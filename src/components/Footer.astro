@@ -79,7 +79,11 @@ const currentYear = new Date().getFullYear();
 
     <!-- Copyright -->
     <p class="mt-8 text-center text-sm text-gray-500">
-      &copy; {currentYear} Five Star Auto Leather. All rights reserved.
+      &copy; <span id="footer-year">{currentYear}</span> Five Star Auto Leather. All rights reserved.
     </p>
   </div>
 </footer>
+
+<script is:inline>
+  document.getElementById('footer-year').innerText = new Date().getFullYear();
+</script>
