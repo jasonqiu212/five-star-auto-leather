@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "astro": "^5.15.1"
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.15.1",
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.46.2",
