@@ -1,6 +1,6 @@
 # Five Star Auto Leather
 
-A modern website built with Astro and TypeScript.
+A modern website for [Five Star Auto Leather](https://fivestarautoleather.com), showcasing automotive leather upholstery, customization, and repair services.
 
 ## Tech Stack
 
@@ -38,7 +38,7 @@ npm install -g pnpm
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/jasonqiu212/five-star-auto-leather-v1.git
 cd five-star-auto-leather
 ```
 
@@ -61,7 +61,6 @@ The site will be available at `http://localhost:4321`
 ## Project Structure
 
 ```
-/
 ├── public/          # Static assets
 ├── src/
 │   ├── assets/      # Project assets (images, etc.)
