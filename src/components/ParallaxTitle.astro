@@ -18,10 +18,8 @@ const {
 const minHeightValue = typeof minHeight === 'number' ? `${minHeight}px` : minHeight;
 const overlayColor = `rgba(0, 0, 0, ${overlayOpacity})`;
 
-// Map title order to HTML heading tags
 const HeadingTag = `h${titleOrder}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
-// Map title order to Tailwind text sizes
 const titleSizes = {
   1: 'text-4xl',
   2: 'text-3xl',
