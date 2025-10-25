@@ -1,0 +1,54 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ParallaxTitle from '@/components/ParallaxTitle.astro';
+import { Image } from 'astro:assets';
+import ourStoryImage from '@/assets/our-story.jpg';
+import foundersImage from '@/assets/founders.png';
+---
+
+<BaseLayout>
+  <ParallaxTitle backgroundImage={ourStoryImage.src} title="Our Story" />
+
+  <section class="container mx-auto max-w-7xl px-6 py-12">
+    <div class="flex flex-col gap-3">
+      <Image src={foundersImage} alt="Our Story" class="mx-auto w-full max-w-[500px]" />
+
+      <p class="text-center text-lg font-bold">Integrity – Quality – Service</p>
+
+      <p class="text-center text-lg font-bold">诚信 – 品质 – 服务</p>
+
+      <p>
+        These are the three pillars our Co-Presidents, Mr Mensono and Mdm Ang Poh Tin, have built
+        Five Star Auto Leather on. Their story began in 1984 in Batam, Indonesia. With nothing but
+        dreams of making a better living for their family, they tried every business idea they had –
+        selling electronics, watches and even car accessories. For 12 years, they struggled to make
+        ends meet.
+      </p>
+
+      <p>
+        Opportunity came to them in 2006, when they ventured into Singapore with a potential
+        business partner. They started with refurbishing deregistered cars which were exported for
+        sale. It was difficult work which often required them to labour into late hours of the
+        night, sewing in a dark factory. But our Co-Presidents persevered and their hard work paid
+        off.
+      </p>
+
+      <p>
+        Five Star Auto Leather was then born, furnishing the interiors of the Lion City's cars with
+        quality leather upholstery. Our Co-Presidents poured their heart and soul into the business
+        and built their reputation bit by bit, attracting more customers each day. To keep quality
+        leather seats a luxury that everyone can afford to enjoy, Five Star established a
+        manufacturing base in Batam, employing talented employees sewing each stitch with care. Our
+        Singapore experts are in charge of assembling the new seats and performing quality checks.
+      </p>
+
+      <p>
+        15 years on, Five Star Auto Leather now services more than 100 cars a month with 21 experts
+        working tirelessly on your beloved cars. We may not be the largest player in the industry,
+        but we take on every request with all our hearts. Our designs are lovingly crafted by our
+        President Mr Mensono himself, and we strive for full customer satisfaction with our quality
+        and service. You can always rely on us delivering the best for your car.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

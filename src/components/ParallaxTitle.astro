@@ -1,0 +1,48 @@
+---
+interface Props {
+  backgroundImage: string;
+  title: string;
+  overlayOpacity?: number;
+  minHeight?: number | string;
+  titleOrder?: 1 | 2 | 3 | 4 | 5 | 6;
+}
+
+const {
+  backgroundImage,
+  title,
+  overlayOpacity = 0.7,
+  minHeight = 400,
+  titleOrder = 1,
+} = Astro.props;
+
+const minHeightValue = typeof minHeight === 'number' ? `${minHeight}px` : minHeight;
+const overlayColor = `rgba(0, 0, 0, ${overlayOpacity})`;
+
+// Map title order to HTML heading tags
+const HeadingTag = `h${titleOrder}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+// Map title order to Tailwind text sizes
+const titleSizes = {
+  1: 'text-4xl',
+  2: 'text-3xl',
+  3: 'text-2xl',
+  4: 'text-xl',
+  5: 'text-lg',
+  6: 'text-base',
+};
+---
+
+<section
+  class="relative flex items-center justify-center bg-cover bg-center bg-no-repeat sm:bg-fixed"
+  style={`background-image: url(${backgroundImage}); min-height: ${minHeightValue}`}
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-0" style={`background-color: ${overlayColor}`}></div>
+
+  <!-- Content -->
+  <div class="relative z-10 container mx-auto max-w-7xl px-6 py-20 text-center">
+    <HeadingTag class={`font-bold text-white ${titleSizes[titleOrder]}`}>
+      {title}
+    </HeadingTag>
+  </div>
+</section>
