@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  image: ImageMetadata;
+  title: string;
+  description: string;
+  publishedDate: string;
+  readingTime: number;
+  link: string;
+}
+
+const { image, title, description, publishedDate, readingTime, link } = Astro.props;
+---
+
+<article
+  class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-shadow hover:shadow-md"
+>
+  <a href={link} class="block">
+    <Image src={image} alt={title} class="h-48 w-full bg-black object-cover" />
+  </a>
+
+  <div class="flex flex-1 flex-col p-6">
+    <a href={link} class="group">
+      <h3 class="text-xl font-bold transition-colors group-hover:text-red-500">
+        {title}
+      </h3>
+    </a>
+
+    <p class="mt-3 flex-1 text-sm text-gray-600">
+      {description}
+    </p>
+
+    <div class="mt-4 flex items-center gap-4 text-xs text-gray-500">
+      <div class="flex items-center gap-1">
+        <Icon name="mdi:calendar" class="h-4 w-4" />
+        <span>{publishedDate}</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <Icon name="mdi:clock-outline" class="h-4 w-4" />
+        <span>{readingTime} min read</span>
+      </div>
+    </div>
+  </div>
+</article>

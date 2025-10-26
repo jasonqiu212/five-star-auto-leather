@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ParallaxTitle from '@/components/ParallaxTitle.astro';
+import ArticleCard from '@/components/ArticleCard.astro';
+
+import blogImage from '@/assets/blog.jpg';
+import customizationImage from '@/assets/customization.jpg';
+import seatImage from '@/assets/seat.jpg';
+import upholsteryImage from '@/assets/upholstery.jpg';
+
+const blogPosts = [
+  {
+    image: seatImage,
+    title: 'Caring for Your Leather Interior',
+    description:
+      'Learn the best practices for maintaining your custom leather interior and keeping it looking new for years to come.',
+    publishedDate: '15 Oct 2025',
+    readingTime: 5,
+    link: '#',
+  },
+  {
+    image: upholsteryImage,
+    title: 'The Art of Automotive Upholstery',
+    description:
+      'Discover the craftsmanship and attention to detail that goes into every custom upholstery project.',
+    publishedDate: '28 Sep 2025',
+    readingTime: 7,
+    link: '#',
+  },
+  {
+    image: customizationImage,
+    title: 'Choosing the Right Leather for Your Vehicle',
+    description:
+      'A comprehensive guide to selecting the perfect leather type and color for your automotive interior project.',
+    publishedDate: '10 Sep 2025',
+    readingTime: 6,
+    link: '#',
+  },
+];
+---
+
+<BaseLayout>
+  <ParallaxTitle backgroundImage={blogImage.src} title="Blog" titleOrder={1} />
+
+  <section class="container mx-auto max-w-7xl px-6 py-8">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        blogPosts.map((post) => (
+          <ArticleCard
+            image={post.image}
+            title={post.title}
+            description={post.description}
+            publishedDate={post.publishedDate}
+            readingTime={post.readingTime}
+            link={post.link}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
