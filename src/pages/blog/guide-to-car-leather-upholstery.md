@@ -28,7 +28,7 @@ The material of your seats is the most crucial choice to make as it will greatly
 
 Do note that Half Leather may be limited to standard color options like black and grey as the car upholstery workshop must be able to closely match the color of the PVC with the leather.
 
-![Half leather seat](/src/assets/blog/half-leather.png)
+![Half leather seat](../../assets/blog/half-leather.png)
 
 **Full Leather** means that the whole seat (front, back and sides) is in leather, and is a luxurious option which you can choose especially for more unique colors such as burgundy and caramel.
 
@@ -44,7 +44,7 @@ Other upholstery services such as steering wheel and gear knob rewraps are gener
 
 For seats, embroidered personalised logos, colored stitching and two color (“two tone”) designs are just the tip of the iceberg. You can also ask for customised stitching patterns such as diamond in the center of your seat (see picture below). Don’t be afraid to ask the car upholstery workshop if they have special materials such as carbon fiber and faux suede (“Alcantara”) as well.
 
-![Seat patterns](/src/assets/blog/seat-patterns.png)
+![Seat patterns](../../assets/blog/seat-patterns.png)
 
 But the more complex the customisation, the more it will cost. While one workshop’s base price is lower, but after adding up all the extras, you may sometimes find another workshop’s price more attractive. Always ask the upholstery workshop for a breakdown on the customisation costs so that you can decide on a design which suits your budget. At Five Star, we offer complimentary colored stitch and customised seat patterns in the picture above.
 

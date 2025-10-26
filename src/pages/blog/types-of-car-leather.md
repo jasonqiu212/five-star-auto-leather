@@ -49,7 +49,7 @@ As you have probably read from our article [A Guide to Car Leather Upholstery in
   </tbody>
 </table>
 
-![PVC](/src/assets/blog/pvc.png)
+![PVC](../../assets/blog/pvc.png)
 
 > **How to Identify PVC?**
 >
@@ -95,7 +95,7 @@ Microfiber leather’s greatest advantage is that you don’t have to compromise
 
 > Note that automotive microfiber leather shouldn’t be confused with ordinary polyurethane (PU) leather typically used for furniture making. Ordinary PU leather has a fabric base like PVC, and the quality of PU resin used is generally of a lower quality.
 
-![Microfiber leather](/src/assets/blog/microfiber.png)
+![Microfiber leather](../../assets/blog/microfiber.png)
 
 > **How to Identify Microfiber Leather?**
 >
@@ -143,6 +143,6 @@ Cowhide leather car interiors are increasingly uncommon these days. While we do 
   </tbody>
 </table>
 
-![Cowhide leather](/src/assets/blog/cowhide.png)
+![Cowhide leather](../../assets/blog/cowhide.png)
 
 Ultimately, each type of material has its pros and cons. We recommend dropping by a couple of car leather upholstery workshops to feel their leather samples in person. Take time to consider your needs and budget before deciding on an important purchase which you will have to live with for years.
