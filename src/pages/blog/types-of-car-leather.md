@@ -51,12 +51,10 @@ As you have probably read from our article “A Guide to Car Leather Upholstery 
 
 ![PVC](/src/assets/blog/pvc.png)
 
-<blockquote>
-  <dl>
-    <dt>How to Identify PVC?</dt>
-    <dd>The fabric backing (see picture above) is the first telltale sign. The second identifying factor is the feel – if you rub your fingers across the surface, the plastic rubbery feeling of PVC is distinctive.</dd>
-  </dl>
-</blockquote>
+<dl>
+  <dt>How to Identify PVC?</dt>
+  <dd>The fabric backing (see picture above) is the first telltale sign. The second identifying factor is the feel – if you rub your fingers across the surface, the plastic rubbery feeling of PVC is distinctive.</dd>
+</dl>
 
 ## 2. Microfiber Leather
 
@@ -100,14 +98,12 @@ Microfiber leather’s greatest advantage is that you don’t have to compromise
 
 ![Microfiber leather](/src/assets/blog/microfiber.png)
 
-<blockquote>
-  <dl>
-    <dt>How to Identify Microfiber Leather?</dt>
-    <dd>By touch, you should find it hard to distinguish microfiber leather from cowhide leather. By sight, there are two obvious signs due to the fact that it is a man-made material – (1) the grain is consistent throughout, and (2) the actual leather stock is stored in rolls like fabric and measured in meters.</dd>
-    <dt>SPECIAL TIP: How to Identify QUALITY Microfiber Leather?</dt>
-    <dd>Fold the leather like you’re folding paper. For quality microfiber leather, the crease should disappear fast and is not noticeable after recovering.</dd>
-  </dl>
-</blockquote>
+<dl>
+  <dt>How to Identify Microfiber Leather?</dt>
+  <dd>By touch, you should find it hard to distinguish microfiber leather from cowhide leather. By sight, there are two obvious signs due to the fact that it is a man-made material – (1) the grain is consistent throughout, and (2) the actual leather stock is stored in rolls like fabric and measured in meters.</dd>
+  <dt>Special Tip: How to Identify QUALITY Microfiber Leather?</dt>
+  <dd>Fold the leather like you’re folding paper. For quality microfiber leather, the crease should disappear fast and is not noticeable after recovering.</dd>
+</dl>
 
 ## 3. Cowhide Leather
 
