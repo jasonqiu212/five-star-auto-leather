@@ -3,12 +3,12 @@ layout: /src/layouts/BlogArticleLayout.astro
 title: '3 Types of Car Leather and How to Identify Them'
 description: 'From PVC to genuine cowhide, discover how to tell car leather types apart and choose the best one for your needs, budget, and lifestyle.'
 publishedDate: 2020-07-01
-readingTime: 4
+readingTime: 5
 cover: '/src/assets/blog/types-of-car-leather.jpg'
 coverAlt: 'Types of car leather'
 ---
 
-Let’s face it – the world of leather is complicated, and plain folks like us are definitely not specialists who can name its every molecular component. But we definitely know enough to help you avoid being led by the nose by any car salesperson. Let us share handy facts about the main types of automotive leather available on the Singapore market and how to identify them yourself.
+Let’s face it – the world of leather is complicated, and plain folks like us are definitely not specialists who can name its every molecular component. But we definitely know enough to help you avoid being led by the nose by any car salesperson. Let us share handy facts about the main types of automotive leather available on the Singapore market and how to identify them yourself 😊
 
 ## 1. PVC
 
@@ -59,7 +59,7 @@ As you have probably read from our article [A Guide to Car Leather Upholstery in
 
 Microfiber leather is a synthetic alternative built to resemble the touch and feel of cowhide leather. This material has a base of ultra-fine bundles of microfibers coated with high performance polyurethane resins. With the latest advances in technology, there’s very little to distinguish it from its cowhide counterpart.
 
-Microfiber leather’s greatest advantage is that you don’t have to compromise on a refined car interior, while at the same time it is cost effective and you can proudly say “No animals were harmed in the making of this car interior!"
+Microfiber leather’s greatest advantage is that you don’t have to compromise on a refined car interior, while at the same time it is cost effective and you can proudly say “No animals were harmed in the making of this car interior!" 🐄
 
 <table>
   <tbody>
