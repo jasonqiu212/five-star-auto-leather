@@ -1,6 +1,19 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@utility prose {
+  blockquote {
+    /* Disable adding quote marks to blockquote: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
+    p {
+      &:first-of-type::before,
+      &:last-of-type::after {
+        content: none;
+      }
+      font-weight: 400;
+    }
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
