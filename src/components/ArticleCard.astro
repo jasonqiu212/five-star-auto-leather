@@ -16,29 +16,29 @@ const { id, title, description, publishedDate, readingTime, cover, coverAlt } = 
 ---
 
 <article
-  class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-shadow hover:shadow-md"
+  class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-shadow hover:shadow-lg"
 >
   <a href={`/blog/${id}`} class="block">
     <Image src={cover} alt={coverAlt} class="h-48 w-full bg-black object-cover" />
   </a>
 
-  <div class="flex flex-1 flex-col p-4">
-    <a href={`/blog/${id}`} class="group">
-      <h3 class="text-xl font-bold transition-colors group-hover:text-red-500">
+  <div class="flex flex-1 flex-col gap-3 p-4">
+    <a href={`/blog/${id}`}>
+      <h3 class="text-xl font-bold transition-colors">
         {title}
       </h3>
     </a>
 
-    <p class="mt-3 flex-1 text-sm text-gray-600">
+    <p class="flex-1 text-sm text-gray-600">
       {description}
     </p>
 
-    <div class="mt-4 flex items-center gap-4 text-xs text-gray-500">
+    <div class="flex items-center gap-3 text-xs text-gray-600">
       <div class="flex items-center gap-1">
         <Icon name="mdi:calendar" class="h-4 w-4" />
         <span
           >{
-            publishedDate.toLocaleDateString('en-US', {
+            publishedDate.toLocaleDateString('en-SG', {
               month: 'long',
               day: 'numeric',
               year: 'numeric',
