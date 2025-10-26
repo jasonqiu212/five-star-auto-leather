@@ -4,7 +4,7 @@ title: 'A Guide to Car Leather Upholstery in Singapore'
 description: 'Discover the different types of car leather upholstery available in Singapore and learn how to choose the best option for your car’s comfort, budget, and style.'
 publishedDate: 2020-06-02
 readingTime: 4
-cover: '/src/assets/blog/blog.jpg'
+cover: '/src/assets/blog/guide-to-car-leather-upholstery.png'
 coverAlt: 'Guide to car leather upholstery'
 ---
 
