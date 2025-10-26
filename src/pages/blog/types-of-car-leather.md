@@ -12,7 +12,7 @@ Let’s face it – the world of leather is complicated, and plain folks like us
 
 ## 1. PVC
 
-As you have probably read from our article “A Guide to Car Leather Upholstery in Singapore”, PVC is the most affordable option on the market. This material is made out of a fabric base topped with a layer of Polyvinyl Chloride (thus the name PVC) which is a synthetic plastic polymer. PVC is usually requested for pick-up trucks, vans and rental cars which have to endure heavy duty use.
+As you have probably read from our article [A Guide to Car Leather Upholstery in Singapore](/blog/guide-to-car-leather-upholstery), PVC is the most affordable option on the market. This material is made out of a fabric base topped with a layer of Polyvinyl Chloride (thus the name PVC) which is a synthetic plastic polymer. PVC is usually requested for pick-up trucks, vans and rental cars which have to endure heavy duty use.
 
 <table>
   <tbody>
@@ -51,10 +51,9 @@ As you have probably read from our article “A Guide to Car Leather Upholstery 
 
 ![PVC](/src/assets/blog/pvc.png)
 
-<dl>
-  <dt>How to Identify PVC?</dt>
-  <dd>The fabric backing (see picture above) is the first telltale sign. The second identifying factor is the feel – if you rub your fingers across the surface, the plastic rubbery feeling of PVC is distinctive.</dd>
-</dl>
+> **How to Identify PVC?**
+>
+> The fabric backing (see picture above) is the first telltale sign. The second identifying factor is the feel – if you rub your fingers across the surface, the plastic rubbery feeling of PVC is distinctive.
 
 ## 2. Microfiber Leather
 
@@ -94,16 +93,17 @@ Microfiber leather’s greatest advantage is that you don’t have to compromise
   </tbody>
 </table>
 
-\* Note that automotive microfiber leather shouldn’t be confused with ordinary polyurethane (PU) leather typically used for furniture making. Ordinary PU leather has a fabric base like PVC, and the quality of PU resin used is generally of a lower quality.
+> Note that automotive microfiber leather shouldn’t be confused with ordinary polyurethane (PU) leather typically used for furniture making. Ordinary PU leather has a fabric base like PVC, and the quality of PU resin used is generally of a lower quality.
 
 ![Microfiber leather](/src/assets/blog/microfiber.png)
 
-<dl>
-  <dt>How to Identify Microfiber Leather?</dt>
-  <dd>By touch, you should find it hard to distinguish microfiber leather from cowhide leather. By sight, there are two obvious signs due to the fact that it is a man-made material – (1) the grain is consistent throughout, and (2) the actual leather stock is stored in rolls like fabric and measured in meters.</dd>
-  <dt>Special Tip: How to Identify QUALITY Microfiber Leather?</dt>
-  <dd>Fold the leather like you’re folding paper. For quality microfiber leather, the crease should disappear fast and is not noticeable after recovering.</dd>
-</dl>
+> **How to Identify Microfiber Leather?**
+>
+> By touch, you should find it hard to distinguish microfiber leather from cowhide leather. By sight, there are two obvious signs due to the fact that it is a man-made material – (1) the grain is consistent throughout, and (2) the actual leather stock is stored in rolls like fabric and measured in meters.
+>
+> **Special Tip: How to Identify QUALITY Microfiber Leather?**
+>
+> Fold the leather like you’re folding paper. For quality microfiber leather, the crease should disappear fast and is not noticeable after recovering.
 
 ## 3. Cowhide Leather
 

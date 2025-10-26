@@ -50,10 +50,10 @@ const cover = images[frontmatter.cover]();
     <Image
       src={cover}
       alt={frontmatter.coverAlt}
-      class="max-h-140 w-full rounded-lg object-cover shadow-md"
+      class="max-h-140 w-full rounded-lg object-cover shadow-lg"
     />
     <div
-      class="prose prose-img:rounded-lg prose-img:max-h-140 prose-img:w-auto prose-img:mx-auto prose-img:object-contain max-w-none"
+      class="prose prose-img:rounded-lg prose-img:max-h-140 prose-img:w-auto prose-img:mx-auto prose-img:object-contain prose-img:shadow-lg max-w-none"
     >
       <slot />
     </div>
