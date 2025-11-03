@@ -2,8 +2,14 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ParallaxTitle from '@/components/ParallaxTitle.astro';
 import { Image } from 'astro:assets';
+
 import ourStoryImage from '@/assets/our-story.jpg';
-import foundersImage from '@/assets/founders.png';
+import earlyDaysImage from '@/assets/early-days.png';
+import babyBossImage from '@/assets/baby-boss.png';
+import covidTimesImages from '@/assets/covid-times.png';
+import fiveYearsImage from '@/assets/five-years.png';
+import singaporeWorkersImage from '@/assets/singapore-workers.png';
+import batamWorkersImage from '@/assets/batam-workers.png';
 ---
 
 <BaseLayout>
@@ -11,9 +17,7 @@ import foundersImage from '@/assets/founders.png';
 
   <section class="container mx-auto max-w-7xl px-6 py-8">
     <div class="flex flex-col gap-3">
-      <Image src={foundersImage} alt="Our Story" class="mx-auto w-full max-w-[500px]" />
-
-      <h2 class="text-center text-xl font-bold">Integrity – Quality – Service</h2>
+      <h2 class="text-center text-2xl font-bold">Integrity – Quality – Service</h2>
 
       <p>
         These are the values that built Five Star Auto Leather, founded by Mensono and Ang Poh Tin —
@@ -32,7 +36,24 @@ import foundersImage from '@/assets/founders.png';
         installation meets our uncompromising standards.
       </p>
 
-      <h2 class="text-center text-xl font-bold">A New Generation, A New Drive</h2>
+      <div class="mx-auto my-3 grid max-w-[1000px] grid-cols-12 gap-3">
+        <div class="col-span-12 sm:col-span-8">
+          <Image
+            src={earlyDaysImage}
+            alt="Early days husband and wife team"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-4">
+          <Image
+            src={babyBossImage}
+            alt="Baby boss at Batam shop"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+      </div>
+
+      <h2 class="text-center text-2xl font-bold">A New Generation, A New Drive</h2>
 
       <p>
         In 2020, during the toughest of times due to the pandemic, the second generation joined the
@@ -48,7 +69,24 @@ import foundersImage from '@/assets/founders.png';
         deepened our connection with the car enthusiast community.
       </p>
 
-      <h2 class="text-center text-xl font-bold">Crafting the Future</h2>
+      <div class="mx-auto my-3 grid max-w-[1000px] grid-cols-12 gap-3">
+        <div class="col-span-12 sm:col-span-6">
+          <Image
+            src={covidTimesImages}
+            alt="Difficult Covid times"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <Image
+            src={fiveYearsImage}
+            alt="Celebrating 5 years of working together"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+      </div>
+
+      <h2 class="text-center text-2xl font-bold">Crafting the Future</h2>
 
       <p>
         In a world driven by mass production and efficiency, we hold a growing appreciation for the
@@ -66,6 +104,23 @@ import foundersImage from '@/assets/founders.png';
         excellence that endure.
       </p>
       <p>Because true craftsmanship isn’t just made — it’s passed on.</p>
+
+      <div class="mx-auto my-3 grid max-w-[1000px] grid-cols-12 gap-3">
+        <div class="col-span-12 sm:col-span-6">
+          <Image
+            src={singaporeWorkersImage}
+            alt="Our Singapore team"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <Image
+            src={batamWorkersImage}
+            alt="Our Batam team"
+            class="h-full w-auto rounded-lg object-cover"
+          />
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
