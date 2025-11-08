@@ -1,6 +1,6 @@
 # Five Star Auto Leather
 
-A modern website for [Five Star Auto Leather](https://fivestarautoleather.com), showcasing automotive leather upholstery, customization, and repair services.
+A modern website for [Five Star Auto Leather](https://fivestarautoleather.com), showcasing automotive leather upholstery, customisation, and repair services.
 
 ## Tech Stack
 
