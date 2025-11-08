@@ -15,19 +15,22 @@ interface Props {
 const { id, title, description, publishedDate, readingTime, cover, coverAlt } = Astro.props;
 ---
 
-<article
-  class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-shadow hover:shadow-lg"
+<a
+  href={`/blog/${id}`}
+  class="group flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-shadow hover:shadow-lg"
 >
-  <a href={`/blog/${id}`} class="block">
-    <Image src={cover} alt={coverAlt} class="h-48 w-full bg-black object-cover" />
-  </a>
+  <div class="overflow-hidden">
+    <Image
+      src={cover}
+      alt={coverAlt}
+      class="h-48 w-full bg-black object-cover transition-transform duration-500 group-hover:scale-103"
+    />
+  </div>
 
   <div class="flex flex-1 flex-col gap-3 p-4">
-    <a href={`/blog/${id}`}>
-      <h3 class="text-xl font-bold transition-colors">
-        {title}
-      </h3>
-    </a>
+    <h3 class="text-xl font-bold">
+      {title}
+    </h3>
 
     <p class="flex-1 text-sm text-gray-600">
       {description}
@@ -52,4 +55,4 @@ const { id, title, description, publishedDate, readingTime, cover, coverAlt } = 
       </div>
     </div>
   </div>
-</article>
+</a>
