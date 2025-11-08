@@ -14,8 +14,20 @@
   }
 }
 
+@font-face {
+  font-family: 'RacingSansOne';
+  src: url('/fonts/RacingSansOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'RacingSansOne', var(--font-sans);
 }
 
 @keyframes slideUp {

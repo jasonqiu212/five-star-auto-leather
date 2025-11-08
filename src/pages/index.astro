@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
-import seatImage from '@/assets/seat.jpg';
+import seatImage from '@/assets/seat.png';
 import customizationImage from '@/assets/customization.jpg';
 import repairImage from '@/assets/repair.jpg';
 import upholsteryImage from '@/assets/upholstery.jpg';
@@ -18,7 +18,7 @@ const whatWeDoItems = [
     imageUrl: upholsteryImage,
   },
   {
-    title: 'Customization',
+    title: 'Customisation',
     description:
       'Along with a vast range of quality leather, we also offer bespoke designs and personalisation details.',
     imageUrl: customizationImage,
@@ -48,7 +48,7 @@ const businessStats = [
 
 const whyReasons = [
   'Obsessed with our craft',
-  'Bold an creative in every design',
+  'Bold and creative in every design',
   'Driven by quality and top-tier service',
   'Trusted to deliver nothing less than the best for your ride',
 ];
@@ -165,3 +165,9 @@ const whyReasons = [
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  h2 {
+    font-family: 'RacingSansOne', var(--font-sans);
+  }
+</style>
