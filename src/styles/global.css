@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'RacingSansOne';
-  src: url('/fonts/RacingSansOne-Regular.ttf') format('truetype');
+  src: url('/fonts/RacingSansOne.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -36,6 +36,11 @@ const cover = images[frontmatter.cover]();
 ---
 
 <BaseLayout>
+  <Fragment slot="head">
+    <title>{frontmatter.title} | Five Star Auto Leather</title>
+    <meta name="description" content={frontmatter.description} />
+  </Fragment>
+
   <section class="container mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8">
     <h1 class="text-center text-4xl font-bold">{frontmatter.title}</h1>
     <p class="text-center text-sm text-gray-600">
