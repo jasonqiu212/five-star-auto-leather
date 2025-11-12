@@ -29,7 +29,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </slot>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TFGCVSWFZ"></script>
-    <script is:inline src="/src/scripts/gtag.js"></script>
+    <script
+      set:html={`
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-0TFGCVSWFZ');
+        `}
+    />
   </head>
   <body>
     <Header />
