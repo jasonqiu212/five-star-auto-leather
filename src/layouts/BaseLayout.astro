@@ -27,6 +27,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <slot name="head">
       <title>Five Star Auto Leather</title>
     </slot>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TFGCVSWFZ"></script>
+    <script is:inline src="/src/scripts/gtag.js"></script>
   </head>
   <body>
     <Header />
