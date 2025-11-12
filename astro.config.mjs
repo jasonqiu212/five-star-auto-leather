@@ -5,7 +5,7 @@ import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://fivestarautoleather.com',
+  site: 'https://www.fivestarautoleather.com',
   vite: {
     plugins: [tailwindcss()],
   },
