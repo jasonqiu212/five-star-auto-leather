@@ -9,14 +9,14 @@ interface WhatsAppAccount {
 
 const accounts: WhatsAppAccount[] = [
   {
-    name: 'Joy',
-    number: '+65 8790 9677',
-    whatsappUrl: 'https://api.whatsapp.com/send?phone=6587909677',
-  },
-  {
     name: 'Alvin',
     number: '+65 9172 9570',
     whatsappUrl: 'https://api.whatsapp.com/send?phone=6591729570',
+  },
+  {
+    name: 'Joy',
+    number: '+65 8790 9677',
+    whatsappUrl: 'https://api.whatsapp.com/send?phone=6587909677',
   },
 ];
 
