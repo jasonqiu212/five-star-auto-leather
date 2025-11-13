@@ -41,6 +41,10 @@ h1 {
   }
 }
 
-.slide-up {
+.title-slide-up {
   animation: slideUp 0.8s ease-out;
+}
+
+.whatsapp-popover-slide-up {
+  animation: slideUp 0.3s ease-out;
 }
