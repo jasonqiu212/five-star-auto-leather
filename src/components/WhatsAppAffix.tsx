@@ -22,11 +22,13 @@ const accounts: WhatsAppAccount[] = [
 
 export default function WhatsAppAffix() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showHint, setShowHint] = useState(true);
   const popoverRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
   const togglePopover = () => {
     setIsOpen(!isOpen);
+    setShowHint(false);
   };
 
   const handleAccountClick = () => {
@@ -56,6 +58,12 @@ export default function WhatsAppAffix() {
 
   return (
     <div className="fixed right-4 bottom-4 z-1000">
+      {showHint && !isOpen && (
+        <div className="absolute right-14 bottom-2 rounded-lg bg-white px-3 py-2 text-sm whitespace-nowrap shadow-md/20">
+          Need help? Chat with us!
+        </div>
+      )}
+
       <button
         ref={toggleButtonRef}
         className="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-none bg-green-500 p-4 text-white shadow-md/20 transition-all duration-300 hover:bg-green-600 hover:shadow-lg/20"
