@@ -48,7 +48,15 @@ export default function WhatsAppAffix() {
     };
 
     if (isOpen) {
-      document.addEventListener('click', handleClickOutside);
+      // Add listener on next tick to avoid catching the same click that opened the popover
+      const timeoutId = setTimeout(() => {
+        document.addEventListener('click', handleClickOutside);
+      }, 0);
+
+      return () => {
+        clearTimeout(timeoutId);
+        document.removeEventListener('click', handleClickOutside);
+      };
     }
 
     return () => {
