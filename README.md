@@ -12,7 +12,7 @@ A modern website for [Five Star Auto Leather](https://www.fivestarautoleather.co
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (v20.19.2 as specified in `.nvmrc`)
+- **Node.js** (v20.19.5 as specified in `.nvmrc`)
 - **pnpm** (package manager)
 
 ### Using nvm (recommended)
