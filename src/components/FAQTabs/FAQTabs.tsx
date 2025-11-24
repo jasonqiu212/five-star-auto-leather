@@ -7,6 +7,7 @@ import { FAQCategory, FAQCategoryLabels, faqs, type FAQItem } from '@/components
 import '@mantine/core/styles.css';
 
 export const FAQTabs = (): React.ReactElement => {
+  const [selectedTab, setSelectedTab] = useState(FAQCategory.ServiceAndProcess);
   const [searchQuery, setSearchQuery] = useState('');
 
   const searchFAQs = (items: FAQItem[], query: string) => {
@@ -76,7 +77,13 @@ export const FAQTabs = (): React.ReactElement => {
             variant="pills"
             radius="lg"
             color="black"
-            defaultValue={FAQCategory.ServiceAndProcess}
+            value={selectedTab}
+            onChange={(value) => setSelectedTab(value as FAQCategory)}
+            styles={{
+              tabLabel: {
+                fontSize: '16px',
+              },
+            }}
           >
             <Tabs.List justify="center">
               {Object.values(FAQCategory).map((category) => (
