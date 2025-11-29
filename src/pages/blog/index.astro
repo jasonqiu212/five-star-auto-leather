@@ -8,6 +8,7 @@ import ArticleCard from '@/components/ArticleCard.astro';
 import blogImage from '@/assets/blog.jpg';
 
 const articles = await getCollection('articles');
+articles.sort((a, b) => b.data.publishedDate.getTime() - a.data.publishedDate.getTime());
 ---
 
 <BaseLayout>
