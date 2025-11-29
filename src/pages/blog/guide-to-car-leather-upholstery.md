@@ -1,57 +1,67 @@
 ---
 layout: /src/layouts/BlogArticleLayout.astro
 title: 'A Guide to Car Leather Upholstery in Singapore'
-description: 'Discover the different types of car leather upholstery available in Singapore and learn how to choose the best option for your car’s comfort, budget, and style.'
-publishedDate: 2020-06-02
+description: 'A Singapore-centric guide that demystifies the world of car leather — so you know exactly what you’re getting into.'
+publishedDate: 2025-11-01
 readingTime: 4
 cover: '/src/assets/blog/guide-to-car-leather-upholstery.png'
 coverAlt: 'Guide to car leather upholstery'
 ---
 
-So you finally made the decision to treat yourself to a new set of leather seats for your beloved car! 👏👏 But your excitement may soon turn into confusion as you start your research on the many MANY options and choices available. Let us demystify the world of car leather upholstery in Singapore, and share some tips on getting the best deal (and also the right deal!) for your car 😊
+So you’ve finally decided to upgrade your car with new leather seats!👏 But excitement can quickly turn into confusion. This guide aims to demystify the world of car leather upholstery in Singapore and gives you the insights you need to make confident, informed choices.
 
 ## 1. How Do You Get New Leather Seats?
 
-At Five Star, we remove existing seats covers and replace with completely new leather. There are other alternative options such as dying the existing leather or placing new covers over the old ones, but full replacement is our recommended option as it would look the most fitted, letting you feel like it’s a whole new car again.
+At Five Star, the process involves removing your existing seat covers and replacing them with entirely new leather – a full rewrap. While some workshops offer alternatives such as spray-painting old leather or overlaying new covers on top, a full rewrap delivers the cleanest, most fitted result. It creates the feeling of a truly refreshed interior.
 
-Or do you just have a small problematic area on your seats? Like the side of the driver seat which suffers the most wear and tear? Instead of replacing whole seats, we also offer services to replace just selected pieces of leather on your seat, which can be a more affordable solution.
+Our typical lead time is three to four working days to manufacture or ship your leather covers, but actual downtime for installation usually takes less than one day.
 
-For downtime, most car upholstery workshops require some time to manufacture and/or ship over your order but actual installation shouldn’t take more than a day or two. If you are engaging other services such as spray painting your car, ask your car upholstery workshop to make arrangements to do the leather seat installation at the same time. This will greatly help to reduce downtime for you.
+> ✏️ Want to understand our process better? Read our article: [Seat Rewrap Process: How We Do It with Minimal Downtime](/blog/seat-rewrap-process)
 
-## 2. What Material to Choose?
+> ⚡️ **Quick Tip:** If you are engaging other services such as exterior spray painting, consider coordinating the leather installation at the same time to reduce overall downtime.
 
-The material of your seats is the most crucial choice to make as it will greatly determine your entire budget. Most car upholstery workshops will quote you 3 options: PVC, half leather and full leather.
+## 2. What Material Should You Choose?
 
-**PVC** is the most affordable option usually requested for pick-up trucks, vans and rental cars which have to endure heavy duty use. It has a more plastic feel and get hot pretty fast when you sit on it.
+This is where most people get confused — especially with the mysterious term “Half Leather.” So… what exactly is it half of? 😵‍💫💫
 
-**Half Leather** means the seat is a combination of leather and PVC – the front of the seat which touches your body is in leather, while the sides and back of the seat is in PVC (see picture below). This is the most popular option for personal use cars as it feels premium yet still friendly on your wallet.
+### Half Leather
 
-Do note that Half Leather may be limited to standard color options like black and grey as the car upholstery workshop must be able to closely match the color of the PVC with the leather.
+Half Leather seats combine leather on the front areas that contact your body, with PVC on the sides and back. At Five Star, we specialise in automotive-grade vegan Microfiber Leather, which is paired with PVC in our Half Leather option. This configuration is the most popular choice for personal use cars due to its balance of premium feel and affordability.
 
-![Half leather seat](../../assets/blog/half-leather.png)
+![Half leather](../../assets/blog/half-leather.png)
 
-**Full Leather** means that the whole seat (front, back and sides) is in leather, and is a luxurious option which you can choose especially for more unique colors such as burgundy and caramel.
+### Full Leather
 
-> The type and quality of leather is, of course, the next big consideration, and to which we have dedicated an entire article: [3 Types of Car Leather and How to Identify Them](/blog/types-of-car-leather)
+Full Leather means the entire seat (front, sides, and back) is upholstered in leather. This is the preferred choice for those seeking a uniform and luxurious finish.
+
+### PVC
+
+PVC is the most budget-friendly option and is commonly used in commercial or rental vehicles. However, it has a more plastic texture and tends to heat up quickly under the sun.
+
+> ✏️ Want a deeper dive? Read our article: [3 Types of Car Leather and How to Identify Them](/blog/types-of-car-leather)
 
 ## 3. What’s Included in the Price?
 
-Always confirm with your car upholstery workshop what’s included in the price quoted to you. For example, matching door panel are usually complimentary for Japanese make cars, but may be charged separately for continental cars. You can also ask if there are free add-ons such as adding foam to parts of the seats where years of usage have damaged the internal foam structure.
+Always clarify what is covered in the quoted price. Matching door panels may be complimentary for Japanese or Korean make cars, but charged separately for European models. Internal foam repairs may or may not be included as well.
 
-Other upholstery services such as steering wheel and gear knob rewraps are generally charged separately. If you are interested in such rewraps, we suggest going back to the same workshop that did your seats so that the rewrap leather can be the same matching leather used for your seats. The same workshop is also likely to give you a cheaper package price if you do it all together.
+Services such as steering wheel or gear knob rewraps are usually priced separately. If you intend to do these, it is advisable to return to the same workshop to ensure the leather matches and potentially secure a bundled package price.
 
-## 4. What Can I Customise?
+## 4. What Can You Customise?
 
-For seats, embroidered personalised logos, colored stitching and two color (“two tone”) designs are just the tip of the iceberg. You can also ask for customised stitching patterns such as diamond in the center of your seat (see picture below). Don’t be afraid to ask the car upholstery workshop if they have special materials such as carbon fiber and faux suede (“Alcantara”) as well.
+More than you might think!
 
-![Seat patterns](../../assets/blog/seat-patterns.png)
+- Material type such as textured vs smooth grain, fabric alternatives like Alcantara
+- Multiple colour combinations
+- Leather trim details such as piping
+- Stitching colour & pattern such as diamond quilting
+- Embroidered logo or branding
 
-But the more complex the customisation, the more it will cost. While one workshop’s base price is lower, but after adding up all the extras, you may sometimes find another workshop’s price more attractive. Always ask the upholstery workshop for a breakdown on the customisation costs so that you can decide on a design which suits your budget. At Five Star, we offer complimentary colored stitch and customised seat patterns in the picture above.
+![Custom details](../../assets/blog/custom-details.png)
 
-## 5. How to Decide on a Car Leather Upholstery Workshop?
+Complex designs usually cost more. A low base price can quickly rise once customisation is added, so always request a clear breakdown to keep your budget on track.
 
-Google is your best friend! Additionally, you can read customer reviews as well as check out finished product photos and videos on social media platforms such as Facebook. Carousell is also a popular media for car related services in Singapore.
+## 5. Choosing the Right Car Upholstery Workshop
 
-We recommend asking a few workshops for their quotes, and ask questions! Chat with them on their material quality, price breakdowns or their design opinions. A good car upholstery workshop is always upfront and transparent about their material and costs, as well as offer good (and patient!) customer service from their salespeople.
+Start with Google reviews and browse finished projects on Facebook, Instagram or Carousell. Visit the workshop in person if possible, compare quotes and ask detailed questions about materials, pricing breakdowns, and design options. A trustworthy workshop will be transparent, informative and patient with your questions.
 
-After shortlisting a couple of workshops, we recommend dropping by to see their workers in action and feel the leather samples in person before making any decisions. After all, a set of new car leather seats is an important purchase which you will have to live with for years – we know you would want to take the time to make the right decision 😊
+Leather seats are a long-term investment, so choose a specialist who delivers both quality and top-tier service. With Five Star’s craftsmanship, premium materials, and proven expertise, your car’s interior is in safe hands — and the results speak for themselves.
