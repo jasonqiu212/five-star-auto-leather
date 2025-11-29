@@ -4,7 +4,7 @@ title: '3 Types of Car Leather and How to Identify Them'
 description: 'From PVC to genuine cowhide, discover how to tell car leather types apart and choose the best one for your needs, budget, and lifestyle.'
 publishedDate: 2020-07-01
 readingTime: 5
-cover: '/src/assets/blog/types-of-car-leather.jpg'
+cover: '/src/assets/blog/types-of-car-leather.png'
 coverAlt: 'Types of car leather'
 ---
 
