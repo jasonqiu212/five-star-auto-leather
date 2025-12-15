@@ -4,8 +4,8 @@ title: 'Car Interior Design: Essential Tips for Choosing Your New Look'
 description: '3 simple but powerful tips to choose the right design for your car interior, backed by real workshop experience.'
 publishedDate: 2025-12-07
 readingTime: 2
-cover: '/src/assets/blog/seat-rewrap-process.jpg'
-coverAlt: 'Seat rewrap process'
+cover: '/src/assets/blog/sports-vs-comfort.png'
+coverAlt: 'Car interior design tips'
 ---
 
 At Five Star, we believe a well-designed interior transforms the entire driving experience. While there are guides for designing houses, wardrobes and even PowerPoints, car interior design is often overlooked.
@@ -52,6 +52,8 @@ Always choose a design that works with the natural seat shape, not against it.
 
 If you’re unsure what works best for your vehicle, we’re here to help. We’ll show you colour samples, materials and real projects so you can visualise exactly how your interior will look.
 
-[Book an appointment today](#), let’s la kopi together and talk cars.
+**Book an appointment today**, let’s la kopi together and talk cars.
+
+<!-- Insert link to contact us -->
 
 💫 **Your dream car interior is just one conversation away**
