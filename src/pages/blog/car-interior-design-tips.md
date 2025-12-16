@@ -4,7 +4,7 @@ title: 'Car Interior Design: Essential Tips for Choosing Your New Look'
 description: '3 simple but powerful tips to choose the right design for your car interior, backed by real workshop experience.'
 publishedDate: 2025-12-07
 readingTime: 2
-cover: '/src/assets/blog/sports-vs-comfort.png'
+cover: '/src/assets/blog/car-interior-design-tips.jpg'
 coverAlt: 'Car interior design tips'
 ---
 
