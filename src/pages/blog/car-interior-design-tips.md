@@ -52,8 +52,6 @@ Always choose a design that works with the natural seat shape, not against it.
 
 If you’re unsure what works best for your vehicle, we’re here to help. We’ll show you colour samples, materials and real projects so you can visualise exactly how your interior will look.
 
-**Book an appointment today**, let’s la kopi together and talk cars.
-
-<!-- Insert link to contact us -->
+[Book an appointment today](/contact-us), let’s la kopi together and talk cars.
 
 💫 **Your dream car interior is just one conversation away**

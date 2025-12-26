@@ -153,4 +153,4 @@ At Five Star, we specialise exclusively in top-tier automotive-grade microfiber 
 
 Leather is personal — it’s about what feels right, and how it fits into your daily life. Each material has something different to offer, so take the time to experience it yourself. Visit workshops, feel the textures, and imagine it in your car.
 
-<!-- 💬 **Need expert advice?** Consult us (link: Contact Us page) to find the perfect leather for your car -->
+💬 **Need expert advice?** [Consult us](/contact-us) to find the perfect leather for your car
