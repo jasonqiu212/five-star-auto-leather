@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import ParallaxTitle from '@/components/ParallaxTitle.astro';
+import HeroTitle from '@/components/HeroTitle.astro';
 import { Icon } from 'astro-icon/components';
 
 import contactUsImage from '@/assets/contact-us.jpg';
@@ -15,7 +15,7 @@ import contactUsImage from '@/assets/contact-us.jpg';
     />
   </Fragment>
 
-  <ParallaxTitle backgroundImage={contactUsImage.src} title="Contact Us" />
+  <HeroTitle backgroundImage={contactUsImage.src} title="Contact Us" />
 
   <section class="container mx-auto max-w-7xl px-6 py-8">
     <div class="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
