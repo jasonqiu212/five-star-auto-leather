@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import ParallaxTitle from '@/components/ParallaxTitle.astro';
+import HeroTitle from '@/components/HeroTitle.astro';
 import faqImage from '@/assets/faq.jpg';
 import { FAQTabs } from '@/components/FAQTabs';
 ---
@@ -14,7 +14,11 @@ import { FAQTabs } from '@/components/FAQTabs';
     />
   </Fragment>
 
-  <ParallaxTitle backgroundImage={faqImage.src} title="Frequently Asked Questions" />
+  <HeroTitle
+    backgroundImage={faqImage.src}
+    title="Frequently Asked Questions"
+    overlayOpacity={0.5}
+  />
 
   <section class="container mx-auto w-full max-w-7xl px-6 py-8">
     <FAQTabs client:load />
