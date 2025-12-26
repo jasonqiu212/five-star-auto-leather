@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import ParallaxTitle from '@/components/ParallaxTitle.astro';
 import { Icon } from 'astro-icon/components';
 
-import ourStoryImage from '@/assets/our-story.jpg';
+import contactUsImage from '@/assets/contact-us.jpg';
 ---
 
 <BaseLayout>
@@ -15,7 +15,7 @@ import ourStoryImage from '@/assets/our-story.jpg';
     />
   </Fragment>
 
-  <ParallaxTitle backgroundImage={ourStoryImage.src} title="Contact Us" />
+  <ParallaxTitle backgroundImage={contactUsImage.src} title="Contact Us" />
 
   <section class="container mx-auto max-w-7xl px-6 py-8">
     <div class="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -95,29 +95,41 @@ import ourStoryImage from '@/assets/our-story.jpg';
             Follow Us
           </div>
 
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-3">
             <a
               href="https://www.facebook.com/fivestarautoleather/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
             >
-              <Icon name="mdi:facebook" class="h-5 w-5" />
+              <Icon name="mdi:facebook" class="h-7 w-7" />
             </a>
 
             <a
               href="https://www.instagram.com/fivestarautoleather/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
-              <Icon name="mdi:instagram" class="h-5 w-5" />
+              <Icon name="mdi:instagram" class="h-7 w-7" />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@fivestarautoleather"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <Icon name="tiktok" class="h-7 w-7" />
             </a>
 
             <a
               href="https://www.carousell.sg/u/fivestarautoleather/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Carousell"
             >
-              <Icon name="carousell" class="h-5 w-5" />
+              <Icon name="carousell" class="h-7 w-7" />
             </a>
           </div>
         </div>
