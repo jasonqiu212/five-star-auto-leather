@@ -18,96 +18,116 @@ import ourStoryImage from '@/assets/our-story.jpg';
   <ParallaxTitle backgroundImage={ourStoryImage.src} title="Contact Us" />
 
   <section class="container mx-auto max-w-7xl px-6 py-8">
-    <div class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-      <div class="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-md">
-        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-orange-100">
-          <Icon name="mdi:phone" class="h-8 w-8 text-orange-600" />
-        </div>
+    <div class="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div class="flex items-center gap-6 rounded-lg p-4 shadow-md">
+        <Icon name="mdi:phone" class="h-8 w-8" />
         <div>
-          <h3 class="mb-1 text-sm font-medium text-gray-500">Phone</h3>
-          <p class="text-sm font-semibold text-gray-900">9172 9570</p>
-          <p class="text-sm font-semibold text-gray-900">8790 9677</p>
+          <h3 class="mb-1 text-sm text-gray-600">Phone</h3>
+          <a href="tel:91729570" class="text-sm font-semibold text-gray-900 underline">9172 9570</a>
+          {' / '}
+          <a href="tel:87909677" class="text-sm font-semibold text-gray-900 underline">8790 9677</a>
         </div>
       </div>
 
-      <div class="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-md">
-        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-red-100">
-          <Icon name="mdi:email" class="h-8 w-8 text-red-600" />
-        </div>
+      <div class="flex items-center gap-6 rounded-lg p-4 shadow-md">
+        <Icon name="mdi:email" class="h-8 w-8" />
         <div>
-          <h3 class="mb-1 text-sm font-medium text-gray-500">Email</h3>
-          <p class="text-sm font-semibold text-gray-900">fivestarautoleather@live.com</p>
+          <h3 class="mb-1 text-sm text-gray-600">Email</h3>
+          <a
+            href="mailto:sales@fivestarautoleather.com"
+            class="text-sm font-semibold wrap-anywhere text-gray-900 underline"
+            >sales@fivestarautoleather.com</a
+          >
         </div>
       </div>
 
-      <div class="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-md">
-        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-teal-100">
-          <Icon name="mdi:map-marker" class="h-8 w-8 text-teal-600" />
-        </div>
+      <div class="flex items-center gap-6 rounded-lg p-4 shadow-md">
+        <Icon name="mdi:map-marker" class="h-8 w-8" />
         <div>
-          <h3 class="mb-1 text-sm font-medium text-gray-500">Address</h3>
-          <p class="text-sm font-semibold text-gray-900">1234 Divi St. #1000</p>
-          <p class="text-sm font-semibold text-gray-900">San Francisco, CA 94220</p>
+          <h3 class="mb-1 text-sm text-gray-600">Address</h3>
+          <p class="text-sm font-semibold text-gray-900">10 Ang Mo Kio Industrial Park 2A</p>
+          <p class="text-sm font-semibold text-gray-900">#05-05 AMK AutoPoint</p>
+          <p class="text-sm font-semibold text-gray-900">Singapore 568047</p>
         </div>
       </div>
     </div>
 
-    <!-- Bottom Row: Visit Section & Hours -->
-    <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_auto]">
-      <!-- Left: Visit Section & Map -->
-      <div>
-        <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Visit our workshop!</h2>
-        <p class="mb-8 leading-relaxed text-gray-600">
-          Praesent sapien lacus, molestie vitae arcu in, elementum congue justo. Aenean aliquam
-          semper velit eu pretium. Suspendisse mattis luctus quam nec vehicula. Donec scelerisque
-          tristique metus a vestibulum.
-        </p>
-        <a
-          href="#"
-          class="mb-8 inline-block rounded-full border-2 border-orange-400 px-8 py-3 text-sm font-medium text-orange-400 transition-colors hover:bg-orange-400 hover:text-white"
-        >
-          GET DIRECTIONS
-        </a>
+    <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-6">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2ssg!4v1766728446154!5m2!1sen!2ssg"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="col-span-1 min-h-[300px] w-full rounded-lg lg:col-span-4"></iframe>
 
-        <!-- Map Skeleton -->
-        <div
-          class="mt-8 flex aspect-video w-full animate-pulse items-center justify-center rounded-3xl bg-gray-200"
-        >
-          <span class="text-lg text-gray-400">Map Coming Soon</span>
-        </div>
-      </div>
-
-      <!-- Right: Opening Hours Card (Narrower) -->
-      <div class="w-full rounded-3xl bg-teal-900 p-8 text-white shadow-lg lg:w-80">
-        <div
-          class="mb-6 inline-block rounded-full bg-orange-500 px-4 py-1 text-xs font-semibold tracking-wide uppercase"
-        >
-          Hours
-        </div>
-
-        <div class="space-y-6">
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Monday - Friday</h3>
-            <p class="text-teal-200">9am - 5pm</p>
+      <div class="col-span-1 flex flex-col gap-4 lg:col-span-2">
+        <div class="rounded-lg p-6 shadow-lg">
+          <div
+            class="mb-4 inline-block rounded-full bg-black px-4 py-1 text-xs tracking-wide text-white uppercase"
+          >
+            Opening Hours
           </div>
 
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Saturdays</h3>
-            <p class="text-teal-200">11am - 5pm</p>
+          <div class="space-y-4">
+            <div>
+              <h3 class="mb-1 text-xl font-semibold">Monday - Friday</h3>
+              <p>9am - 6pm</p>
+            </div>
+
+            <div>
+              <h3 class="mb-1 text-xl font-semibold">Saturday</h3>
+              <p>9am - 12pm</p>
+            </div>
+
+            <div>
+              <h3 class="mb-1 text-xl font-semibold">Sunday & Public Holidays</h3>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-lg p-6 shadow-lg">
+          <div
+            class="mb-4 inline-block rounded-full bg-black px-4 py-1 text-xs tracking-wide text-white uppercase"
+          >
+            Follow Us
           </div>
 
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Sundays</h3>
-            <p class="text-teal-200">9am - 3pm</p>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://www.facebook.com/fivestarautoleather/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="mdi:facebook" class="h-5 w-5" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/fivestarautoleather/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="mdi:instagram" class="h-5 w-5" />
+            </a>
+
+            <a
+              href="https://www.carousell.sg/u/fivestarautoleather/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="carousell" class="h-5 w-5" />
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-</BaseLayout>
 
-<style>
-  h2 {
-    font-family: 'RacingSansOne', var(--font-sans);
-  }
-</style>
+  <style>
+    h2 {
+      font-family: 'RacingSansOne', var(--font-sans);
+    }
+  </style>
+</BaseLayout>
