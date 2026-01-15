@@ -102,6 +102,8 @@ Microfiber leather is a next-gen vegan alternative that replicates the premium l
 
 At Five Star, we specialise exclusively in top-tier automotive-grade microfiber leather. Crafted from ultra-fine fibres coated with high performance polyurethane resins, our leather is not only soft and supple to touch, but also clean to clean, UV- and scratch-resistant – engineered for modern car interiors.
 
+> ✏️ Want a deep dive on the benefits of Microfiber Leather? Read our article: [Why Choose Vegan Leather for Your Car](/blog/why-choose-vegan-leather)
+
 <table>
   <tbody>
     <tr>
