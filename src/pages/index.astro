@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import seatImage from '@/assets/seat.png';
@@ -9,6 +9,12 @@ import repairImage from '@/assets/repair.jpg';
 import upholsteryImage from '@/assets/upholstery.jpg';
 import businessInNumbersImage from '@/assets/business-in-numbers.jpg';
 import vanImage from '@/assets/van.jpg';
+
+const processedBusinessInNumbersImage = await getImage({
+  src: businessInNumbersImage,
+  format: 'webp',
+  quality: 90,
+});
 
 const whatWeDoItems = [
   {
@@ -69,6 +75,8 @@ const whyReasons = [
       <Image
         src={seatImage}
         alt="Five Star Auto Leather"
+        loading="eager"
+        fetchpriority="high"
         class="h-full w-full bg-black object-cover"
       />
     </div>
@@ -105,6 +113,7 @@ const whyReasons = [
               <Image
                 src={item.imageUrl}
                 alt={item.title}
+                loading="lazy"
                 class="h-auto w-full max-w-[350px] object-cover"
               />
               <h3 class="mt-4 text-xl font-bold">{item.title}</h3>
@@ -119,7 +128,7 @@ const whyReasons = [
   <!-- Business In Numbers -->
   <section
     class="relative bg-cover bg-center bg-no-repeat sm:bg-fixed"
-    style={`background-image: url(${businessInNumbersImage.src})`}
+    style={`background-image: url(${processedBusinessInNumbersImage.src})`}
   >
     <!-- Overlay -->
     <div class="absolute inset-0 z-0 bg-black/70"></div>
@@ -146,7 +155,7 @@ const whyReasons = [
   <!-- Why You'll Love Us -->
   <section class="grid grid-cols-1 sm:grid-cols-12">
     <div class="order-2 sm:order-1 sm:col-span-5">
-      <Image src={vanImage} alt="Van" class="h-full w-full object-cover" />
+      <Image src={vanImage} alt="Van" loading="lazy" class="h-full w-full object-cover" />
     </div>
 
     <div class="order-1 flex items-center px-6 py-9 sm:order-2 sm:col-span-7 md:px-20">
