@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <Fragment slot="head">
+    <title>Page Not Found | Five Star Auto Leather</title>
+    <meta name="description" content="The page you're looking for could not be found." />
+  </Fragment>
+
+  <section
+    class="container mx-auto flex min-h-[60vh] max-w-7xl flex-col items-center justify-center px-6 py-16 text-center"
+  >
+    <p class="mt-4 text-3xl text-gray-900">The page you're looking for can't be found.</p>
+    <a
+      href="/"
+      class="mt-8 inline-block w-36 rounded bg-black px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-gray-800"
+    >
+      Back to Home
+    </a>
+  </section>
+</BaseLayout>
