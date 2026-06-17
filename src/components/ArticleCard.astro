@@ -23,6 +23,7 @@ const { id, title, description, publishedDate, readingTime, cover, coverAlt } = 
     <Image
       src={cover}
       alt={coverAlt}
+      loading="lazy"
       class="h-48 w-full bg-black object-cover transition-transform duration-500 group-hover:scale-103"
     />
   </div>

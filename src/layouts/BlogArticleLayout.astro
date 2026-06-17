@@ -55,6 +55,8 @@ const cover = images[frontmatter.cover]();
     <Image
       src={cover}
       alt={frontmatter.coverAlt}
+      loading="eager"
+      fetchpriority="high"
       class="mx-auto max-h-170 w-auto rounded-lg object-contain shadow-lg"
     />
     <div

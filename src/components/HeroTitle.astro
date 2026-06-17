@@ -1,6 +1,9 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface Props {
-  backgroundImage: string;
+  backgroundImage: ImageMetadata;
   title: string;
   overlayOpacity?: number;
   minHeight?: number | string;
@@ -31,9 +34,18 @@ const titleSizes = {
 ---
 
 <section
-  class="relative flex items-center justify-center bg-black bg-cover bg-center bg-no-repeat"
-  style={`background-image: url(${backgroundImage}); min-height: ${minHeightValue}`}
+  class="relative flex items-center justify-center overflow-hidden bg-black"
+  style={`min-height: ${minHeightValue}`}
 >
+  <Image
+    src={backgroundImage}
+    alt=""
+    aria-hidden="true"
+    loading="eager"
+    fetchpriority="high"
+    quality={90}
+    class="absolute inset-0 h-full w-full object-cover"
+  />
   <!-- Overlay -->
   <div class="absolute inset-0 z-0" style={`background-color: ${overlayColor}`}></div>
 
