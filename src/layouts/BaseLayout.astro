@@ -1,7 +1,7 @@
 ---
 import Footer from '@/components/Footer.astro';
 import Header from '@/components/Header.astro';
-import WhatsAppAffix from '@/components/WhatsAppAffix.tsx';
+import WhatsAppAffix from '@/components/WhatsAppAffix.astro';
 import '@/styles/global.css';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -72,6 +72,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer />
-    <WhatsAppAffix client:load />
+    <WhatsAppAffix />
   </body>
 </html>

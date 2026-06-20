@@ -1,0 +1,119 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const accounts = [
+  {
+    name: 'Alvin',
+    number: '+65 9172 9570',
+    whatsappUrl: 'https://api.whatsapp.com/send?phone=6591729570',
+  },
+  {
+    name: 'Joy',
+    number: '+65 8790 9677',
+    whatsappUrl: 'https://api.whatsapp.com/send?phone=6587909677',
+  },
+];
+---
+
+<div id="wa-affix" class="fixed right-4 bottom-4 z-1000">
+  <div
+    id="wa-hint"
+    class="absolute right-14 bottom-2 rounded-lg bg-white px-3 py-2 text-sm whitespace-nowrap shadow-md/20"
+  >
+    Need help? Chat with us!
+  </div>
+
+  <button
+    id="wa-btn"
+    class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-none bg-green-500 p-4 text-white shadow-md/20 transition-all duration-300 hover:bg-green-600 hover:shadow-lg/20"
+    aria-label="Chat with us on WhatsApp"
+    type="button"
+  >
+    <Icon name="mdi:whatsapp" class="wa-icon absolute h-7 w-7" />
+    <Icon name="mdi:close" class="close-icon absolute h-7 w-7" />
+  </button>
+
+  <div
+    id="wa-popover"
+    class="whatsapp-popover-slide-up absolute right-0 bottom-16 hidden min-w-[250px] rounded-lg bg-white p-4 shadow-xl/25"
+  >
+    <h3 class="mb-1">Chat with us on WhatsApp!</h3>
+    <div class="flex flex-col gap-1">
+      {
+        accounts.map((account) => (
+          <a
+            href={account.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-3 rounded-lg p-2 no-underline transition-colors hover:bg-gray-100"
+          >
+            <Icon name="mdi:whatsapp" class="h-8 w-8 text-green-500" />
+            <div class="flex flex-col gap-1">
+              <p class="font-medium">{account.name}</p>
+              <p class="text-sm text-gray-600">{account.number}</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .wa-icon,
+  .close-icon {
+    transition: all 300ms;
+  }
+
+  .wa-icon {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  .close-icon {
+    transform: scale(0) rotate(-90deg);
+    opacity: 0;
+  }
+
+  #wa-affix[data-open] .wa-icon {
+    transform: scale(0) rotate(90deg);
+    opacity: 0;
+  }
+
+  #wa-affix[data-open] .close-icon {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+</style>
+
+<script>
+  const affix = document.getElementById('wa-affix')!;
+  const btn = document.getElementById('wa-btn')!;
+  const popover = document.getElementById('wa-popover')!;
+  const hint = document.getElementById('wa-hint');
+
+  function openPopover() {
+    affix.setAttribute('data-open', '');
+    popover.classList.remove('hidden');
+  }
+
+  function closePopover() {
+    affix.removeAttribute('data-open');
+    popover.classList.add('hidden');
+  }
+
+  btn.addEventListener('click', () => {
+    hint?.remove();
+    affix.hasAttribute('data-open') ? closePopover() : openPopover();
+  });
+
+  popover.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closePopover);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (affix.hasAttribute('data-open') && !affix.contains(e.target as Node)) {
+      closePopover();
+    }
+  });
+</script>
