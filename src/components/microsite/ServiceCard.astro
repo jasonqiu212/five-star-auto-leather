@@ -31,8 +31,11 @@ const { image, imageAlt, title, description, features } = Astro.props;
     <ul class="mt-4 space-y-2 border-t border-gray-200 pt-4">
       {
         features.map((feature) => (
-          <li class="flex items-center gap-2">
-            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
+          <li class="flex gap-2">
+            <Icon
+              name="mdi:checkbox-marked-circle-outline"
+              class="mt-1 h-4 w-4 shrink-0 text-red-600"
+            />
             <span>{feature}</span>
           </li>
         ))
