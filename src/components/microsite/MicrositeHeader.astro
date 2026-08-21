@@ -6,11 +6,6 @@ import '@/styles/global.css';
 const contacts = [
   { icon: 'mdi:phone', label: '9172 9570', href: 'https://api.whatsapp.com/send?phone=6591729570' },
   { icon: 'mdi:phone', label: '8790 9677', href: 'https://api.whatsapp.com/send?phone=6587909677' },
-  {
-    icon: 'mdi:email',
-    label: 'sales@fivestarautoleather.com',
-    href: 'mailto:sales@fivestarautoleather.com',
-  },
 ];
 
 const socials = [
@@ -37,15 +32,22 @@ const socials = [
         <div class="flex items-center gap-6">
           {
             contacts.map((contact) => (
-              <a href={contact.href} class="flex items-center gap-3 text-sm font-semibold">
-                <Icon name={contact.icon} class="h-5 w-5" />
+              <a href={contact.href} class="flex items-center gap-2 text-sm font-semibold">
+                <Icon name={contact.icon} class="h-5 w-5 shrink-0" />
                 <span>{contact.label}</span>
               </a>
             ))
           }
+          <a
+            href="mailto:sales@fivestarautoleather.com"
+            class="hidden items-center gap-2 text-sm font-semibold md:flex"
+          >
+            <Icon name="mdi:email" class="h-5 w-5 shrink-0" />
+            <span>sales@fivestarautoleather.com</span>
+          </a>
         </div>
 
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2">
           {
             socials.map((social) => (
               <a
@@ -54,7 +56,7 @@ const socials = [
                 rel="noopener noreferrer"
                 aria-label={social.label}
               >
-                <Icon name={social.icon} class="h-5 w-5" />
+                <Icon name={social.icon} class="h-5 w-5 shrink-0" />
               </a>
             ))
           }
