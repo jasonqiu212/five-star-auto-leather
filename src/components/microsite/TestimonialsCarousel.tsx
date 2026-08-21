@@ -39,7 +39,7 @@ export const TestimonialsCarousel = ({
         <Carousel
           height={500}
           slideSize={{ base: '100%', sm: '50%', lg: '33.333333%' }}
-          slideGap={{ base: 0, sm: 'md', lg: 'lg' }}
+          slideGap={{ base: 'sm', sm: 'md', lg: 'lg' }}
           withControls
           controlSize={48}
           controlsOffset="sm"
