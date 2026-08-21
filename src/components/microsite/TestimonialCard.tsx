@@ -12,7 +12,7 @@ export const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   const starCount = Math.max(0, Math.min(5, Math.round(testimonial.rating ?? 5)));
 
   return (
-    <article className="relative flex h-full flex-col items-center overflow-hidden bg-white px-6 py-8 text-center">
+    <article className="relative flex h-full flex-col items-center overflow-hidden rounded-lg bg-white px-6 py-8 text-center">
       <div
         className="absolute -top-20 -right-20 z-0 size-40 rounded-full bg-red-600"
         aria-hidden="true"
