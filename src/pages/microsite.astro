@@ -76,22 +76,18 @@ const materials = [
 
 const steps = [
   {
-    number: '01',
     title: 'Contact Us',
     description: 'Tell us if you need an upgrade, repair, or full refresh.',
   },
   {
-    number: '02',
     title: 'Free Consultation',
     description: 'We assess your car and give you a clear quote.',
   },
   {
-    number: '03',
     title: 'Expert Craftsmanship',
     description: 'Our specialists handle the work with passion, care and precision.',
   },
   {
-    number: '04',
     title: 'Pick Up & Drive',
     description:
       'A refreshed interior, customised for your comfort and built to suit your lifestyle.',
@@ -182,13 +178,10 @@ const testimonials = [
             Trusted by thousands of Singapore car owners for leather rewraps, custom upgrades, and
             flawless finishes.
           </p>
-          <div
-            class="mt-4 grid gap-x-8 gap-y-2 border-t border-white/20 pt-4 text-white sm:grid-cols-2"
-          >
-            <p class="col-span-full mb-1 text-white">We can help you with:</p>
-            <!-- TODO: use another symbol for bullet point -->
-            {overallServices.map((service) => <span>✓ {service}</span>)}
-          </div>
+          <p class="mt-4 border-t border-white/20 pt-4 text-white">We can help you with:</p>
+          <ul class="mt-2 grid list-disc gap-x-8 gap-y-2 pl-4 text-white sm:grid-cols-2">
+            {overallServices.map((service) => <li>{service}</li>)}
+          </ul>
           <p class="mt-4 text-white">
             With fast turnaround on all work, we deliver the result you dream of, hassle-free.
           </p>
@@ -243,29 +236,65 @@ const testimonials = [
           />
         </div>
 
-        <div class="order-2 flex items-center justify-center bg-white px-6 py-8 sm:px-16">
-          <div class="flex h-full flex-col items-center justify-center">
-            <h2 class="text-4xl">Hundreds of Options. One Perfect Finish.</h2>
+        <div class="order-2 flex h-full flex-col justify-center bg-white px-6 py-8 sm:px-16">
+          <h2 class="text-4xl">Hundreds of Options. One Perfect Finish.</h2>
 
-            <p class="mt-2">
-              Choose from an extensive range of premium leathers, Alcantara, and technical
-              automotive-grade fabrics. Our in-house selection spans from understated luxury to bold
-              racing aesthetics.
-            </p>
+          <p class="mt-2">
+            Choose from an extensive range of premium leathers, Alcantara, and technical
+            automotive-grade fabrics. Our in-house selection spans from understated luxury to bold
+            racing aesthetics.
+          </p>
 
-            <ul class="mt-4 space-y-2 border-t border-gray-200 pt-4">
-              {
-                materials.map((material) => (
-                  <li class="flex gap-3 leading-7">
-                    <Icon name="mdi:check-bold" class="mt-1 h-5 w-5 shrink-0 text-red-600" />
-                    <p>
-                      <strong>{material.title}:</strong> {material.description}
-                    </p>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
+          <ul class="mt-4 space-y-2 border-t border-gray-200 pt-4">
+            {
+              materials.map((material) => (
+                <li class="flex gap-2">
+                  <Icon
+                    name="mdi:checkbox-marked-circle-outline"
+                    class="mt-1 h-4 w-4 shrink-0 text-red-600"
+                  />
+                  <p>
+                    <strong>{material.title}:</strong> {material.description}
+                  </p>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="order-1 flex h-full flex-col justify-center bg-white px-6 py-8 sm:px-16">
+          <h2 class="text-4xl">From Quote to Quality - In 4 Steps</h2>
+
+          <p class="mt-2">
+            We make the entire process smooth and stress-free, whether you're upgrading or
+            repairing.
+          </p>
+
+          <ol
+            class="mt-4 list-decimal space-y-2 border-t border-gray-200 pt-4 pl-4 marker:font-bold"
+          >
+            {
+              steps.map((step) => (
+                <li>
+                  <strong>{step.title}:</strong> {step.description}
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+
+        <div class="order-2">
+          <Image
+            src={seatImage}
+            alt="Five Star Auto Leather"
+            loading="eager"
+            fetchpriority="high"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="h-full w-full bg-black object-cover"
+          />
         </div>
       </section>
 
