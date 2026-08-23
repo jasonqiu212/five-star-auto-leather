@@ -10,8 +10,11 @@ import MicrositeHeader from '@/components/microsite/MicrositeHeader.astro';
 import Footer from '@/components/Footer.astro';
 import ServiceCard from '@/components/microsite/ServiceCard.astro';
 import { TestimonialsCarousel } from '@/components/microsite/TestimonialsCarousel';
-import repairImage from '@/assets/repair.jpg';
-import seatImage from '@/assets/seat.png';
+import premiumRewrapAndUpgradeImage from '@/assets/premium-rewrap-and-upgrade.png';
+import fullInteriorRefreshAndRepairImage from '@/assets/full-interior-refresh-and-repair.png';
+import hundredsOfOptionsImage from '@/assets/hundreds-of-options.png';
+import fromQuoteToQualityImage from '@/assets/blog/car-interior-design-tips.jpg';
+import upholsteryImage from '@/assets/upholstery.jpg';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -25,7 +28,7 @@ const overallServices = [
 const getMyFreeQuoteGuarantees = ['No hidden fees', 'No obligation', 'Fast response'];
 
 const rewrapAndUpgradeService = {
-  image: seatImage,
+  image: premiumRewrapAndUpgradeImage,
   imageAlt: 'Custom leather car seats with diamond stitching',
   title: 'Premium Rewrap & Upgrade',
   description: 'For car enthusiasts who want a sharper, sportier, more premium cabin.',
@@ -40,7 +43,7 @@ const rewrapAndUpgradeService = {
 };
 
 const refreshAndRepairService = {
-  image: repairImage,
+  image: fullInteriorRefreshAndRepairImage,
   imageAlt: 'Craftsperson repairing automotive upholstery with a sewing machine',
   title: 'Full Interior Refresh & Repair',
   description: 'For worn, cracked, sagging, or tired interiors that need a fresh start.',
@@ -230,13 +233,12 @@ const testimonials = [
       <section class="grid grid-cols-1 sm:grid-cols-2">
         <div class="order-1">
           <Image
-            src={seatImage}
-            alt="Five Star Auto Leather"
-            loading="eager"
-            fetchpriority="high"
+            src={hundredsOfOptionsImage}
+            alt="Mercedes-Benz AMG car seat"
+            loading="lazy"
             widths={[640, 1280]}
             sizes="(max-width: 640px) 100vw, 50vw"
-            class="h-full w-full bg-black object-cover"
+            class="h-full w-full object-cover"
           />
         </div>
 
@@ -293,43 +295,49 @@ const testimonials = [
 
         <div class="order-1 sm:order-2">
           <Image
-            src={seatImage}
-            alt="Five Star Auto Leather"
-            loading="eager"
-            fetchpriority="high"
+            src={fromQuoteToQualityImage}
+            alt="Our boss meticulously crafting designs for a car interior upgrade"
+            loading="lazy"
             widths={[640, 1280]}
             sizes="(max-width: 640px) 100vw, 50vw"
-            class="h-full w-full bg-black object-cover"
+            class="h-full w-full object-cover"
           />
         </div>
       </section>
 
-      <section class="bg-black px-6 py-8 text-center text-white sm:py-20">
-        <div class="mx-auto flex size-26 items-center justify-center rounded-full bg-white">
-          <Image
-            src={logo}
-            alt="Five Star Auto Leather"
-            loading="lazy"
-            width={180}
-            style="width: 90px; height: auto;"
-          />
-        </div>
+      <section
+        class="relative overflow-hidden bg-cover bg-center bg-no-repeat px-6 py-8 text-center text-white sm:py-20"
+        style={`background-image: url(${upholsteryImage.src})`}
+      >
+        <div class="absolute inset-0 z-0 bg-linear-to-b from-black/35 via-black/70 to-black"></div>
 
-        <h2 class="mt-8 text-4xl">Five Star Auto Leather</h2>
+        <div class="relative z-10">
+          <div class="mx-auto flex size-26 items-center justify-center rounded-full bg-white">
+            <Image
+              src={logo}
+              alt="Five Star Auto Leather"
+              loading="lazy"
+              width={180}
+              style="width: 90px; height: auto;"
+            />
+          </div>
 
-        <div class="mx-auto mt-4 max-w-5xl border-t border-white/20 pt-4">
-          <p class="sm:text-lg">
-            Five Star Auto Leather has been delivering custom automotive interiors, quality
-            workmanship, and five-star service since 2005. The team is built around craftsmanship,
-            creative design, and dependable service, helping drivers upgrade their cabins with
-            confidence.
-          </p>
+          <h2 class="mt-8 text-4xl">Five Star Auto Leather</h2>
 
-          <p class="mt-4 sm:text-lg">
-            With 20 years in business, 21 experts working, and a commitment to customer
-            satisfaction, Five Star Auto Leather is trusted by car owners who want both style and
-            practicality from their interior upgrade.
-          </p>
+          <div class="mx-auto mt-4 max-w-5xl border-t border-white/20 pt-4">
+            <p class="sm:text-lg">
+              Five Star Auto Leather has been delivering custom automotive interiors, quality
+              workmanship, and five-star service since 2005. The team is built around craftsmanship,
+              creative design, and dependable service, helping drivers upgrade their cabins with
+              confidence.
+            </p>
+
+            <p class="mt-4 sm:text-lg">
+              With 20 years in business, 21 experts working, and a commitment to customer
+              satisfaction, Five Star Auto Leather is trusted by car owners who want both style and
+              practicality from their interior upgrade.
+            </p>
+          </div>
         </div>
       </section>
 
