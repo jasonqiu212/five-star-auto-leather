@@ -29,7 +29,7 @@ const getMyFreeQuoteGuarantees = ['No hidden fees', 'No obligation', 'Fast respo
 
 const rewrapAndUpgradeService = {
   image: premiumRewrapAndUpgradeImage,
-  imageAlt: 'Custom leather car seats with diamond stitching',
+  imageAlt: 'Premium custom car interior with red leather seats',
   title: 'Premium Rewrap & Upgrade',
   description: 'For car enthusiasts who want a sharper, sportier, more premium cabin.',
   features: [
@@ -44,7 +44,7 @@ const rewrapAndUpgradeService = {
 
 const refreshAndRepairService = {
   image: fullInteriorRefreshAndRepairImage,
-  imageAlt: 'Craftsperson repairing automotive upholstery with a sewing machine',
+  imageAlt: 'Premium custom car interior with diamond stitching',
   title: 'Full Interior Refresh & Repair',
   description: 'For worn, cracked, sagging, or tired interiors that need a fresh start.',
   features: [
@@ -175,13 +175,16 @@ const testimonials = [
     <MicrositeHeader />
 
     <main>
-      <section class="bg-black text-white">
-        <div class="mx-auto flex max-w-7xl flex-col px-6 py-16">
+      <section class="grid grid-cols-1 bg-black text-white lg:grid-cols-[1.35fr_1fr]">
+        <div
+          class="order-2 mx-auto flex w-full max-w-7xl flex-col justify-center px-6 py-8 lg:order-1 lg:px-16"
+        >
           <p class="text-xs tracking-[0.2em] uppercase">Trusted since 2005 · Singapore</p>
-          <h1 class="mt-4 max-w-5xl text-5xl">
-            Singapore's Highly Trusted Car Interior Specialists — 20 Years, Zero Compromises
+          <h1 class="mt-4 text-4xl">
+            Singapore's <span class="text-red-600">Highly Trusted</span> Car Interior
+            <span class="text-red-600">Specialists</span> — 20 Years, Zero Compromises
           </h1>
-          <p class="mt-4 max-w-5xl leading-8">
+          <p class="mt-4">
             Trusted by thousands of Singapore car owners for leather rewraps, custom upgrades, and
             flawless finishes.
           </p>
@@ -199,7 +202,7 @@ const testimonials = [
             Get My Free Quote
           </a>
 
-          <div class="mt-4 flex items-center gap-4 text-sm">
+          <div class="mt-4 flex items-center gap-2 text-sm lg:gap-4">
             {
               getMyFreeQuoteGuarantees.map((guarantee) => (
                 <div class="flex items-center gap-2">
@@ -211,6 +214,21 @@ const testimonials = [
                 </div>
               ))
             }
+          </div>
+        </div>
+
+        <div class="relative order-1 bg-black lg:order-2">
+          <Image
+            src={premiumRewrapAndUpgradeImage}
+            alt="Premium custom car interior with red leather seats"
+            loading="eager"
+            widths={[640, 838]}
+            sizes="(max-width: 1024px) 100vw, 42vw"
+            class="h-full w-full object-cover"
+          />
+          <div
+            class="pointer-events-none absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent lg:bg-linear-to-r"
+          >
           </div>
         </div>
       </section>
