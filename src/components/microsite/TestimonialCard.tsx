@@ -14,7 +14,7 @@ export const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
     <article className="relative flex h-full flex-col items-center overflow-hidden rounded-lg bg-white px-6 py-8 text-center">
       <div
-        className="absolute -top-20 -right-20 z-0 size-40 rounded-full bg-red-600"
+        className="absolute -top-20 -right-20 z-0 size-40 rounded-full bg-red-700"
         aria-hidden="true"
       >
         <span className="absolute bottom-2 left-10 font-serif text-6xl text-white">”</span>
