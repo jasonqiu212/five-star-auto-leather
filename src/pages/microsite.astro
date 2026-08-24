@@ -1,0 +1,398 @@
+---
+import '@/styles/global.css';
+import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import WhatsAppAffix from '@/components/WhatsAppAffix.astro';
+import logo from '@/assets/logo.png';
+import MicrositeHeader from '@/components/microsite/MicrositeHeader.astro';
+import Footer from '@/components/Footer.astro';
+import ServiceCard from '@/components/microsite/ServiceCard.astro';
+import { TestimonialsCarousel } from '@/components/microsite/TestimonialsCarousel';
+import premiumRewrapAndUpgradeImage from '@/assets/premium-rewrap-and-upgrade.png';
+import fullInteriorRefreshAndRepairImage from '@/assets/full-interior-refresh-and-repair.png';
+import hundredsOfOptionsImage from '@/assets/hundreds-of-options.png';
+import fromQuoteToQualityImage from '@/assets/blog/car-interior-design-tips.jpg';
+import upholsteryImage from '@/assets/upholstery.jpg';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const overallServices = [
+  'Car Seat Leather Rewrap & Repair',
+  'Custom Interior Styling & Material Upgrades',
+  'Roof Lining Rewrap & Repair',
+  'Dashboard, Door Card & Armrest Refresh',
+];
+
+const getMyFreeQuoteGuarantees = ['No hidden fees', 'No obligation', 'Fast response'];
+
+const rewrapAndUpgradeService = {
+  image: premiumRewrapAndUpgradeImage,
+  imageAlt: 'Premium custom car interior with red leather seats',
+  title: 'Premium Rewrap & Upgrade',
+  description: 'For car enthusiasts who want a sharper, sportier, more premium cabin.',
+  features: [
+    'Diamond-stitch quilting & custom panel designs',
+    'Two-tone & contrasting leather wraps',
+    'Racing-inspired sport seat upgrades',
+    'Personalised embroidery & branding',
+    'Full interior upgrade packages',
+    'Wide material selection — leather, Alcantara, technical automotive-grade fabrics',
+  ],
+};
+
+const refreshAndRepairService = {
+  image: fullInteriorRefreshAndRepairImage,
+  imageAlt: 'Premium custom car interior with diamond stitching',
+  title: 'Full Interior Refresh & Repair',
+  description: 'For worn, cracked, sagging, or tired interiors that need a fresh start.',
+  features: [
+    'Car seat leather rewrap',
+    'Cracked & worn seat rewrap',
+    'Sagging headliner repair & replacement',
+    'Dashboard & trim panel repair',
+    'Door card & armrest refresh',
+    'PHV / fleet interior solutions',
+  ],
+};
+
+const materials = [
+  {
+    title: 'Vegan Microfiber Leather Technology',
+    description: 'Our primary material. 100% vegan, engineered for durability and a premium feel.',
+  },
+  {
+    title: 'Full-Grain Leather',
+    description: 'A vegan leather with a natural, structured texture and long-lasting finish.',
+  },
+  {
+    title: 'Smooth-Grain Leather',
+    description:
+      'A more refined vegan leather with a soft, smooth texture that closely mimics the look and feel of Italian cowhide.',
+  },
+  {
+    title: 'Perforated Leather',
+    description: 'Enhanced breathability and a sport-style aesthetic.',
+  },
+  {
+    title: 'Alcantara & Technical Fabrics',
+    description: 'Grippy, performance-focused finishes favoured by driving enthusiasts.',
+  },
+];
+
+const steps = [
+  {
+    title: 'Contact Us',
+    description: 'Tell us if you need an upgrade, repair, or full refresh.',
+  },
+  {
+    title: 'Free Consultation',
+    description: 'We assess your car and give you a clear quote.',
+  },
+  {
+    title: 'Expert Craftsmanship',
+    description: 'Our specialists handle the work with passion, care and precision.',
+  },
+  {
+    title: 'Pick Up & Drive',
+    description:
+      'A refreshed interior, customised for your comfort and built to suit your lifestyle.',
+  },
+];
+
+const testimonials = [
+  {
+    name: 'Serene Lim',
+    paragraphs: [
+      'Excellent workmanship! The stitching and fitting were done neatly and professionally, and the final result looks both elegant and durable.',
+      'Special thanks to Alvin for his excellent service throughout the process. He was professional, responsive, and helpful, making the entire experience smooth and pleasant.',
+      'Truly appreciate the great workmanship and outstanding customer service. 👍🏻👍🏻👍🏻',
+    ],
+  },
+  {
+    name: 'EdDy TeO',
+    paragraphs: [
+      "I refreshed my car with a new roof lining and car seat wrapping. Thanks for the nice workmanship👍🏽, my family members love it and it's like a new car now.",
+      'Five Star Auto provides excellent service and colour matching recommendations. They have samples and pictures for reference which aided you in decision-making on the colours. They are also prompt in responses and updating you on the progress.',
+      'Highly recommended for those who wants to give your car Interior a makeover. Never regret and definitely worth the price.',
+    ],
+  },
+  {
+    name: 'Tony Tan',
+    paragraphs: [
+      'First time engaging Five Star Auto Leather to replace the cracked covers on my two front seats, and I’m very impressed with the overall experience. Even though they did not have the template for my Sorento, they managed to get the seat covers ready within just 5 days.',
+      'The workmanship was excellent and meticulous, right down to the steering wheel wrapping. Prompt service, quality workmanship, and reasonable pricing. Highly recommended for anyone considering replacing or refurbishing their car seat covers.',
+    ],
+  },
+  {
+    name: 'Thomas Toh',
+    paragraphs: [
+      'Just had my citreon seat covers replaced at Five Star. Very happy with the new “leather”.',
+      'The Covers align tightly with original seat shape, no wrinkles or sagging The Microfiber leather feels smooth, durable, and close to real leather Good workmanship. Clean stitching, no loose threads, edges tucked properly Only needed to leave my car there for a day. Installation was Completed within expected timeframe',
+    ],
+  },
+  {
+    name: 'ow lian jie',
+    paragraphs: [
+      'Excellent service with very reasonable pricing. Alvin and his team were extremely helpful and responsive to all my questions. Alvin even went the extra mile by assisting with sending my car to another workshop within the same area, which I truly appreciated. The workmanship and overall experience were great. Will definitely return if I decide to rewrap my car leather again.',
+    ],
+  },
+  {
+    name: 'joanna tang',
+    paragraphs: [
+      'Excellent service and workmanship! Alvin was incredibly helpful, patient, and kind throughout the whole process. The leather seat rewrapping was done beautifully with great attention to detail, and the quality was really good. Highly recommend this shop if you’re looking for professional work and outstanding customer service. Thank you, Alvin!',
+    ],
+  },
+];
+---
+
+<html lang="en-SG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Five Star" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link rel="preload" href="/fonts/RacingSansOne.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="canonical" href={canonicalURL} />
+
+    <title>Five Star Auto Leather</title>
+    <meta
+      name="description"
+      content="Singapore's highly trusted car interior specialists. Five Star Auto Leather delivers premium rewraps, repairs, and custom automotive interiors since 2005."
+    />
+  </head>
+  <body>
+    <MicrositeHeader />
+
+    <main>
+      <section class="grid grid-cols-1 bg-black text-white lg:grid-cols-[1.35fr_1fr]">
+        <div
+          class="order-2 mx-auto flex w-full max-w-7xl flex-col justify-center px-4 py-8 sm:px-6 lg:order-1 lg:px-16"
+        >
+          <p class="text-xs tracking-[0.2em] uppercase">Trusted since 2005 · Singapore</p>
+          <h1 class="mt-4 text-4xl">
+            Singapore's <span class="text-red-600">Highly Trusted</span> Car Interior
+            <span class="text-red-600">Specialists</span> — 20 Years, Zero Compromises
+          </h1>
+          <p class="mt-4">
+            Trusted by thousands of Singapore car owners for leather rewraps, custom upgrades, and
+            flawless finishes.
+          </p>
+          <p class="mt-4 border-t border-white/20 pt-4 text-white">We can help you with:</p>
+          <ul class="mt-2 grid list-disc gap-x-8 gap-y-2 pl-5 text-white sm:grid-cols-2">
+            {overallServices.map((service) => <li>{service}</li>)}
+          </ul>
+          <p class="mt-4 text-white">
+            With fast turnaround on all work, we deliver the result you dream of, hassle-free.
+          </p>
+          <a
+            href="#get-quote"
+            class="mt-4 inline-block w-45 rounded bg-red-700 px-4 py-2 text-center font-medium text-white transition-colors hover:bg-red-600"
+          >
+            Get My Free Quote
+          </a>
+
+          <div class="mt-4 flex items-center gap-2 text-sm lg:gap-4">
+            {
+              getMyFreeQuoteGuarantees.map((guarantee) => (
+                <div class="flex items-center gap-2">
+                  <Icon
+                    name="mdi:checkbox-marked-circle-outline"
+                    class="h-4 w-4 shrink-0 text-red-600"
+                  />
+                  <span>{guarantee}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="relative order-1 bg-black lg:order-2">
+          <Image
+            src={premiumRewrapAndUpgradeImage}
+            alt="Premium custom car interior with red leather seats"
+            loading="eager"
+            widths={[640, 838]}
+            sizes="(max-width: 1024px) 100vw, 42vw"
+            class="h-full w-full object-cover"
+          />
+          <div
+            class="pointer-events-none absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent lg:bg-linear-to-r"
+          >
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-neutral-100 px-4 py-8 sm:px-6">
+        <div class="text-center">
+          <h2 class="text-4xl">Crafted for Every Driver</h2>
+          <p class="mt-2">
+            From bold custom upgrades to quick interior repairs, we deliver quality upholstery for
+            every need.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-8 grid max-w-7xl gap-8 lg:grid-cols-2">
+          <ServiceCard {...rewrapAndUpgradeService} />
+          <ServiceCard {...refreshAndRepairService} />
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="order-1">
+          <Image
+            src={hundredsOfOptionsImage}
+            alt="Mercedes-Benz AMG car seat"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="h-full w-full object-cover"
+          />
+        </div>
+
+        <div class="order-2 flex h-full flex-col justify-center bg-white px-4 py-8 sm:px-16">
+          <h2 class="text-4xl">Hundreds of Options. One Perfect Finish.</h2>
+
+          <p class="mt-2">
+            Choose from an extensive range of premium leathers, Alcantara, and technical
+            automotive-grade fabrics. Our in-house selection spans from understated luxury to bold
+            racing aesthetics.
+          </p>
+
+          <ul class="mt-4 space-y-2 border-t border-gray-200 pt-4">
+            {
+              materials.map((material) => (
+                <li class="flex gap-2">
+                  <Icon
+                    name="mdi:checkbox-marked-circle-outline"
+                    class="mt-1 h-4 w-4 shrink-0 text-red-600"
+                  />
+                  <p>
+                    <strong>{material.title}:</strong> {material.description}
+                  </p>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2">
+        <div
+          class="order-2 flex h-full flex-col justify-center bg-white px-4 py-8 sm:order-1 sm:px-16"
+        >
+          <h2 class="text-4xl">From Quote to Quality - In 4 Steps</h2>
+
+          <p class="mt-2">
+            We make the entire process smooth and stress-free, whether you're upgrading or
+            repairing.
+          </p>
+
+          <ol
+            class="mt-4 list-decimal space-y-2 border-t border-gray-200 pt-4 pl-5 marker:font-bold"
+          >
+            {
+              steps.map((step) => (
+                <li>
+                  <strong>{step.title}:</strong> {step.description}
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+
+        <div class="order-1 sm:order-2">
+          <Image
+            src={fromQuoteToQualityImage}
+            alt="Our boss meticulously crafting designs for a car interior upgrade"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </section>
+
+      <section
+        class="relative overflow-hidden bg-cover bg-center bg-no-repeat px-4 py-8 text-center text-white sm:px-6 sm:py-20"
+        style={`background-image: url(${upholsteryImage.src})`}
+      >
+        <div class="absolute inset-0 z-0 bg-linear-to-b from-black/35 via-black/70 to-black"></div>
+
+        <div class="relative z-10">
+          <div class="mx-auto flex size-26 items-center justify-center rounded-full bg-white">
+            <Image
+              src={logo}
+              alt="Five Star Auto Leather"
+              loading="lazy"
+              width={180}
+              style="width: 90px; height: auto;"
+            />
+          </div>
+
+          <h2 class="mt-8 text-4xl">Five Star Auto Leather</h2>
+
+          <div class="mx-auto mt-4 max-w-5xl border-t border-white/20 pt-4">
+            <p class="sm:text-lg">
+              Five Star Auto Leather has been delivering custom automotive interiors, quality
+              workmanship, and five-star service since 2005. The team is built around craftsmanship,
+              creative design, and dependable service, helping drivers upgrade their cabins with
+              confidence.
+            </p>
+
+            <p class="mt-4 sm:text-lg">
+              With 20 years in business, 21 experts working, and a commitment to customer
+              satisfaction, Five Star Auto Leather is trusted by car owners who want both style and
+              practicality from their interior upgrade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-black px-4 py-8 text-center sm:px-6">
+        <h2 class="text-4xl text-white">Testimonials</h2>
+
+        <div class="mx-auto mt-8 max-w-7xl text-left">
+          <TestimonialsCarousel testimonials={testimonials} client:visible />
+        </div>
+      </section>
+
+      <section id="get-quote" class="bg-red-700 px-4 py-8 text-white sm:px-6">
+        <div
+          class="mx-auto grid max-w-7xl gap-8 text-center lg:grid-cols-2 lg:items-center lg:text-left"
+        >
+          <div>
+            <h2 class="text-4xl">Have Your Car Interiors Upgraded or Repaired Today</h2>
+            <p class="mt-4 text-lg">
+              Tell us what you need, and we'll get back to you within 24 hours. No pressure, no
+              commitment — just expert advice and a fair price.
+            </p>
+          </div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSckZoWbEYH7ziJclDMNbGxIGhK6LI5YU9V0HCRNEQuGBIXeWA/viewform?embedded=true"
+            title="Get a free quote"
+            class="h-[500px] w-full rounded-lg bg-white py-2">Loading…</iframe
+          >
+        </div>
+      </section>
+
+      <style>
+        h2 {
+          font-family: 'RacingSansOne', var(--font-sans);
+        }
+      </style>
+    </main>
+    <Footer />
+    <WhatsAppAffix />
+  </body>
+</html>

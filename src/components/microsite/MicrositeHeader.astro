@@ -1,0 +1,75 @@
+---
+import { Icon } from 'astro-icon/components';
+import Logo from '@/components/Logo.astro';
+import '@/styles/global.css';
+
+const contacts = [
+  { icon: 'mdi:phone', label: '9172 9570', href: 'https://api.whatsapp.com/send?phone=6591729570' },
+  { icon: 'mdi:phone', label: '8790 9677', href: 'https://api.whatsapp.com/send?phone=6587909677' },
+];
+
+const socials = [
+  {
+    icon: 'mdi:facebook',
+    label: 'Facebook',
+    href: 'https://www.facebook.com/fivestarautoleather/',
+  },
+  {
+    icon: 'mdi:instagram',
+    label: 'Instagram',
+    href: 'https://www.instagram.com/fivestarautoleather/',
+  },
+];
+---
+
+<header class="sticky top-0 z-50 h-16 bg-white/70 shadow-sm backdrop-blur-md">
+  <div class="container mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6">
+    <div class="flex w-full items-center justify-between">
+      <Logo />
+
+      <div class="flex items-center gap-2 lg:gap-4">
+        <div class="flex items-center gap-2 lg:gap-4">
+          {
+            contacts.map((contact) => (
+              <a href={contact.href} class="flex items-center gap-2 text-sm font-semibold">
+                <Icon name={contact.icon} class="h-5 w-5 shrink-0" />
+                <span>{contact.label}</span>
+              </a>
+            ))
+          }
+          <a
+            href="mailto:sales@fivestarautoleather.com"
+            class="hidden items-center gap-2 text-sm font-semibold md:flex"
+          >
+            <Icon name="mdi:email" class="h-5 w-5 shrink-0" />
+            <span>sales@fivestarautoleather.com</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          {
+            socials.map((social) => (
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+              >
+                <Icon name={social.icon} class="h-5 w-5 shrink-0" />
+              </a>
+            ))
+          }
+          <a
+            href="https://www.tiktok.com/@fivestarautoleather"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            class="hidden md:flex"
+          >
+            <Icon name="tiktok" class="h-5 w-5 shrink-0" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
