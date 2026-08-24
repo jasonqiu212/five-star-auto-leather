@@ -21,19 +21,22 @@ const whatWeDoItems = [
     title: 'Upholstery',
     description:
       'We craft tailored car leather seats and interiors with exceptional attention to detail.',
-    imageUrl: upholsteryImage,
+    image: upholsteryImage,
+    imageAlt: 'Close-up of automotive leather upholstery',
   },
   {
     title: 'Customisation',
     description:
       'Along with a vast range of quality leather, we also offer bespoke designs and personalisation details.',
-    imageUrl: customizationImage,
+    image: customizationImage,
+    imageAlt: 'Leathers used in car seat upholstery',
   },
   {
     title: 'Repair',
     description:
       'Be it a sagging roof lining or a cracked dashboard, we have the solution to all your car interior needs.',
-    imageUrl: repairImage,
+    image: repairImage,
+    imageAlt: 'Sewing machine used in creating car leather seats',
   },
 ];
 
@@ -74,7 +77,7 @@ const whyReasons = [
     <div class="order-2 sm:order-1">
       <Image
         src={seatImage}
-        alt="Five Star Auto Leather"
+        alt="Two leather seats done by Five Star Auto Leather"
         loading="eager"
         fetchpriority="high"
         widths={[640, 1280]}
@@ -113,8 +116,8 @@ const whyReasons = [
           whatWeDoItems.map((item) => (
             <div class="flex flex-col items-center">
               <Image
-                src={item.imageUrl}
-                alt={item.title}
+                src={item.image}
+                alt={item.imageAlt}
                 loading="lazy"
                 widths={[350, 700]}
                 sizes="350px"
@@ -161,7 +164,7 @@ const whyReasons = [
     <div class="order-2 sm:order-1 sm:col-span-5">
       <Image
         src={vanImage}
-        alt="Van"
+        alt="Five Star Auto Leather van"
         loading="lazy"
         widths={[640, 1280]}
         sizes="(max-width: 640px) 100vw, 50vw"
