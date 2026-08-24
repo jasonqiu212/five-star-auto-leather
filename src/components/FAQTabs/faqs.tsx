@@ -28,7 +28,7 @@ export const faqs: FAQItem[] = [
           We handle everything inside your ride. Other than just car seat upholstery, our services
           also include:
         </p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-5">
           <li>Roof lining rewraps</li>
           <li>Dashboard and door panel rewraps</li>
           <li>Steering wheel, gear knob and shift boot rewraps</li>
@@ -60,7 +60,7 @@ export const faqs: FAQItem[] = [
     answer: (
       <div className="space-y-2">
         <p>It’s straightforward and built around your convenience:</p>
-        <ol className="list-decimal pl-4">
+        <ol className="list-decimal pl-5">
           <li>
             <span className="font-bold">Consultation & Design Selection</span> – Choose your
             materials, stitching, and design. We’ll guide you through every detail.
@@ -231,7 +231,7 @@ export const faqs: FAQItem[] = [
           is UV-resistant, scratch-resistant and easy to clean. Our collection comes in two
           finishes:
         </p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-5">
           <li>
             <span className="font-bold">Standard Full Grain</span> – for a more textured, natural
             feel
@@ -297,7 +297,7 @@ export const faqs: FAQItem[] = [
     answer: (
       <div className="space-y-2">
         <p>You can personalise your interior with:</p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-5">
           <li>
             Material type (such as textured vs. smooth grain, fabric alternatives like Alcantara)
           </li>
