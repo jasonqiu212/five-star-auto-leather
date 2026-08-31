@@ -4,8 +4,18 @@ import Logo from '@/components/Logo.astro';
 import '@/styles/global.css';
 
 const contacts = [
-  { icon: 'mdi:phone', label: '9172 9570', href: 'https://api.whatsapp.com/send?phone=6591729570' },
-  { icon: 'mdi:phone', label: '8790 9677', href: 'https://api.whatsapp.com/send?phone=6587909677' },
+  {
+    icon: 'mdi:phone',
+    label: '9172 9570',
+    href: 'https://api.whatsapp.com/send?phone=6591729570',
+    conversionLabel: 'WmWqCKHYj-gcEMDJ-Jko',
+  },
+  {
+    icon: 'mdi:phone',
+    label: '8790 9677',
+    href: 'https://api.whatsapp.com/send?phone=6587909677',
+    conversionLabel: 'a1QTCKTYj-gcEMDJ-Jko',
+  },
 ];
 
 const socials = [
@@ -31,7 +41,12 @@ const socials = [
         <div class="flex items-center gap-2 lg:gap-4">
           {
             contacts.map((contact) => (
-              <a href={contact.href} class="flex items-center gap-2 text-sm font-semibold">
+              <a
+                href={contact.href}
+                class="flex items-center gap-2 text-sm font-semibold"
+                data-conversion-event={`phone_click_${contact.label.slice(-4)}`}
+                data-conversion-label={contact.conversionLabel}
+              >
                 <Icon name={contact.icon} class="h-5 w-5 shrink-0" />
                 <span>{contact.label}</span>
               </a>
@@ -40,6 +55,8 @@ const socials = [
           <a
             href="mailto:sales@fivestarautoleather.com"
             class="hidden items-center gap-2 text-sm font-semibold md:flex"
+            data-conversion-event="email_click"
+            data-conversion-label="WABVCKfYj-gcEMDJ-Jko"
           >
             <Icon name="mdi:email" class="h-5 w-5 shrink-0" />
             <span>sales@fivestarautoleather.com</span>
