@@ -38,7 +38,7 @@ npm install -g pnpm
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/jasonqiu212/five-star-auto-leather-v1.git
+git clone https://github.com/jasonqiu212/five-star-auto-leather.git
 cd five-star-auto-leather
 ```
 
