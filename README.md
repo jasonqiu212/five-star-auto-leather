@@ -23,7 +23,7 @@ If you use [nvm](https://github.com/nvm-sh/nvm), the correct Node.js version wil
 nvm use
 ```
 
-This will use the version specified in the `.nvmrc` file (v20.19.2).
+This will use the version specified in the `.nvmrc` file.
 
 ### Installing pnpm
 
