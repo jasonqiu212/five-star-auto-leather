@@ -20,7 +20,7 @@ export const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
         <span className="absolute bottom-2 left-10 font-serif text-6xl text-white">”</span>
       </div>
 
-      <p className="text-2xl" style={{ fontFamily: "'RacingSansOne', sans-serif" }}>
+      <p className="text-2xl" style={{ fontFamily: "'RacingSansOne', var(--font-sans)" }}>
         {testimonial.name}
       </p>
 

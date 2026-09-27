@@ -21,19 +21,22 @@ const whatWeDoItems = [
     title: 'Upholstery',
     description:
       'We craft tailored car leather seats and interiors with exceptional attention to detail.',
-    imageUrl: upholsteryImage,
+    image: upholsteryImage,
+    imageAlt: 'Close-up of automotive leather upholstery',
   },
   {
     title: 'Customisation',
     description:
       'Along with a vast range of quality leather, we also offer bespoke designs and personalisation details.',
-    imageUrl: customizationImage,
+    image: customizationImage,
+    imageAlt: 'Leathers used in car seat upholstery',
   },
   {
     title: 'Repair',
     description:
       'Be it a sagging roof lining or a cracked dashboard, we have the solution to all your car interior needs.',
-    imageUrl: repairImage,
+    image: repairImage,
+    imageAlt: 'Sewing machine used in creating car leather seats',
   },
 ];
 
@@ -62,10 +65,10 @@ const whyReasons = [
 
 <BaseLayout>
   <Fragment slot="head">
-    <title>Five Star Auto Leather | Quality Car Leather Upholstery | Singapore</title>
+    <title>Car Upholstery & Leather Seat Repair Singapore | Five Star Auto Leather</title>
     <meta
       name="description"
-      content="With 20 years of expertise in Singapore, Five Star Auto Leather redefines automotive interiors with unique, thoughtful designs, meticulous craftsmanship, and top-tier service that goes above and beyond."
+      content="Car upholstery, leather seat repair, and auto interior restoration in Singapore. With 20 years of expertise in Singapore, we redefined automotive interiors."
     />
   </Fragment>
 
@@ -74,7 +77,7 @@ const whyReasons = [
     <div class="order-2 sm:order-1">
       <Image
         src={seatImage}
-        alt="Five Star Auto Leather"
+        alt="Two leather seats done by Five Star Auto Leather"
         loading="eager"
         fetchpriority="high"
         widths={[640, 1280]}
@@ -87,11 +90,11 @@ const whyReasons = [
       <div
         class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
       >
-        <h1 class="text-4xl font-bold text-white">Five Star Auto Leather</h1>
+        <h2 class="text-4xl font-bold text-white">Five Star Auto Leather</h2>
 
-        <p class="mt-2 text-white">
+        <h1 class="mt-2 text-white" style={{ fontFamily: 'var(--font-sans)' }}>
           Custom Automotive Interiors | Quality Workmanship | Five Star Service since 2005
-        </p>
+        </h1>
 
         <a
           href="/contact-us"
@@ -113,8 +116,8 @@ const whyReasons = [
           whatWeDoItems.map((item) => (
             <div class="flex flex-col items-center">
               <Image
-                src={item.imageUrl}
-                alt={item.title}
+                src={item.image}
+                alt={item.imageAlt}
                 loading="lazy"
                 widths={[350, 700]}
                 sizes="350px"
@@ -161,7 +164,7 @@ const whyReasons = [
     <div class="order-2 sm:order-1 sm:col-span-5">
       <Image
         src={vanImage}
-        alt="Van"
+        alt="Five Star Auto Leather van"
         loading="lazy"
         widths={[640, 1280]}
         sizes="(max-width: 640px) 100vw, 50vw"
@@ -171,7 +174,9 @@ const whyReasons = [
 
     <div class="order-1 flex items-center px-4 py-8 sm:order-2 sm:col-span-7 sm:px-6 md:px-20">
       <div class="flex h-full flex-col justify-center">
-        <h2 class="mb-6 text-center text-2xl font-bold sm:text-left">Why You'll Love Us</h2>
+        <h2 class="mb-6 text-center text-2xl font-bold sm:text-left">
+          Why Choose Five Star Auto Leather?
+        </h2>
         <p class="mb-2">
           We're all about passion, precision, and that perfect finish. Drop by and see why our team
           is:
