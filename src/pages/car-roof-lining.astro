@@ -1,0 +1,255 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeroTitle from '@/components/HeroTitle.astro';
+import { Image, getImage } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+import carLining from '@/assets/car-roof-lining.webp';
+import restorationProcess from '@/assets/roofing-restoration-process.webp';
+import whyFiveStar from '@/assets/why-five-star-roofing-restoration.webp';
+import beforeAfter from '@/assets/before-after.webp';
+import faqLiner from '@/assets/faq-roof-liner.webp';
+---
+
+<BaseLayout>
+<Fragment slot="head">
+    <title>Car Roof Lining Repair & Restoration in Singapore | Five Star Auto Leather</title>
+    <meta
+      name="description"
+      content="Sagging car roof lining? We restore roof liners, headliners & upholstery for all makes and models in Singapore. Book your slot today."
+    />
+  </Fragment>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2">
+    <div class="order-2 sm:order-1">
+      <Image
+        src={carLining}
+        alt='Technician performing car roof lining repair in Singapore'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="h-full w-full bg-black object-cover"
+      />
+    </div>
+
+    <div class="order-1 flex items-center justify-center bg-black px-4 py-8 sm:order-2 sm:px-16">
+      <div
+        class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
+      >
+        <h1 class="text-white text-4xl font-bold">
+          Professional Car Roof Lining Repair & Restoration in Singapore
+        </h1>
+        <p class="mt-8 text-white">
+        Is your car roof lining sagging, stained or peeling? Whether the fix you need is called car roof lining repair, car headliner repair, or roof upholstery restoration, a drooping headliner affects both your car's look and the way it feels to drive.  
+        At Five Star Auto Leather, we specialise in restoring car roof linings to factory-quality finish, using premium materials tailored to your vehicle's size and specifications.
+        </p>
+        <div class="flex mt-8 w-full justify-start items-center">
+        <p class="text-white">
+        Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a class="text-white" href="tel:+6587909677">8790 9677</a>
+        </p>
+        <a
+          href="https://www.google.com/url?q=https://www.google.com/maps?cid%3D13495479379412370960&sa=D&source=docs&ust=1791512303627989&usg=AOvVaw0Ig_hNMiZMAyyDyPW0XW-C"
+          class="inline-block w-50 ml-6 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
+        >
+         Visit our workshop
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto max-w-7xl px-4 py-8 sm:px-6">
+    <div class="flex w-full flex-col items-center justify-center gap-6">
+      <h2 class="text-2xl mb-0 font-bold">The Problem: Why Roof Linings Sag</h2>
+      <p>Most factory roof linings use a foam-backed fabric that degrades over time, especially in Singapore's heat and humidity. Common signs:</p>
+<table class='w-full border-collapse border border-gray-300'>
+  <thead>
+    <tr>
+      <th class='border border-gray-300 px-4 py-3 text-left'>Symptom</th>
+      <th class='border border-gray-300 px-4 py-3 text-left'>Cause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='border border-gray-300 px-4 py-3'>Fabric drooping at the edges</td>
+      <td class='border border-gray-300 px-4 py-3'>Adhesive breakdown from heat exposure</td>
+    </tr>
+    <tr>
+      <td class='border border-gray-300 px-4 py-3'>Bubbling or rippling</td>
+      <td class='border border-gray-300 px-4 py-3'>Moisture trapped between foam and fabric</td>
+    </tr>
+    <tr>
+      <td class='border border-gray-300 px-4 py-3'>Visible stains or yellowing</td>
+      <td class='border border-gray-300 px-4 py-3'>Age, wear and tear, and sun damage</td>
+    </tr>
+    <tr>
+      <td class='border border-gray-300 px-4 py-3'>Foam crumbling when touched</td>
+      <td class='border border-gray-300 px-4 py-3'>Foam degradation (common in cars 5+ years old)</td>
+    </tr>
+  </tbody>
+</table>
+<p class="mt-2">Good news: All cases are fixable. We assess, quote, and restore most jobs usually within the same day.</p>
+    </div>
+  </section>
+
+  <section class="container mx-auto grid grid-cols-1 sm:grid-cols-12 px-4 py-14">
+    <div class="order-1 sm:order-2 sm:col-span-8 flex justify-center flex-col">
+       <h2 class="mb-6 text-2xl font-bold sm:text-left">Our Roof Lining Restoration Process</h2>
+       <h3 class="mb-2 font-bold">Step 1: Free Assessment & Quote</h3>
+       <p class="mb-4">Bring your vehicle to our workshop or simply send us your car's make and model. As every vehicle is different, from compact hatchbacks to SUVs and MPVs, we provide a tailored quotation based on your vehicle and material selection.</p>
+       <h3 class="mb-2 font-bold">Step 2: Removal & Preparation</h3>
+       <p class="mb-4">We carefully remove the existing roof liner, strip away the old deteriorated foam and adhesive, then prepare the backing board so the new material bonds strongly and lasts.</p>
+       <h3 class="mb-2 font-bold">Step 3: Precision Bonding</h3>
+       <p class="mb-4">Using premium, high-temperature industrial adhesives (formaldehyde-free and proven for Singapore's tropical climate), we bond the new headliner fabric for a smooth, wrinkle-free finish with no bubbles or sagging.</p>
+       <h3 class="mb-2 font-bold">Step 4: Reinstallation & Quality Check</h3>
+       <p class="mb-4">We reinstall the restored roof liner and refit all trim pieces, grab handles, lights and sun visors with care. Every installation undergoes a final inspection for fit, alignment and finish before your vehicle is returned.</p>
+    </div>
+
+    <div class="order-2 flex items-center sm:order-1 sm:col-span-4 sm:px-6 md:px-20">
+      <div class="flex h-full flex-col justify-center">
+        <div class="facebook-reel-container"> <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1009400853873591&show_text=false" width="320" height="570" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Reel video" loading="lazy" ></iframe> </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Business In Numbers -->
+  <section
+    class="relative bg-cover bg-center bg-no-repeat sm:bg-fixed"
+    style={`background-image: url(${restorationProcess.src})`}
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 z-0 bg-black/70"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto max-w-7xl px-4 py-14 text-center sm:px-6">
+      <div class="flex w-full flex-col items-center gap-4">
+        <h2 class="text-2xl font-bold text-white mb-2">Vehicles We Service</h2>
+        <p class="mb-4 text-white">We restore roof linings for all vehicle makes and models, including:</p>
+        <ul class="space-y-2 text-white">
+          <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Hatchbacks and sedans</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>SUVs and MPVs</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Luxury and continental cars</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Commercial vans and vehicles</span>
+              </li>
+        </ul>
+        <p class="text-white">Call us for a quick quote based on your car model.</p>
+      </div>
+    </div>
+  </section>
+
+   <section class="grid grid-cols-1 sm:grid-cols-2">
+    <div class="order-2 sm:order-2">
+      <Image
+        src={whyFiveStar}
+        alt='Technician securing loose overhead wiring against the bare roof frame during car roof lining repair'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="h-full w-full bg-black object-cover"
+      />
+    </div>
+
+    <div class="order-1 flex items-center justify-center px-4 py-8 sm:order-1 sm:px-16">
+      <div
+        class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
+      >
+        <h2 class="text-2xl font-bold mb-6">
+          Why Choose Five Star Auto Leather? 
+        </h2>
+        <h3 class="mb-2 font-bold">Transparent Pricing</h3>
+        <p class="mb-6">Every roof lining restoration is quoted based on your vehicle's roof size and your chosen material. No misleading "from" prices, no hidden charges. Just honest pricing tailored to your car.</p>
+        <h3 class="mb-2 font-bold">Minimal Downtime, Maximum Convenience</h3>
+        <p class="mb-6">Most restorations are completed within a day. For added convenience, you can even drive your car after we remove the roof board and return the next day for reinstallation. This gives the adhesive time to fully cure while allowing any residual odour to dissipate, with dismantling and installation taking just 1–2 hours each.</p>
+        <h3 class="mb-2 font-bold">Built for Singapore's Climate</h3>
+        <p class="mb-6">We use premium headliner materials and high-temperature, formaldehyde-free adhesives selected specifically for Singapore's heat and humidity, helping ensure your new roof lining stays secure for years to come.</p>
+         <h3 class="mb-2 font-bold">100% In-House Craftsmanship</h3>
+        <p>Every restoration is carried out by our experienced team at our Singapore workshop — never outsourced. From careful preparation to final installation, we maintain complete quality control and back our workmanship with a warranty for your peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto max-w-7xl px-4 py-14 sm:px-6">
+    <div class="flex w-full flex-col items-center justify-center gap-6">
+      <h2 class="text-2xl mb-0 font-bold">Before & After</h2>
+      <Image
+        src={beforeAfter}
+        alt='Toyota Prius roof panel before and after car headliner repair'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="mx-auto object-cover"
+      />
+      <p>Every roof lining tells the story of a sagging headliner returning to a clean, tight finish. Watch a full restoration from start to finish, filmed inside our workshop, or take a look at recent jobs completed by our team.</p>
+<p class="mt-2">Watch the full roof lining restoration process</p>
+<div class="facebook-reel-container"> <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1009400853873591&show_text=false" title="Facebook Reel" width="320" height="570" style="border: none; overflow: hidden;" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy" ></iframe> </div>
+    </div>
+  </section>
+
+  <section class="bg-black w-full px-4 py-14 sm:px-6">
+    <div class="container mx-auto flex max-w-5xl flex-col justify-center gap-6">
+      <h2 class="text-2xl mb-6 font-bold text-white text-center">Frequently Asked Questions</h2>
+      <h3 class="text-white font-bold text-xl">What's the difference between a roof liner, roof lining, and headliner?</h3>
+      <p class="text-white mb-8">They're all different names for the same thing — the upholstered fabric covering the interior ceiling of your car. Whether you call it a roof liner, roof lining, or headliner, it's the same restoration service.</p>
+      
+      <h3 class="text-white font-bold text-xl">Can you match my original factory colour and texture?</h3>
+      <p class="text-white mb-8">We carry a wide range of headliner fabrics in different colours and textures to closely match your vehicle's original interior. While an exact factory match isn't always possible, we always recommend the closest available option.</p>
+      
+      <h3 class="text-white font-bold text-xl">What if my car has a sunroof?</h3>
+       <Image
+        src={faqLiner}
+        alt='car roof lining repair sunroof comparison'
+        loading='eager'
+        fetchpriority='high'
+        widths={[300, 600]}
+        sizes='(max-width: 300px) 100vw, 50vw'
+        class="mx-auto object-cover"
+      />
+      <p class="text-white mb-8">No problem. We can restore the main roof lining on vehicles with sunroofs. If your sunroof has a removable hardboard panel, we can rewrap that too. However, if your vehicle has a panoramic roof with a retractable roller blind, the blind itself cannot be rewrapped due to its construction.</p>
+    
+       <h3 class="text-white font-bold text-xl">How long does a roof lining restoration take?</h3>
+      <p class="text-white mb-8">Most roof lining restorations are completed within a day. To minimise your downtime, you also have the option to drive your car after we remove the roof board and return the following day for reinstallation. This allows the adhesive to cure properly and any residual odour to dissipate, while dismantling and installation each take only 1–2 hours.</p> 
+
+      <h3 class="text-white font-bold text-xl">Do I need to book an appointment?</h3>
+      <p class="text-white mb-8">Yes. We recommend booking an appointment so we can dedicate the necessary time to your vehicle. Walk-ins are welcome but are subject to workshop availability.</p> 
+
+      <h3 class="text-white font-bold text-xl">Do you provide a warranty?</h3>
+      <p class="text-white mb-8">Yes. We provide a 1-year workmanship warranty on all roof lining restorations, giving you added peace of mind. Feel free to ask us for the full warranty details during your visit.</p>    
+    </div>
+  </section>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</BaseLayout>
+
+<style>
+  h2 {
+    font-family: 'RacingSansOne', var(--font-sans);
+  }
+  .facebook-reel-container { width: 100%; max-width: 400px; margin: 0 auto; aspect-ratio: 9 / 16; overflow: hidden; } .facebook-reel-container iframe { display: block; width: 100%; height: 100%; border: 0; }
+</style>
