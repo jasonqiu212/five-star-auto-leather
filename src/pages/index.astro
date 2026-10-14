@@ -12,6 +12,7 @@ import vanImage from '@/assets/van.jpg';
 import steeringRewrap from '@/assets/home-steering-rewrap.webp';
 import roofLining from '@/assets/home-roof-lining.webp';
 import dashboardRestore from '@/assets/home-dashboard-restore.webp';
+import homepageMidImage from '@/assets/homepage-mid-image.webp';
 import worksRoof1 from '@/assets/home-latest-roof-lining-1.webp';
 import worksRoof2 from '@/assets/home-latest-roof-lining-2.webp';
 import worksRoof3 from '@/assets/home-latest-roof-lining-3.webp';
@@ -208,7 +209,7 @@ const whyReasons = [
         <p class="mb-2">
           We're all about passion, precision, and that perfect finish. Drop by and see why our team is:
         </p>
-        <ul class="space-y-2">
+        <ul class="space-y-2 mb-6">
           {
             whyReasons.map((reason) => (
               <li class="flex items-center gap-2">
@@ -221,6 +222,14 @@ const whyReasons = [
             ))
           }
         </ul>
+        <Image
+        src={homepageMidImage}
+        alt="BMW convertible front seats finished with two-tone car upholstery in Onyx black and beige"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="max-h-[400px] w-full object-cover"
+      />
       </div>
     </div>
   </section>
