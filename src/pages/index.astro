@@ -57,8 +57,7 @@ const whatWeDoItems = [
   },
   {
     title: 'Roof Lining Rewrap',
-    description:
-      'Restore sagging headliners with a clean, durable roof lining rewrap.',
+    description: 'Restore sagging headliners with a clean, durable roof lining rewrap.',
     imageUrl: roofLining,
     imageAlt: 'sewing machine used in creating car leather seats',
   },
@@ -124,7 +123,8 @@ const whyReasons = [
         <h2 class="text-4xl font-bold text-white">Five Star Auto Leather</h2>
 
         <h1 class="mt-2 text-white">
-          Car Upholstery, Leather Seat Repair & Custom Auto Interiors in Singapore | Five Star Service since 2005
+          Car Upholstery, Leather Seat Repair & Custom Auto Interiors in Singapore | Five Star
+          Service since 2005
         </h1>
 
         <a
@@ -141,7 +141,10 @@ const whyReasons = [
   <section class="container mx-auto max-w-7xl px-4 py-8 sm:px-6">
     <div class="flex w-full flex-col items-center gap-6">
       <h2 class="text-2xl font-bold">What We Do</h2>
-      <p class="mb-8">From car interior repair to full leather refits, we handle every part of your car's interior in-house at our Singapore workshop.</p>
+      <p class="mb-8">
+        From car interior repair to full leather refits, we handle every part of your car's interior
+        in-house at our Singapore workshop.
+      </p>
       <div class="grid w-full grid-cols-1 gap-3 sm:grid-cols-4">
         {
           whatWeDoItems.map((item) => (
@@ -152,9 +155,9 @@ const whyReasons = [
                 loading="lazy"
                 widths={[350, 700]}
                 sizes="350px"
-                class="h-auto w-full max-w-[350px] object-cover max-h-[200px]"
+                class="h-auto max-h-[200px] w-full max-w-[350px] object-cover"
               />
-              <h3 class="mt-4 text-xl font-bold text-center">{item.title}</h3>
+              <h3 class="mt-4 text-center text-xl font-bold">{item.title}</h3>
               <p class="mt-2 text-center">{item.description}</p>
             </div>
           ))
@@ -205,11 +208,14 @@ const whyReasons = [
 
     <div class="order-1 flex items-center px-4 py-8 sm:order-2 sm:col-span-7 sm:px-6 md:px-20">
       <div class="flex h-full flex-col justify-center">
-        <h2 class="mb-6 text-center text-2xl font-bold sm:text-left">Why Choose Five Star Auto Leather?</h2>
+        <h2 class="mb-6 text-center text-2xl font-bold sm:text-left">
+          Why Choose Five Star Auto Leather?
+        </h2>
         <p class="mb-2">
-          We're all about passion, precision, and that perfect finish. Drop by and see why our team is:
+          We're all about passion, precision, and that perfect finish. Drop by and see why our team
+          is:
         </p>
-        <ul class="space-y-2 mb-6">
+        <ul class="mb-6 space-y-2">
           {
             whyReasons.map((reason) => (
               <li class="flex items-center gap-2">
@@ -223,265 +229,295 @@ const whyReasons = [
           }
         </ul>
         <Image
-        src={homepageMidImage}
-        alt="BMW convertible front seats finished with two-tone car upholstery in Onyx black and beige"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
+          src={homepageMidImage}
+          alt="BMW convertible front seats finished with two-tone car upholstery in Onyx black and beige"
+          loading="lazy"
+          widths={[640, 1280]}
+          sizes="(max-width: 640px) 100vw, 50vw"
+          class="max-h-[400px] w-full object-cover"
+        />
       </div>
     </div>
   </section>
 
   <section class="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
     <div class="flex w-full flex-col items-center justify-center gap-4">
-      <h2 class="text-2xl mb-0 font-bold text-center">Our Latest Works</h2>
-<p class="mb-6 text-center">See our recent car upholstery, dashboard, roof lining and steering wheel work, all completed in-house at our Singapore workshop.</p>
-   
-    <h3 class="text-xl mb-0 font-bold text-left">Car Roof Lining Repair</h3>
-    <p class="mb-2 text-center">Car roof lining repair restores sagging or peeling headliners back to a clean, factory-fresh finish.</p>
-    <div class="grid w-full grid-cols-3 gap-3">
-    <div class="order-1">
-      <Image
-        src={worksRoof1}
-        alt="BMW 420i cabin with headliner converted from original beige to plush black velvet"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-2">
-      <Image
-        src={worksRoof2}
-        alt="Mercedes A180 fitted with a custom starlight headliner featuring fibre-optic LEDs above two-tone red and black sports seats"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-3">
-      <Image
-        src={worksRoof3}
-        alt="Mitsubishi Evolution interior with black velvet roof panel and matching pillars, paired with black Recaro sports seats and blue stitching"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-4">
-      <Image
-        src={worksRoof4}
-        alt="Toyota Hiace Commuter cabin with newly refitted white roof panel around the ceiling air-con vents and drop-down monitor"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-5">
-      <Image
-        src={worksRoof5}
-        alt="Subaru Forester with refreshed roof panel and sun visors in a clean grey finish above two-tone red and black seats with Forester embroidery"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    </div>
+      <h2 class="mb-0 text-center text-2xl font-bold">Our Latest Works</h2>
+      <p class="mb-6 text-center">
+        See our recent car upholstery, dashboard, roof lining and steering wheel work, all completed
+        in-house at our Singapore workshop.
+      </p>
 
-    <h3 class="text-xl mb-0 font-bold text-left mt-10">Car Dashboard Leather Repair</h3>
-    <p class="mb-2 text-center">Car dashboard leather repair renews cracked or sun-damaged dashboards with a fresh wrap that matches the rest of the cabin.</p>
-    <div class="grid w-full grid-cols-3 gap-3">
-    <div class="order-1">
-      <Image
-        src={worksDashboard1}
-        alt="Honda Odyssey dashboard rewrapped in rich burgundy leather with matching gear surround and vents, paired with a black upper dash and infotainment screen"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover object-top"
-      />
-    </div>
-    <div class="order-2">
-      <Image
-        src={worksDashboard2}
-        alt="Hyundai i45 dashboard refinished with a smooth black PVC upper section and beige lower panel, giving the cabin a clean two-tone contrast"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-3">
-      <Image
-        src={worksDashboard3}
-        alt="Honda Stepwagon Spada dashboard finished in two-tone black and blue with a wrapped instrument hood and matching accent on the steering wheel"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-4">
-      <Image
-        src={worksDashboard4}
-        alt="Lexus IS250 cabin with dashboard rewrapped in smooth black PVC above beige door trims and matching perforated leather seats"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-5">
-      <Image
-        src={worksDashboard5}
-        alt="Toyota Corolla Cross interior with a caramel dashboard rewrap flowing into matching front seat upholstery and contrast stitching detail"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    </div>
+      <h3 class="mb-0 text-left text-xl font-bold">Car Roof Lining Repair</h3>
+      <p class="mb-2 text-center">
+        Car roof lining repair restores sagging or peeling headliners back to a clean, factory-fresh
+        finish.
+      </p>
+      <div class="grid w-full grid-cols-3 gap-3">
+        <div class="order-1">
+          <Image
+            src={worksRoof1}
+            alt="BMW 420i cabin with headliner converted from original beige to plush black velvet"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-2">
+          <Image
+            src={worksRoof2}
+            alt="Mercedes A180 fitted with a custom starlight headliner featuring fibre-optic LEDs above two-tone red and black sports seats"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-3">
+          <Image
+            src={worksRoof3}
+            alt="Mitsubishi Evolution interior with black velvet roof panel and matching pillars, paired with black Recaro sports seats and blue stitching"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-4">
+          <Image
+            src={worksRoof4}
+            alt="Toyota Hiace Commuter cabin with newly refitted white roof panel around the ceiling air-con vents and drop-down monitor"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-5">
+          <Image
+            src={worksRoof5}
+            alt="Subaru Forester with refreshed roof panel and sun visors in a clean grey finish above two-tone red and black seats with Forester embroidery"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+      </div>
 
-    <h3 class="text-xl mb-0 font-bold text-left mt-10">Steering Wheel Leather Wrap</h3>
-    <p class="mb-2 text-center">Steering wheel leather wrap gives one of the most touched surfaces in the car a completely new feel with hand-stitched precision.</p>
-    <div class="grid w-full grid-cols-3 gap-3">
-    <div class="order-1">
-      <Image
-        src={worksSteering1}
-        alt="Lexus IS250 steering wheel finished in two-tone black leather with faux carbon fibre accents on the grip sides"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover object-top"
-      />
-    </div>
-    <div class="order-2">
-      <Image
-        src={worksSteering2}
-        alt="Mazda MX5 steering wheel refinished in smooth black leather"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-3">
-      <Image
-        src={worksSteering3}
-        alt="Alternate angle of Mazda MX5 steering wheel refresh in black leather"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-4">
-      <Image
-        src={worksSteering4}
-        alt="Mini S steering wheel finished in two-tone Winter Snow and black with perforated grip sections"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-5">
-      <Image
-        src={worksSteering5}
-        alt="VW ID Buzz steering wheel refinished in smooth leather"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    </div>
+      <h3 class="mt-10 mb-0 text-left text-xl font-bold">Car Dashboard Leather Repair</h3>
+      <p class="mb-2 text-center">
+        Car dashboard leather repair renews cracked or sun-damaged dashboards with a fresh wrap that
+        matches the rest of the cabin.
+      </p>
+      <div class="grid w-full grid-cols-3 gap-3">
+        <div class="order-1">
+          <Image
+            src={worksDashboard1}
+            alt="Honda Odyssey dashboard rewrapped in rich burgundy leather with matching gear surround and vents, paired with a black upper dash and infotainment screen"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover object-top"
+          />
+        </div>
+        <div class="order-2">
+          <Image
+            src={worksDashboard2}
+            alt="Hyundai i45 dashboard refinished with a smooth black PVC upper section and beige lower panel, giving the cabin a clean two-tone contrast"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-3">
+          <Image
+            src={worksDashboard3}
+            alt="Honda Stepwagon Spada dashboard finished in two-tone black and blue with a wrapped instrument hood and matching accent on the steering wheel"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-4">
+          <Image
+            src={worksDashboard4}
+            alt="Lexus IS250 cabin with dashboard rewrapped in smooth black PVC above beige door trims and matching perforated leather seats"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-5">
+          <Image
+            src={worksDashboard5}
+            alt="Toyota Corolla Cross interior with a caramel dashboard rewrap flowing into matching front seat upholstery and contrast stitching detail"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+      </div>
 
-    <h3 class="text-xl mb-0 font-bold text-left mt-10">Car Seat Leather Repair</h3>
-    <p class="mb-2 text-center">Car seat leather repair restores worn seats or transforms them with a full custom rewrap in your chosen material and colour.</p>
-    <div class="grid w-full grid-cols-3 gap-3">
-    <div class="order-1">
-      <Image
-        src={worksCarSeat1}
-        alt="Lexus RX300 rear bench rewrapped in Caramel with perforated inserts"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover object-top"
-      />
-    </div>
-    <div class="order-2">
-      <Image
-        src={worksCarSeat2}
-        alt="Mercedes A35 front seat rewrapped in two-tone Onyx black and Oxford Navy with vertical centre channel"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-3">
-      <Image
-        src={worksCarSeat3}
-        alt="Close-up of BMW 640i seat rewrapped in full-grain Midnight black and Alabaster"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-4">
-      <Image
-        src={worksCarSeat4}
-        alt="Close-up of Mazda CX5 seat rewrap in full-grain Caramel leather"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    <div class="order-5">
-      <Image
-        src={worksCarSeat5}
-        alt="Close-up of Mercedes C200 seat rewrap in premium smooth-grain Merlot leather"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="max-h-[400px] w-full object-cover"
-      />
-    </div>
-    </div>
+      <h3 class="mt-10 mb-0 text-left text-xl font-bold">Steering Wheel Leather Wrap</h3>
+      <p class="mb-2 text-center">
+        Steering wheel leather wrap gives one of the most touched surfaces in the car a completely
+        new feel with hand-stitched precision.
+      </p>
+      <div class="grid w-full grid-cols-3 gap-3">
+        <div class="order-1">
+          <Image
+            src={worksSteering1}
+            alt="Lexus IS250 steering wheel finished in two-tone black leather with faux carbon fibre accents on the grip sides"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover object-top"
+          />
+        </div>
+        <div class="order-2">
+          <Image
+            src={worksSteering2}
+            alt="Mazda MX5 steering wheel refinished in smooth black leather"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-3">
+          <Image
+            src={worksSteering3}
+            alt="Alternate angle of Mazda MX5 steering wheel refresh in black leather"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-4">
+          <Image
+            src={worksSteering4}
+            alt="Mini S steering wheel finished in two-tone Winter Snow and black with perforated grip sections"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-5">
+          <Image
+            src={worksSteering5}
+            alt="VW ID Buzz steering wheel refinished in smooth leather"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+      </div>
 
+      <h3 class="mt-10 mb-0 text-left text-xl font-bold">Car Seat Leather Repair</h3>
+      <p class="mb-2 text-center">
+        Car seat leather repair restores worn seats or transforms them with a full custom rewrap in
+        your chosen material and colour.
+      </p>
+      <div class="grid w-full grid-cols-3 gap-3">
+        <div class="order-1">
+          <Image
+            src={worksCarSeat1}
+            alt="Lexus RX300 rear bench rewrapped in Caramel with perforated inserts"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover object-top"
+          />
+        </div>
+        <div class="order-2">
+          <Image
+            src={worksCarSeat2}
+            alt="Mercedes A35 front seat rewrapped in two-tone Onyx black and Oxford Navy with vertical centre channel"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-3">
+          <Image
+            src={worksCarSeat3}
+            alt="Close-up of BMW 640i seat rewrapped in full-grain Midnight black and Alabaster"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-4">
+          <Image
+            src={worksCarSeat4}
+            alt="Close-up of Mazda CX5 seat rewrap in full-grain Caramel leather"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+        <div class="order-5">
+          <Image
+            src={worksCarSeat5}
+            alt="Close-up of Mercedes C200 seat rewrap in premium smooth-grain Merlot leather"
+            loading="lazy"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="max-h-[400px] w-full object-cover"
+          />
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="w-full bg-black px-4 py-8 sm:px-6">
-    <div class="container mx-auto w-full flex flex-col items-center justify-center gap-2">
-      <h2 class="text-2xl text-white mb-0 font-bold">Get a Quote Now!</h2>
-      <p class="text-white">Ready to refresh your car interior? Bring your car to Five Star Auto Leather for a free assessment and quotation.</p>
-<p class="text-white">Full upholstery, partial seat repairs, steering wheel wraps, roof linings, and dashboards all done in our Singapore workshop.</p>
-   <div class="flex mt-8 w-full justify-center items-center">
-        <p class="text-white font-bold">
-        Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a class="text-white" href="tel:+6587909677">8790 9677</a>
+    <div class="container mx-auto flex w-full flex-col items-center justify-center gap-2">
+      <h2 class="mb-0 text-2xl font-bold text-white">Get a Quote Now!</h2>
+      <p class="text-white">
+        Ready to refresh your car interior? Bring your car to Five Star Auto Leather for a free
+        assessment and quotation.
+      </p>
+      <p class="text-white">
+        Full upholstery, partial seat repairs, steering wheel wraps, roof linings, and dashboards
+        all done in our Singapore workshop.
+      </p>
+      <div class="mt-8 flex w-full items-center justify-center">
+        <p class="font-bold text-white">
+          Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a
+            class="text-white"
+            href="tel:+6587909677">8790 9677</a
+          >
         </p>
         <a
           href="https://www.google.com/maps?cid=13495479379412370960"
-          class="inline-block w-50 ml-6 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
+          class="ml-6 inline-block w-50 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
         >
-         Find Us
+          Find Us
         </a>
-        </div>
+      </div>
     </div>
   </section>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </BaseLayout>
 
 <style>
