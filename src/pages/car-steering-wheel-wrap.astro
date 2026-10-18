@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import HeroTitle from '@/components/HeroTitle.astro';
-import { Image, getImage } from 'astro:assets';
+import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import carSteeringWrap from '@/assets/car-steering-wrap-enhanced.png';
@@ -15,7 +14,7 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
 ---
 
 <BaseLayout>
-<Fragment slot="head">
+  <Fragment slot="head">
     <title>Custom Leather Steering Wheel Wrap Singapore | Five Star Auto Leather</title>
     <meta
       name="description"
@@ -27,12 +26,12 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
     <div class="order-2 sm:order-1">
       <Image
         src={carSteeringWrap}
-        alt='Porsche Boxster steering wheel finished with steering wheel leather wrap Singapore service in Onyx black with contrast stitching'
-        loading='eager'
-        fetchpriority='high'
+        alt="Porsche Boxster steering wheel finished with steering wheel leather wrap Singapore service in Onyx black with contrast stitching"
+        loading="eager"
+        fetchpriority="high"
         widths={[800]}
-        sizes='(max-width: 640px) 100vw, 50vw'
-        class="h-full w-full bg-black object-cover custom-featured"
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="custom-featured h-full w-full bg-black object-cover"
       />
     </div>
 
@@ -40,41 +39,94 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
       <div
         class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
       >
-        <h1 class="text-white text-4xl font-bold">
+        <h1 class="text-4xl font-bold text-white">
           Custom Leather Steering Wheel Wrap in Singapore
         </h1>
         <p class="mt-8 text-white">
-        Is your steering wheel worn smooth, sticky, peeling or just not feeling right in your hands? A good steering wheel wrap doesn't just refresh the look of your interior. It also improves grip, comfort and control every time you drive.
+          Is your steering wheel worn smooth, sticky, peeling or just not feeling right in your
+          hands? A good steering wheel wrap doesn't just refresh the look of your interior. It also
+          improves grip, comfort and control every time you drive.
         </p>
         <p class="mt-2 text-white">
-        At Five Star Auto Leather, we specialise in custom steering wheel wraps using premium leather tailored to your vehicle. Whether you want a factory-restored finish or a completely custom look, we've got you covered.
+          At Five Star Auto Leather, we specialise in custom steering wheel wraps using premium
+          leather tailored to your vehicle. Whether you want a factory-restored finish or a
+          completely custom look, we've got you covered.
         </p>
-        <div class="flex mt-8 w-full justify-start items-center">
-        <p class="text-white">
-        Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a class="text-white" href="tel:+6587909677">8790 9677</a>
-        </p>
-        <a
-          href="https://www.google.com/maps?cid=13495479379412370960"
-          class="inline-block w-50 ml-6 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
-        >
-         Visit our workshop
-        </a>
+        <div class="mt-8 flex w-full items-center justify-start">
+          <p class="text-white">
+            Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a
+              class="text-white"
+              href="tel:+6587909677">8790 9677</a
+            >
+          </p>
+          <a
+            href="https://www.google.com/maps?cid=13495479379412370960"
+            class="ml-6 inline-block w-50 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
+          >
+            Visit our workshop
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-   <section class="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
+  <section class="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
     <div class="flex w-full flex-col items-center justify-center gap-6">
-      <h2 class="text-2xl mb-0 font-bold">Why Your Steering Wheel Needs a Rewrap</h2>
-      <p class="text-center">Your steering wheel is the most frequently touched surface in your car. Over time, constant contact with sweat, skin oils, UV exposure and heat causes the original material to wear and deteriorate.</p>
+      <h2 class="mb-0 text-2xl font-bold">Why Your Steering Wheel Needs a Rewrap</h2>
+      <p class="text-center">
+        Your steering wheel is the most frequently touched surface in your car. Over time, constant
+        contact with sweat, skin oils, UV exposure and heat causes the original material to wear and
+        deteriorate.
+      </p>
       <p class="text-center">Here are some of the most common signs:</p>
-<table class="w-full border-collapse border border-gray-300"> <thead> <tr class="bg-gray-100"> <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Common Sign</th> <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Why It Happens</th> </tr> </thead> <tbody> <tr> <td class="border border-gray-300 px-4 py-3"><strong>Shiny, slippery surface</strong></td> <td class="border border-gray-300 px-4 py-3">The protective coating wears away, leaving the wheel smooth and reducing grip.</td> </tr> <tr> <td class="border border-gray-300 px-4 py-3"><strong>Peeling or flaking</strong></td> <td class="border border-gray-300 px-4 py-3">Common on leather-wrapped steering wheels as the outer layer ages and breaks down.</td> </tr> <tr> <td class="border border-gray-300 px-4 py-3"><strong>Sticky or tacky feel</strong></td> <td class="border border-gray-300 px-4 py-3">Often found in entry-level vehicles where the steering wheel is made from moulded rubber or polyurethane rather than wrapped in leather.</td> </tr> <tr> <td class="border border-gray-300 px-4 py-3"><strong>Fading or uneven colour</strong></td> <td class="border border-gray-300 px-4 py-3">Constant sun exposure causes the top of the steering wheel to fade faster than the areas that receive less sunlight.</td> </tr> </tbody> </table>
-<p class="text-center">Most factory dashboards use a thin layer of leather or PVC bonded over foam. That foam breaks down in 5 to 8 years depending on sun exposure. All these issues are fixable.</p>
+      <table class="w-full border-collapse border border-gray-300">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Common Sign</th>
+            <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Why It Happens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3"
+              ><strong>Shiny, slippery surface</strong></td
+            >
+            <td class="border border-gray-300 px-4 py-3"
+              >The protective coating wears away, leaving the wheel smooth and reducing grip.</td
+            >
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3"><strong>Peeling or flaking</strong></td>
+            <td class="border border-gray-300 px-4 py-3"
+              >Common on leather-wrapped steering wheels as the outer layer ages and breaks down.</td
+            >
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3"><strong>Sticky or tacky feel</strong></td>
+            <td class="border border-gray-300 px-4 py-3"
+              >Often found in entry-level vehicles where the steering wheel is made from moulded
+              rubber or polyurethane rather than wrapped in leather.</td
+            >
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-3"
+              ><strong>Fading or uneven colour</strong></td
+            >
+            <td class="border border-gray-300 px-4 py-3"
+              >Constant sun exposure causes the top of the steering wheel to fade faster than the
+              areas that receive less sunlight.</td
+            >
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-center">
+        Most factory dashboards use a thin layer of leather or PVC bonded over foam. That foam
+        breaks down in 5 to 8 years depending on sun exposure. All these issues are fixable.
+      </p>
     </div>
   </section>
 
-<section class="grid grid-cols-1 sm:grid-cols-12">
+  <section class="grid grid-cols-1 sm:grid-cols-12">
     <div class="order-2 sm:order-1 sm:col-span-6">
       <Image
         src={steeringWrapProcess}
@@ -88,19 +140,41 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
 
     <div class="order-1 flex items-center px-4 py-14 sm:order-2 sm:col-span-6 sm:px-6 md:px-20">
       <div class="flex h-full flex-col justify-center">
-        <h2 class="mb-2 text-2xl font-bold text-left">Our Steering Wheel Wrap Process</h2>
-        <p class="mb-6">See how a proper steering wheel wrap comes together, from stripping the old material to the final hand-stitched finish inside our workshop.</p>
-       <h3 class="mb-2 font-bold">Step 1: Free Assessment & Quote</h3>
-       <p class="mb-4">Bring your vehicle to our workshop or simply send us a photo of your steering wheel. As every wheel is different, we provide a tailored quotation based on its size, design and your chosen material.</p>
-       <h3 class="mb-2 font-bold">Step 2: Safe Steering Wheel Removal</h3>
-       <p class="mb-4">We carefully remove the steering wheel so the airbag, horn, steering controls, paddle shifters and other electronic components are safely disconnected and handled with care.</p>
-       <h3 class="mb-2 font-bold">Step 3: Surface Preparation</h3>
-       <p class="mb-4">The old worn material is carefully removed before the steering wheel is cleaned, smoothed and prepared for its new wrap. Any imperfections in the original wheel are addressed at this stage so the finish comes out clean.</p>
-       <h3 class="mb-2 font-bold">Step 4: Handcrafted Leather Wrapping</h3>
-       <p class="mb-4">Your steering wheel is meticulously hand-wrapped using premium automotive upholstery materials. Every stitch is sewn by hand to achieve a precise fit, consistent finish and clean factory-style appearance.</p>
+        <h2 class="mb-2 text-left text-2xl font-bold">Our Steering Wheel Wrap Process</h2>
+        <p class="mb-6">
+          See how a proper steering wheel wrap comes together, from stripping the old material to
+          the final hand-stitched finish inside our workshop.
+        </p>
+        <h3 class="mb-2 font-bold">Step 1: Free Assessment & Quote</h3>
+        <p class="mb-4">
+          Bring your vehicle to our workshop or simply send us a photo of your steering wheel. As
+          every wheel is different, we provide a tailored quotation based on its size, design and
+          your chosen material.
+        </p>
+        <h3 class="mb-2 font-bold">Step 2: Safe Steering Wheel Removal</h3>
+        <p class="mb-4">
+          We carefully remove the steering wheel so the airbag, horn, steering controls, paddle
+          shifters and other electronic components are safely disconnected and handled with care.
+        </p>
+        <h3 class="mb-2 font-bold">Step 3: Surface Preparation</h3>
+        <p class="mb-4">
+          The old worn material is carefully removed before the steering wheel is cleaned, smoothed
+          and prepared for its new wrap. Any imperfections in the original wheel are addressed at
+          this stage so the finish comes out clean.
+        </p>
+        <h3 class="mb-2 font-bold">Step 4: Handcrafted Leather Wrapping</h3>
+        <p class="mb-4">
+          Your steering wheel is meticulously hand-wrapped using premium automotive upholstery
+          materials. Every stitch is sewn by hand to achieve a precise fit, consistent finish and
+          clean factory-style appearance.
+        </p>
         <h3 class="mb-2 font-bold">Step 5: Reinstallation & Final Quality Check</h3>
-       <p class="mb-6">The completed steering wheel is reinstalled, with the airbag, steering controls and all electrical functions thoroughly tested. We also inspect the stitching, fitment, surface finish and overall feel before handing your vehicle back.</p>
-       <p><strong>Typical turnaround:</strong> 4–5 hours for most vehicles.</p>
+        <p class="mb-6">
+          The completed steering wheel is reinstalled, with the airbag, steering controls and all
+          electrical functions thoroughly tested. We also inspect the stitching, fitment, surface
+          finish and overall feel before handing your vehicle back.
+        </p>
+        <p><strong>Typical turnaround:</strong> 4–5 hours for most vehicles.</p>
       </div>
     </div>
   </section>
@@ -113,7 +187,7 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
         loading="lazy"
         widths={[640, 1280]}
         sizes="(max-width: 640px) 100vw, 50vw"
-        class="h-full w-full object-cover custom-featured-2"
+        class="custom-featured-2 h-full w-full object-cover"
       />
     </div>
 
@@ -121,65 +195,84 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
       <div
         class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
       >
-        <h2 class="text-2xl font-bold mb-2">
-          Material Options
-        </h2>
-        <p class="mb-6">We offer a wide range of premium materials to suit your style, comfort and budget.</p>
+        <h2 class="mb-2 text-2xl font-bold">Material Options</h2>
+        <p class="mb-6">
+          We offer a wide range of premium materials to suit your style, comfort and budget.
+        </p>
         <h3 class="mb-2 font-bold">Premium Smooth-Grain Microfiber Leather</h3>
-        <p class="mb-6">A clean, refined finish with a soft, luxurious feel. Durable, easy to maintain and an excellent choice for everyday driving.</p>
+        <p class="mb-6">
+          A clean, refined finish with a soft, luxurious feel. Durable, easy to maintain and an
+          excellent choice for everyday driving.
+        </p>
         <h3 class="mb-2 font-bold">Perforated Leather</h3>
-        <p class="mb-6">Our most popular option. The perforated texture offers enhanced grip, improved breathability and excellent comfort, making it ideal for daily use.</p>
+        <p class="mb-6">
+          Our most popular option. The perforated texture offers enhanced grip, improved
+          breathability and excellent comfort, making it ideal for daily use.
+        </p>
         <Image
-        src={processMidImage}
-        alt="Close-up of hand-stitched web pattern in blue and red thread on a custom leather wrap steering wheel"
-        loading="lazy"
-        widths={[640, 1280]}
-        sizes="(max-width: 640px) 100vw, 50vw"
-        class="h-full max-w-[400px] object-cover mb-6 custom-featured-2"
-      />
+          src={processMidImage}
+          alt="Close-up of hand-stitched web pattern in blue and red thread on a custom leather wrap steering wheel"
+          loading="lazy"
+          widths={[640, 1280]}
+          sizes="(max-width: 640px) 100vw, 50vw"
+          class="custom-featured-2 mb-6 h-full max-w-[400px] object-cover"
+        />
         <h3 class="mb-2 font-bold">Alcantara®</h3>
-        <p class="mb-6">A premium suede-like material that delivers exceptional grip and a distinctive motorsport look. Perfect for performance-oriented drivers, though it requires a little more care to keep it looking its best.</p>
+        <p class="mb-6">
+          A premium suede-like material that delivers exceptional grip and a distinctive motorsport
+          look. Perfect for performance-oriented drivers, though it requires a little more care to
+          keep it looking its best.
+        </p>
         <h3 class="mb-2 font-bold">Custom Colours & Stitching</h3>
-        <p>Personalise your steering wheel with a wide selection of leather colours, contrast stitching, two-tone combinations and an optional 12 o'clock centre marker (GT stripe) for a sportier finish.</p>
-        </div>
+        <p>
+          Personalise your steering wheel with a wide selection of leather colours, contrast
+          stitching, two-tone combinations and an optional 12 o'clock centre marker (GT stripe) for
+          a sportier finish.
+        </p>
+      </div>
     </div>
   </section>
 
-   <section class="container mx-auto max-w-5xl px-4 py-20 sm:px-6">
+  <section class="container mx-auto max-w-5xl px-4 py-20 sm:px-6">
     <div class="flex w-full flex-col items-center justify-center gap-6">
-      <h2 class="text-2xl mb-0 font-bold">Steering Wheel Types We Wrap</h2>
-      <p class="text-center">We can restore and rewrap virtually every style of steering wheel, including:</p>
- <ul class="space-y-2 custom-list-width">
-          <li class="flex items-center gap-2">
-                <Icon
-                  name="mdi:checkbox-marked-circle-outline"
-                  class="h-4 w-4 shrink-0 text-red-600"
-                />
-                <span><strong>Standard round wheels:</strong> the most common design found across all makes and models.</span>
-              </li>
-                        <li class="flex items-center gap-2">
-                <Icon
-                  name="mdi:checkbox-marked-circle-outline"
-                  class="h-4 w-4 shrink-0 text-red-600"
-                />
-                <span><strong>Flat-bottomed "D-shaped" or thicker grip wheels:</strong> a sporty look built for performance-oriented driving.</span>
-              </li>
-                        <li class="flex items-center gap-2">
-                <Icon
-                  name="mdi:checkbox-marked-circle-outline"
-                  class="h-4 w-4 shrink-0 text-red-600"
-                />
-                <span><strong>Multi-function wheels with integrated controls:</strong> buttons for audio, cruise control and hands-free functions are carefully reinstalled and fully preserved.</span>
-              </li>
-                        <li class="flex items-center gap-2">
-                <Icon
-                  name="mdi:checkbox-marked-circle-outline"
-                  class="h-4 w-4 shrink-0 text-red-600"
-                />
-                <span><strong>Wood or chrome trimmed wheels:</strong> the original wood or trim accents can be preserved, or fully wrapped for a completely refreshed appearance.</span>
-              </li>
-        </ul>
-<p class="text-center">We work on all vehicle types, from Japanese and Korean makes to continental and luxury models, MPVs and commercial vans.</p>
+      <h2 class="mb-0 text-2xl font-bold">Steering Wheel Types We Wrap</h2>
+      <p class="text-center">
+        We can restore and rewrap virtually every style of steering wheel, including:
+      </p>
+      <ul class="custom-list-width space-y-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
+          <span
+            ><strong>Standard round wheels:</strong> the most common design found across all makes and
+            models.</span
+          >
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
+          <span
+            ><strong>Flat-bottomed "D-shaped" or thicker grip wheels:</strong> a sporty look built for
+            performance-oriented driving.</span
+          >
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
+          <span
+            ><strong>Multi-function wheels with integrated controls:</strong> buttons for audio, cruise
+            control and hands-free functions are carefully reinstalled and fully preserved.</span
+          >
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
+          <span
+            ><strong>Wood or chrome trimmed wheels:</strong> the original wood or trim accents can be
+            preserved, or fully wrapped for a completely refreshed appearance.</span
+          >
+        </li>
+      </ul>
+      <p class="text-center">
+        We work on all vehicle types, from Japanese and Korean makes to continental and luxury
+        models, MPVs and commercial vans.
+      </p>
     </div>
   </section>
 
@@ -191,7 +284,7 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
         loading="lazy"
         widths={[640, 1280]}
         sizes="(max-width: 640px) 100vw, 50vw"
-        class="h-full w-full object-cover custom-featured-2"
+        class="custom-featured-2 h-full w-full object-cover"
       />
     </div>
 
@@ -199,101 +292,158 @@ import processMidImage from '@/assets/process-mid-car-steering.webp';
       <div
         class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
       >
-        <h2 class="text-2xl font-bold mb-2">
-          Why Choose Five Star Auto Leather? 
-        </h2>
-        <p class="mb-6">Choosing the right specialist for a steering wheel leather wrap in Singapore comes down to pricing, turnaround, materials and workmanship. Here is how Five Star Auto Leather delivers on all four.</p>
+        <h2 class="mb-2 text-2xl font-bold">Why Choose Five Star Auto Leather?</h2>
+        <p class="mb-6">
+          Choosing the right specialist for a steering wheel leather wrap in Singapore comes down to
+          pricing, turnaround, materials and workmanship. Here is how Five Star Auto Leather
+          delivers on all four.
+        </p>
         <h3 class="mb-2 font-bold">Transparent Pricing</h3>
-        <p class="mb-6">Every steering wheel rewrap is quoted based on your wheel's design and your chosen material. No misleading "from" prices or hidden charges. Just fair, transparent pricing tailored to your vehicle.</p>
+        <p class="mb-6">
+          Every steering wheel rewrap is quoted based on your wheel's design and your chosen
+          material. No misleading "from" prices or hidden charges. Just fair, transparent pricing
+          tailored to your vehicle.
+        </p>
         <h3 class="mb-2 font-bold">Same-Day Turnaround, No Compromises</h3>
-        <p class="mb-6">Most steering wheel rewraps are completed within 4–5 hours. Throughout the process, the airbag, horn, paddle shifters, cruise control and multi-function steering controls are carefully removed, preserved and fully tested before handover.</p>
+        <p class="mb-6">
+          Most steering wheel rewraps are completed within 4–5 hours. Throughout the process, the
+          airbag, horn, paddle shifters, cruise control and multi-function steering controls are
+          carefully removed, preserved and fully tested before handover.
+        </p>
         <h3 class="mb-2 font-bold">Built for Singapore's Climate</h3>
-        <p class="mb-6">We use premium automotive upholstery materials that are heat and UV resistant, paired with high-performance adhesives where required. Designed to withstand Singapore's tropical climate, they're made to look and feel great for years to come.</p>
+        <p class="mb-6">
+          We use premium automotive upholstery materials that are heat and UV resistant, paired with
+          high-performance adhesives where required. Designed to withstand Singapore's tropical
+          climate, they're made to look and feel great for years to come.
+        </p>
         <h3 class="mb-2 font-bold">100% In-House Craftsmanship</h3>
-        <p>Every steering wheel is rewrapped by our experienced craftsmen at our Singapore workshop — never outsourced. From preparation and hand stitching to final installation, we maintain complete quality control and back our work with a workmanship warranty for your peace of mind.</p>
-        </div>
+        <p>
+          Every steering wheel is rewrapped by our experienced craftsmen at our Singapore workshop —
+          never outsourced. From preparation and hand stitching to final installation, we maintain
+          complete quality control and back our work with a workmanship warranty for your peace of
+          mind.
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
     <div class="flex w-full flex-col items-center justify-center gap-6">
-      <h2 class="text-2xl mb-0 font-bold">Before & After</h2>
-      <p class="mb-6">See what a proper steering wheel leather wrap looks like on real customer vehicles, from worn and peeling grips to a clean, tight finish, all done in our Singapore workshop.</p>
+      <h2 class="mb-0 text-2xl font-bold">Before & After</h2>
+      <p class="mb-6">
+        See what a proper steering wheel leather wrap looks like on real customer vehicles, from
+        worn and peeling grips to a clean, tight finish, all done in our Singapore workshop.
+      </p>
       <div class="grid w-full grid-cols-3 gap-4">
-        <div class="order-1"><Image
-        src={beforeAfter}
-        alt='Toyota Prius steering wheel before and after custom leather wrap steering wheel service'
-        loading='eager'
-        fetchpriority='high'
-        widths={[640, 1280]}
-        sizes='(max-width: 640px) 100vw, 50vw'
-        class="mx-auto object-cover"
-      /></div>
-      <div class="order-2">
-      <Image
-        src={beforeAfter2}
-        alt='Mercedes S320 steering wheel before and after steering wheel wrap service'
-        loading='eager'
-        fetchpriority='high'
-        widths={[640, 1280]}
-        sizes='(max-width: 640px) 100vw, 50vw'
-        class="mx-auto object-cover"
-      />
-      </div>
-      <div class="order-3">
-      <Image
-        src={beforeAfter3}
-        alt='BMW M4 steering wheel before and after steering wheel leather wrap Singapore service'
-        loading='eager'
-        fetchpriority='high'
-        widths={[640, 1280]}
-        sizes='(max-width: 640px) 100vw, 50vw'
-        class="mx-auto object-cover"
-      />
-      </div>
+        <div class="order-1">
+          <Image
+            src={beforeAfter}
+            alt="Toyota Prius steering wheel before and after custom leather wrap steering wheel service"
+            loading="eager"
+            fetchpriority="high"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="mx-auto object-cover"
+          />
+        </div>
+        <div class="order-2">
+          <Image
+            src={beforeAfter2}
+            alt="Mercedes S320 steering wheel before and after steering wheel wrap service"
+            loading="eager"
+            fetchpriority="high"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="mx-auto object-cover"
+          />
+        </div>
+        <div class="order-3">
+          <Image
+            src={beforeAfter3}
+            alt="BMW M4 steering wheel before and after steering wheel leather wrap Singapore service"
+            loading="eager"
+            fetchpriority="high"
+            widths={[640, 1280]}
+            sizes="(max-width: 640px) 100vw, 50vw"
+            class="mx-auto object-cover"
+          />
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-black w-full px-4 py-14 sm:px-6">
+  <section class="w-full bg-black px-4 py-14 sm:px-6">
     <div class="container mx-auto flex max-w-5xl flex-col justify-center gap-6">
-      <h2 class="text-2xl mb-6 font-bold text-white text-center">Frequently Asked Questions</h2>
-      <h3 class="text-white font-bold text-xl">Do I need to remove the steering wheel myself?</h3>
-      <p class="text-white mb-8">No. We take care of the entire process — from steering wheel removal and rewrapping to reinstallation and final testing. Simply bring your car to us.</p>
-      
-      <h3 class="text-white font-bold text-xl">Will my airbag still work after the rewrap?</h3>
-      <p class="text-white mb-8">Yes. The airbag is carefully removed and reinstalled during the process. We do not modify or interfere with the airbag deployment system, and all functions are checked before your vehicle is returned.</p>
-      
-      <h3 class="text-white font-bold text-xl">Will the new dashboard match my original colour?</h3>
-      <p class="text-white mb-8">We aim to achieve the closest possible match using our extensive range of automotive upholstery materials and colours. While we cannot always guarantee an exact factory match, we can usually achieve a finish that closely resembles your original interior.</p>
-    
-       <h3 class="text-white font-bold text-xl">Will my steering wheel controls still work after the rewrap?</h3>
-      <p class="text-white mb-8">Absolutely. All multi-function buttons, paddle shifters, horn, cruise control, and steering wheel controls are carefully handled to ensure everything works as intended.</p> 
+      <h2 class="mb-6 text-center text-2xl font-bold text-white">Frequently Asked Questions</h2>
+      <h3 class="text-xl font-bold text-white">Do I need to remove the steering wheel myself?</h3>
+      <p class="mb-8 text-white">
+        No. We take care of the entire process — from steering wheel removal and rewrapping to
+        reinstallation and final testing. Simply bring your car to us.
+      </p>
 
-      <h3 class="text-white font-bold text-xl">Can you make my steering wheel thicker?</h3>
-      <p class="text-white mb-8">Yes. If you prefer a chunkier grip, we can wrap over the existing steering wheel instead of removing the original covering (where suitable). This adds approximately 1.0-1.2 mm of material, giving the steering wheel a noticeably fuller feel.</p>
+      <h3 class="text-xl font-bold text-white">Will my airbag still work after the rewrap?</h3>
+      <p class="mb-8 text-white">
+        Yes. The airbag is carefully removed and reinstalled during the process. We do not modify or
+        interfere with the airbag deployment system, and all functions are checked before your
+        vehicle is returned.
+      </p>
 
-      <h3 class="text-white font-bold text-xl">How long does a steering wheel wrap take?</h3>
-      <p class="text-white mb-8">Most steering wheel rewraps are completed within 4–5 hours, so you can usually have your vehicle back the same day.</p>
-      
-      <h3 class="text-white font-bold text-xl">Can I customise the design?</h3>
-      <p class="text-white mb-8">Yes. You can choose from a wide range of materials, colours, stitching styles and even centre markers. From retaining the original factory look to creating something completely unique, we'll tailor the steering wheel to your preferences.</p>
+      <h3 class="text-xl font-bold text-white">Will the new dashboard match my original colour?</h3>
+      <p class="mb-8 text-white">
+        We aim to achieve the closest possible match using our extensive range of automotive
+        upholstery materials and colours. While we cannot always guarantee an exact factory match,
+        we can usually achieve a finish that closely resembles your original interior.
+      </p>
+
+      <h3 class="text-xl font-bold text-white">
+        Will my steering wheel controls still work after the rewrap?
+      </h3>
+      <p class="mb-8 text-white">
+        Absolutely. All multi-function buttons, paddle shifters, horn, cruise control, and steering
+        wheel controls are carefully handled to ensure everything works as intended.
+      </p>
+
+      <h3 class="text-xl font-bold text-white">Can you make my steering wheel thicker?</h3>
+      <p class="mb-8 text-white">
+        Yes. If you prefer a chunkier grip, we can wrap over the existing steering wheel instead of
+        removing the original covering (where suitable). This adds approximately 1.0-1.2 mm of
+        material, giving the steering wheel a noticeably fuller feel.
+      </p>
+
+      <h3 class="text-xl font-bold text-white">How long does a steering wheel wrap take?</h3>
+      <p class="mb-8 text-white">
+        Most steering wheel rewraps are completed within 4–5 hours, so you can usually have your
+        vehicle back the same day.
+      </p>
+
+      <h3 class="text-xl font-bold text-white">Can I customise the design?</h3>
+      <p class="mb-8 text-white">
+        Yes. You can choose from a wide range of materials, colours, stitching styles and even
+        centre markers. From retaining the original factory look to creating something completely
+        unique, we'll tailor the steering wheel to your preferences.
+      </p>
     </div>
   </section>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </BaseLayout>
 
 <style>
   h2 {
     font-family: 'RacingSansOne', var(--font-sans);
   }
-  .custom-featured{
-        max-height: 750px;
+  .custom-featured {
+    max-height: 750px;
     object-position: center;
   }
-  .custom-featured-2{
+  .custom-featured-2 {
     max-height: 800px;
     object-position: top;
   }
