@@ -4,15 +4,12 @@ import { Image, getImage } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import seatImage from '@/assets/seat.png';
-import customizationImage from '@/assets/customization.png';
-import repairImage from '@/assets/repair.jpg';
 import upholsteryImage from '@/assets/upholstery.jpg';
 import businessInNumbersImage from '@/assets/business-in-numbers.jpg';
 import vanImage from '@/assets/van.jpg';
 import steeringRewrap from '@/assets/home-steering-rewrap.webp';
 import roofLining from '@/assets/home-roof-lining.webp';
 import dashboardRestore from '@/assets/home-dashboard-restore.webp';
-import homepageMidImage from '@/assets/homepage-mid-image.webp';
 import worksRoof1 from '@/assets/home-latest-roof-lining-1.webp';
 import worksRoof2 from '@/assets/home-latest-roof-lining-2.webp';
 import worksRoof3 from '@/assets/home-latest-roof-lining-3.webp';
@@ -228,35 +225,6 @@ const whyReasons = [
           ))
         }
       </ul>
-    </div>
-  </section>
-
-  <!-- Get a Quote Now -->
-  <section class="grid grid-cols-1 sm:grid-cols-2">
-    <div class="flex h-full flex-col justify-center px-4 py-8 sm:px-6 md:px-20">
-      <h2 class="mb-6 text-center text-2xl sm:text-left">Get a Quote Now</h2>
-      <p class="mb-6">
-        Ready to refresh your car interior? Bring your car to Five Star Auto Leather for a free
-        assessment and quotation.
-      </p>
-      <a
-        href="/contact-us"
-        class="inline-block w-36 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
-      >
-        Get in Touch
-      </a>
-    </div>
-
-    <div class="px-4 sm:py-4">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2ssg!4v1766728446154!5m2!1sen!2ssg"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="min-h-[400px] w-full rounded-lg"></iframe>
     </div>
   </section>
 
@@ -502,42 +470,38 @@ const whyReasons = [
     </div>
   </section>
 
-  <section class="w-full bg-black px-4 py-8 sm:px-6">
-    <div class="container mx-auto flex w-full flex-col items-center justify-center gap-2">
-      <h2 class="mb-0 text-2xl font-bold text-white">Get a Quote Now!</h2>
-      <p class="text-white">
+  <!-- Get a Quote Now -->
+  <section class="grid grid-cols-1 bg-black text-white sm:grid-cols-2">
+    <div
+      class="flex h-full flex-col items-center justify-center px-4 py-8 text-center sm:items-start sm:px-6 sm:text-left md:px-20"
+    >
+      <h2 class="text-2xl">Get a Quote Now!</h2>
+      <p class="mt-8">
         Ready to refresh your car interior? Bring your car to Five Star Auto Leather for a free
         assessment and quotation.
       </p>
-      <p class="text-white">
+      <p class="mt-2">
         Full upholstery, partial seat repairs, steering wheel wraps, roof linings, and dashboards
         all done in our Singapore workshop.
       </p>
-      <div class="mt-8 flex w-full items-center justify-center">
-        <p class="font-bold text-white">
-          Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a
-            class="text-white"
-            href="tel:+6587909677">8790 9677</a
-          >
-        </p>
-        <a
-          href="https://www.google.com/maps?cid=13495479379412370960"
-          class="ml-6 inline-block w-50 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
-        >
-          Find Us
-        </a>
-      </div>
+      <a
+        href="/contact-us"
+        class="mt-8 inline-block w-36 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
+      >
+        Get in Touch
+      </a>
     </div>
-  </section>
 
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph"
-    width="100%"
-    height="400"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2ssg!4v1766728446154!5m2!1sen!2ssg"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="min-h-[400px] w-full"></iframe>
+  </section>
 </BaseLayout>
 
 <style>
