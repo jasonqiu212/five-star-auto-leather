@@ -3,13 +3,13 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { Image, getImage } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
-import seatImage from '@/assets/seat.png';
-import upholsteryImage from '@/assets/upholstery.jpg';
-import businessInNumbersImage from '@/assets/business-in-numbers.jpg';
-import vanImage from '@/assets/van.jpg';
-import steeringRewrap from '@/assets/home-steering-rewrap.webp';
-import roofLining from '@/assets/home-roof-lining.webp';
-import dashboardRestore from '@/assets/home-dashboard-restore.webp';
+import seatImage from '@/assets/index/seat.png';
+import upholsteryImage from '@/assets/index/upholstery.jpg';
+import steeringImage from '@/assets/index/steering.jpg';
+import roofLiningImage from '@/assets/index/roof-lining.jpg';
+import dashboardImage from '@/assets/index/dashboard.jpg';
+import businessInNumbersImage from '@/assets/index/business-in-numbers.jpg';
+import vanImage from '@/assets/index/van.jpg';
 import worksRoof1 from '@/assets/home-latest-roof-lining-1.webp';
 import worksRoof2 from '@/assets/home-latest-roof-lining-2.webp';
 import worksRoof3 from '@/assets/home-latest-roof-lining-3.webp';
@@ -49,20 +49,20 @@ const whatWeDoItems = [
     title: 'Steering Wheel Rewrap',
     description:
       'Restore grip, comfort and driving feel with a premium leather steering wheel wrap.',
-    imageUrl: steeringRewrap,
+    imageUrl: steeringImage,
     imageAlt: 'Leathers used in car seat upholstery',
   },
   {
     title: 'Roof Lining Rewrap',
     description: 'Restore sagging headliners with a clean, durable roof lining rewrap.',
-    imageUrl: roofLining,
+    imageUrl: roofLiningImage,
     imageAlt: 'Sewing machine used in creating car leather seats',
   },
   {
     title: 'Dashboard & Door Panel Repair',
     description:
       'Repair cracked, peeling, faded or sun-damaged dashboards and door panels for a clean, restored finish.',
-    imageUrl: dashboardRestore,
+    imageUrl: dashboardImage,
     imageAlt: 'Dashboard',
   },
 ];
