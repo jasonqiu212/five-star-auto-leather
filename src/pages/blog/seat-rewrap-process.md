@@ -22,7 +22,7 @@ If you’re in a hurry, check out our reel below for a quick visual overview. Bu
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
-    className="rounded-lg mx-auto shadow-lg"
+    class="rounded-lg mx-auto shadow-lg"
 > </iframe>
 
 ## Step 1: Consultation — 15 Minutes is All We Need
