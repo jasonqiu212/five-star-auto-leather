@@ -96,7 +96,7 @@ import sunroofImage from '@/assets/car-roof-lining-repair/sunroof.png';
   </section>
 
   <section class="mx-auto grid max-w-7xl grid-cols-1 px-4 py-8 sm:px-6 lg:grid-cols-12">
-    <div class="mx-auto aspect-9/16 w-full max-w-[300px] overflow-hidden sm:col-span-4">
+    <div class="mx-auto aspect-9/16 w-full max-w-[300px] overflow-hidden lg:col-span-4">
       <iframe
         src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1009400853873591&show_text=false"
         title="Roof Lining Restoration Process"
@@ -107,7 +107,7 @@ import sunroofImage from '@/assets/car-roof-lining-repair/sunroof.png';
         class="h-full w-full rounded-lg shadow-lg"></iframe>
     </div>
 
-    <div class="mt-6 ml-0 flex flex-col justify-center sm:col-span-8 lg:mt-0 lg:ml-6">
+    <div class="mt-6 ml-0 flex flex-col justify-center lg:col-span-8 lg:mt-0 lg:ml-6">
       <h2 class="mb-2 text-center text-2xl lg:text-left">Our Roof Lining Restoration Process</h2>
       <p class="mb-8 text-center lg:text-left">
         See how the restoration is done in our workshop. Watch our roof lining restoration process.
@@ -138,28 +138,24 @@ import sunroofImage from '@/assets/car-roof-lining-repair/sunroof.png';
     </div>
 
     <div class="col-span-full mt-8 grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
-      <div>
-        <Image
-          src={processShapeImage}
-          alt="Technician smoothing fresh headliner fabric onto a moulded panel during car roof lining repair"
-          loading="eager"
-          fetchpriority="high"
-          widths={[640, 1280]}
-          sizes="(max-width: 640px) 100vw, 50vw"
-          class="h-full w-full rounded-lg bg-black object-cover"
-        />
-      </div>
-      <div>
-        <Image
-          src={processCutImage}
-          alt="Technician trimming openings from the back of the moulded roof board during car headliner repair"
-          loading="eager"
-          fetchpriority="high"
-          widths={[640, 1280]}
-          sizes="(max-width: 640px) 100vw, 50vw"
-          class="h-full w-full rounded-lg bg-black object-cover"
-        />
-      </div>
+      <Image
+        src={processShapeImage}
+        alt="Technician smoothing fresh headliner fabric onto a moulded panel during car roof lining repair"
+        loading="eager"
+        fetchpriority="high"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full rounded-lg bg-black object-cover"
+      />
+      <Image
+        src={processCutImage}
+        alt="Technician trimming openings from the back of the moulded roof board during car headliner repair"
+        loading="eager"
+        fetchpriority="high"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full rounded-lg bg-black object-cover"
+      />
     </div>
   </section>
 
