@@ -10,24 +10,24 @@ const links = [
     label: 'Services',
     items: [
       {
-        key: 'car-leather-seat-rewrap',
-        link: '/car-leather-seat-rewrap',
-        label: 'Car Leather Seat Rewrap',
+        key: 'car-leather-seat',
+        link: '/car-leather-seat',
+        label: 'Car Leather Seat',
       },
       {
-        key: 'steering-wheel-rewrap',
-        link: '/steering-wheel-rewrap',
-        label: 'Steering Wheel Rewrap',
+        key: 'steering-wheel',
+        link: '/steering-wheel',
+        label: 'Steering Wheel',
       },
       {
-        key: 'car-roof-lining-repair',
-        link: '/car-roof-lining-repair',
-        label: 'Car Roof Lining Repair',
+        key: 'roof-lining',
+        link: '/roof-lining',
+        label: 'Roof Lining',
       },
       {
-        key: 'dashboard-leather-repair',
-        link: '/dashboard-leather-repair',
-        label: 'Dashboard Leather Repair',
+        key: 'dashboard',
+        link: '/dashboard',
+        label: 'Dashboard',
       },
     ],
   },
@@ -66,7 +66,7 @@ const currentPath = Astro.url.pathname;
                   />
                 </summary>
 
-                <div class="absolute top-full right-0 z-10 mt-3 min-w-56 rounded-md bg-white p-2 shadow-lg ring-1 ring-black/5">
+                <div class="absolute top-full right-0 z-10 mt-3 min-w-40 rounded-md bg-white p-2 shadow-lg ring-1 ring-black/5">
                   {link.items.map((item) => (
                     <a
                       href={item.link}
