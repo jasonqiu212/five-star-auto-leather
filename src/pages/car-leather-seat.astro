@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import carSeatImage from '@/assets/car-leather-seat/car-seat.png';
+import rewrapImage from '@/assets/car-leather-seat/rewrap.jpg';
 import stitchingImage from '@/assets/car-leather-seat/stitching.jpg';
 import HondaOdysseyImage from '@/assets/car-leather-seat/honda-odyssey-seats.jpg';
 import hondaSeatsRoseImage from '@/assets/car-leather-seat/honda-seats-rose.png';
@@ -121,10 +122,10 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
   </section>
 
   <section class="grid grid-cols-1 lg:grid-cols-12">
-    <div class="lg:col-span-6">
+    <div class="order-1 lg:order-2 lg:col-span-6">
       <Image
-        src={stitchingImage}
-        alt="Close up stitching trim with sewing machine during car seat repair upholstery process"
+        src={rewrapImage}
+        alt="Close up of car seat rewrap process"
         loading="lazy"
         widths={[640, 1280]}
         sizes="(max-width: 640px) 100vw, 50vw"
@@ -132,7 +133,7 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
       />
     </div>
 
-    <div class="flex flex-col justify-center px-4 py-8 lg:col-span-6 lg:px-16">
+    <div class="order-2 flex flex-col justify-center px-4 py-8 lg:order-1 lg:col-span-6 lg:px-16">
       <h2 class="mb-2 text-center text-2xl lg:text-left">Our Auto Interior Rewrap Process</h2>
       <p class="mb-8 text-center lg:text-left">
         Our car dashboard leather rewrap process is handled entirely in-house, from removal and
@@ -186,77 +187,84 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
     </div>
   </section>
 
-  <section class="bg-black">
-    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 text-white sm:px-6">
-      <div class="text-center">
-        <h2 class="text-2xl">How We Do Targeted Car Leather Repair</h2>
-        <p class="mt-2">
-          Got a perfectly good car seat with just a bit of leather damage, like a hole on the
-          driver's bolster or a small tear along the seam? There's no need to replace the whole
-          seat. At Five Star, we repair just the damaged spot, so you save on cost and keep the rest
-          of the seat intact.
-        </p>
-      </div>
+  <section class="grid grid-cols-1 lg:grid-cols-2">
+    <Image
+      src={stitchingImage}
+      alt="Close up stitching trim with sewing machine during car seat repair upholstery process"
+      loading="lazy"
+      widths={[640, 1280]}
+      sizes="(max-width: 640px) 100vw, 50vw"
+      class="h-full w-full object-cover"
+    />
+
+    <div class="flex flex-col justify-center px-4 py-8 lg:px-16">
+      <h2 class="mb-2 text-center text-2xl lg:text-left">How We Do Targeted Car Leather Repair</h2>
+      <p class="mb-8 text-center lg:text-left">
+        Got a perfectly good car seat with just a bit of leather damage, like a hole on the driver's
+        bolster or a small tear along the seam? There's no need to replace the whole seat. At Five
+        Star, we repair just the damaged spot, so you save on cost and keep the rest of the seat
+        intact.
+      </p>
 
       <div>
-        <h3 class="text-left text-xl font-bold">Step 1: Cut Out the Damaged Piece</h3>
-        <p class="mt-2">
+        <h3 class="mb-2 font-bold">Step 1: Cut Out the Damaged Piece</h3>
+        <p class="mb-4">
           We mark out the affected area and carefully cut away the damaged patch, keeping the
           surrounding leather untouched.
         </p>
       </div>
 
       <div>
-        <h3 class="text-left text-xl font-bold">Step 2: Stitch in New Leather</h3>
-        <p class="mt-2">
+        <h3 class="mb-2 font-bold">Step 2: Stitch in New Leather</h3>
+        <p class="mb-4">
           Our in-house craftsman cuts a matching piece of premium vegan leather and stitches it in,
           blending with the existing seat design and stitch pattern.
         </p>
       </div>
 
       <div>
-        <h3 class="text-left text-xl font-bold">Step 3: Refit and Inspect</h3>
-        <p class="mt-2">
+        <h3 class="mb-2 font-bold">Step 3: Refit and Inspect</h3>
+        <p class="mb-2">
           The repaired panel is refitted onto the seat frame, test-fitted, and inspected before your
           car leaves the workshop.
         </p>
-        <p class="mt-2">
+        <p class="mb-8">
           Watch our <a
             href="https://www.facebook.com/share/r/1D8hfZkpBH/"
             target="_blank"
             rel="noopener noreferrer"
-            class="font-bold text-gray-400 underline hover:text-gray-100"
+            class="font-bold text-gray-600 underline hover:text-gray-900"
             >step-by-step targeted car leather rewrap</a
           > for a closer look at how the patch work is done in our workshop.
         </p>
       </div>
 
       <div>
-        <h3 class="text-left text-xl font-bold">A Few Repair Tips Worth Knowing</h3>
-        <ul class="mt-2 space-y-2">
+        <h3 class="mb-2 font-bold">A Few Repair Tips Worth Knowing</h3>
+        <ul class="space-y-2">
           <li class="flex items-center gap-2">
-            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0" />
+            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
             <span
               >Black seats are the easiest to match. Beiges and browns are the hardest, as shade
               differences show up more under natural light.</span
             >
           </li>
           <li class="flex items-center gap-2">
-            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0" />
+            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
             <span
               >Repair is worth it only for small damage. If wear is spread across the seat, a
               partial or full rewrap gives a cleaner result.</span
             >
           </li>
           <li class="flex items-center gap-2">
-            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0" />
+            <Icon name="mdi:checkbox-marked-circle-outline" class="h-4 w-4 shrink-0 text-red-600" />
             <span
               >Spray painting works for surface fading, but it may not last on high-touch areas like
               the driver's bolster.</span
             >
           </li>
         </ul>
-        <p class="mt-2">
+        <p class="mt-8">
           Not sure if your car qualifies? Send us a picture of the damaged area for a quick
           preliminary assessment, or drop by our Ang Mo Kio workshop.
         </p>
@@ -361,7 +369,7 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
     />
 
     <div class="flex h-full flex-col justify-center px-4 py-8 lg:px-16">
-      <h2 class="mb-8 text-center text-2xl">Why Choose Five Star Auto Leather</h2>
+      <h2 class="mb-8 text-center text-2xl lg:text-left">Why Choose Five Star Auto Leather</h2>
 
       <h3 class="mb-2 font-bold">Transparent Pricing</h3>
       <p class="mb-4">
