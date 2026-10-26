@@ -7,7 +7,8 @@ import roofLiningImage from '@/assets/roof-lining/roof-lining.jpg';
 import processShapeImage from '@/assets/roof-lining/process-shape.jpg';
 import processCutImage from '@/assets/roof-lining/process-cut.jpg';
 import roofRestoreImage from '@/assets/roof-lining/roof-restore.jpg';
-import beforeAfterToyotaPriusImage from '@/assets/roof-lining/before-after-toyota-prius.png';
+import beforeAfterToyotaImage from '@/assets/roof-lining/before-after-toyota.png';
+import beforeAfterVolvoImage from '@/assets/roof-lining/before-after-volvo.png';
 import sunroofImage from '@/assets/roof-lining/sunroof.png';
 ---
 
@@ -235,17 +236,25 @@ import sunroofImage from '@/assets/roof-lining/sunroof.png';
   <section class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-4 py-8 sm:px-6">
     <h2 class="text-2xl">Before & After</h2>
 
-    <!-- TODO: add more? 
-    is this toyota -->
-    <Image
-      src={beforeAfterToyotaPriusImage}
-      alt="Toyota Prius roof panel before and after car headliner repair"
-      loading="eager"
-      fetchpriority="high"
-      widths={[640, 1280]}
-      sizes="(max-width: 640px) 100vw, 50vw"
-      class="mx-auto max-w-2xl rounded-lg object-cover"
-    />
+    <div class="grid w-full gap-3 lg:grid-cols-2">
+      <Image
+        src={beforeAfterToyotaImage}
+        alt="Toyota Prius roof panel before and after car headliner repair"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="rounded-lg object-cover"
+      />
+
+      <Image
+        src={beforeAfterVolvoImage}
+        alt="Volvo V40 roof panel before and after car headliner repair"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="rounded-lg object-cover"
+      />
+    </div>
   </section>
 
   <section class="bg-black">
