@@ -1,0 +1,335 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+
+import dashboardRepairImage from '@/assets/dashboard/dashboard-repair.jpg';
+import processSpecialistImage from '@/assets/dashboard/process-specialist.jpg';
+import processDismantledImage from '@/assets/dashboard/process-dismantled.jpg';
+import processFittingImage from '@/assets/dashboard/process-fitting.jpg';
+import dashboardRewrapImage from '@/assets/dashboard/dashboard-rewrap.jpeg';
+import beforeAfterBmwImage from '@/assets/dashboard/before-after-bmw.png';
+import beforeAfterHyundaiImage from '@/assets/dashboard/before-after-hyundai.png';
+---
+
+<BaseLayout>
+  <Fragment slot="head">
+    <title>Car Dashboard Leather Repair in Singapore | Five Star Auto Leather</title>
+    <meta
+      name="description"
+      content="Cracked, peeling, or sun-damaged dashboard? We provide professional car dashboard leather repair and reupholstery services in Singapore. Book now!"
+    />
+  </Fragment>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2">
+    <div class="order-2 sm:order-1">
+      <Image
+        src={dashboardRepairImage}
+        alt="Honda Stepwagon Spada dashboard finished with two-tone black and blue car dashboard leather repair"
+        loading="eager"
+        fetchpriority="high"
+        widths={[800]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="custom-featured h-full w-full bg-black object-cover"
+      />
+    </div>
+
+    <div class="order-1 flex items-center justify-center bg-black px-4 py-8 sm:order-2 sm:px-16">
+      <div
+        class="title-slide-up flex h-full flex-col items-center justify-center text-center text-white sm:items-start sm:text-left"
+      >
+        <h1 class="text-4xl">Professional Car Dashboard Leather Repair in Singapore</h1>
+        <p class="mt-2">
+          Singapore's UV rays and heat cause your dashboard to crack, bubble or peel. Five Star
+          reupholsters dashboards using premium materials matched to your vehicle. We restore
+          dashboards to showroom quality, helping protect your car's resale value.
+        </p>
+        <a
+          href="/contact-us"
+          class="mt-8 inline-block w-36 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium transition-colors hover:bg-red-600"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-4 py-8 sm:px-6">
+    <div class="text-center">
+      <h2 class="text-2xl">The Problem: Why Dashboards Deteriorate</h2>
+      <p class="mt-2">
+        Singapore's tropical climate is harsh on interior materials. Here's what typically happens:
+      </p>
+    </div>
+
+    <table class="w-full border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 px-4 py-3 text-left">Symptom</th>
+          <th class="border border-gray-300 px-4 py-3 text-left">Cause</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-4 py-3">Cracking on the top surface</td>
+          <td class="border border-gray-300 px-4 py-3"
+            >Prolonged UV exposure hardens and shrinks the leather or PVC surface</td
+          >
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-3">Bubbling or peeling near the windscreen</td>
+          <td class="border border-gray-300 px-4 py-3"
+            >Heat causes adhesive to fail, especially on afternoon-facing dashboards</td
+          >
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-3">Fading or discolouration</td>
+          <td class="border border-gray-300 px-4 py-3"
+            >Sunlight bleaches dyes unevenly, leaving patchy colour</td
+          >
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-3">Sticky or gummy surface</td>
+          <td class="border border-gray-300 px-4 py-3"
+            >Lower-quality dashboard materials degrading in heat</td
+          >
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-3">Curling edges near window seals</td>
+          <td class="border border-gray-300 px-4 py-3">Thermal expansion over time</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="text-center">
+      Most factory dashboards use a thin layer of leather or PVC bonded over foam. That foam breaks
+      down in 5 to 8 years depending on sun exposure. All these issues are fixable.
+    </p>
+  </section>
+
+  <section class="grid grid-cols-1 lg:grid-cols-12">
+    <div class="lg:col-span-6">
+      <Image
+        src={processSpecialistImage}
+        alt="Specialist installing a newly wrapped Hyundai i30 dashboard back onto the vehicle frame during car dashboard leather repair"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col justify-center px-4 py-8 lg:col-span-6 lg:px-16">
+      <h2 class="mb-2 text-center text-2xl lg:text-left">Our Dashboard Restoration Process</h2>
+      <p class="mb-8 text-center lg:text-left">
+        Our car dashboard leather repair process is handled entirely in-house, from removal and
+        preparation to the final quality check. Watch how a full rewrap is done at Five Star Auto
+        Leather.
+      </p>
+      <h3 class="mb-2 font-bold">Step 1: Free Assessment & Quote</h3>
+      <p class="mb-4">
+        Bring your vehicle in for a complimentary dashboard assessment. Our specialists will inspect
+        your dashboard's condition and provide a customised quotation based on its material, damage
+        severity, and the complexity of dismantling and reinstallation.
+      </p>
+      <h3 class="mb-2 font-bold">Step 2: Surface Preparation</h3>
+      <p class="mb-4">
+        Before rewrapping, the dashboard is thoroughly cleaned and degreased so the new material
+        adheres properly. Worn, peeling or damaged areas are carefully sanded and prepared. Where
+        necessary, cracks and deeper imperfections are repaired using a specialised filler compound
+        to create a smooth, even surface.
+      </p>
+      <h3 class="mb-2 font-bold">Step 3: Precision Rewrap</h3>
+      <p class="mb-4">
+        Using high-temperature resistant and formaldehyde-free industrial adhesives designed for
+        Singapore's tropical climate, we apply the new material carefully for a smooth, wrinkle-free
+        finish. Every section is carefully bonded to eliminate bubbles, ripples and lifting.
+      </p>
+      <h3 class="mb-2 font-bold">Step 4: Reassembly & Quality Check</h3>
+      <p class="mb-4">
+        Once the rewrap is complete, all air vents, buttons, trim pieces and sensors are carefully
+        reinstalled. We carry out a full quality inspection covering fitment, alignment, finish and
+        colour consistency before handing the vehicle back to you.
+      </p>
+      <p>
+        <strong>Typical turnaround:</strong> 2–3 working days, depending on the extent of damage and
+        the complexity of dashboard removal and reinstallation
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="col-span-full mx-auto grid w-full max-w-7xl grid-cols-1 gap-3 px-4 py-8 sm:grid-cols-2 sm:px-6"
+  >
+    <Image
+      src={processDismantledImage}
+      alt="Fully dismantled Hyundai dashboard and centre console exposed for car dashboard leather repair"
+      loading="eager"
+      fetchpriority="high"
+      widths={[640, 1280]}
+      sizes="(max-width: 640px) 100vw, 50vw"
+      class="h-full w-full rounded-lg bg-black object-cover"
+    />
+    <Image
+      src={processFittingImage}
+      alt="Technician's hands fitting control buttons into a freshly wrapped suede-textured dashboard during car dashboard leather repair"
+      loading="eager"
+      fetchpriority="high"
+      widths={[640, 1280]}
+      sizes="(max-width: 640px) 100vw, 50vw"
+      class="h-full w-full rounded-lg bg-black object-cover"
+    />
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-2">
+    <div class="flex flex-col justify-center px-4 py-8 md:px-16">
+      <h2 class="mb-2 text-center text-2xl md:text-left">Why Choose Five Star Auto Leather?</h2>
+      <p class="mb-8 text-center md:text-left">
+        Choosing the right specialist for car dashboard leather repair means looking at how a
+        workshop prices its work, manages your car's downtime, sources its materials, and controls
+        quality. Five Star Auto Leather does all of this in-house.
+      </p>
+      <h3 class="mb-2 font-bold">Transparent Pricing</h3>
+      <p class="mb-4">
+        Every dashboard rewrap is individually quoted based on your vehicle model, dashboard
+        condition, chosen material and the complexity of the work involved. No misleading "from"
+        prices or hidden charges — just fair, transparent pricing tailored to your vehicle.
+      </p>
+      <h3 class="mb-2 font-bold">Minimising Downtime</h3>
+      <p class="mb-4">
+        Dashboard rewrapping is one of the more labour-intensive interior restoration jobs and
+        typically takes 2–3 working days (longer for certain luxury and supercar models). If you're
+        also reupholstering your seats, steering wheel or other interior components, we'll complete
+        everything together whenever possible to minimise your vehicle's downtime.
+      </p>
+      <h3 class="mb-2 font-bold">Built for Singapore's Climate</h3>
+      <p class="mb-4">
+        We use premium automotive upholstery materials that are heat and UV resistant, paired with
+        high-performance adhesives where required. Designed to withstand Singapore's tropical
+        climate, your newly rewrapped dashboard is built to maintain its appearance and durability
+        for years to come.
+      </p>
+      <h3 class="mb-2 font-bold">100% In-House Craftsmanship</h3>
+      <p>
+        Every dashboard is rewrapped by our experienced craftsmen at our Singapore workshop — never
+        outsourced. From careful preparation and precision rewrap to final installation, we maintain
+        complete quality control and back our work with a workmanship warranty for your peace of
+        mind.
+      </p>
+    </div>
+
+    <Image
+      src={dashboardRewrapImage}
+      alt="Toyota Corolla Cross interior with car dashboard leather repair in rich caramel, complemented by matching front seat car upholstery"
+      loading="lazy"
+      widths={[640, 1280]}
+      sizes="(max-width: 640px) 100vw, 50vw"
+      class="h-full w-full object-cover"
+    />
+  </section>
+
+  <section class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-4 py-8 sm:px-6">
+    <h2 class="text-2xl">Before & After</h2>
+
+    <div class="grid w-full gap-3 sm:grid-cols-2">
+      <Image
+        src={beforeAfterBmwImage}
+        alt="BMW 630i dashboard before and after car dashboard leather repair, showing removal of cracked red leather and installation of a fresh black suede-textured finish"
+        loading="eager"
+        fetchpriority="high"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="w-full rounded-lg object-cover"
+      />
+      <Image
+        src={beforeAfterHyundaiImage}
+        alt="Hyundai i30 dashboard before and after car dashboard leather repair, transforming a cracked factory finish into a premium black suede-textured surface"
+        loading="eager"
+        fetchpriority="high"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="w-full rounded-lg object-cover"
+      />
+    </div>
+  </section>
+
+  <section class="bg-black">
+    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-8 text-white sm:px-6">
+      <h2 class="text-center text-2xl">Frequently Asked Questions</h2>
+
+      <div>
+        <h3 class="font-bold">Do you have to remove the entire dashboard to rewrap it?</h3>
+        <p class="mt-4">
+          Yes, in most cases. Removing the dashboard allows us to properly prepare the surface and
+          wrap it seamlessly around edges and contours, resulting in a much cleaner, longer-lasting
+          finish. This is also why dashboard rewrapping is one of the most labour-intensive interior
+          upholstery services.
+        </p>
+        <p class="mt-4">
+          For certain vehicles where only a removable trim section is damaged, we may only need to
+          remove that specific panel instead of the entire dashboard.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">How long does dashboard rewrapping take?</h3>
+        <p class="mt-4">
+          Most dashboard rewraps take 2–3 working days. Luxury vehicles, supercars and models with
+          more complex dashboard designs may require additional time due to the greater dismantling
+          complexity and more intricate craftsmanship involved.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Will the new dashboard match my original colour?</h3>
+        <p class="mt-4">
+          We aim to achieve the closest possible match using our extensive range of automotive
+          upholstery materials and colours. While we cannot always guarantee an exact factory match,
+          we can usually achieve a finish that closely resembles your original interior.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Can I change my dashboard to a different colour?</h3>
+        <p class="mt-4">
+          Absolutely. Dashboard rewrapping gives you the freedom to customise your interior to match
+          your seats, steering wheel, door panels or your personal style.
+        </p>
+        <p class="mt-4">
+          However, because the dashboard sits directly beneath the windscreen, we generally
+          recommend darker or more muted colours to minimise reflections and glare while driving.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Is dashboard rewrapping cheaper than replacing the dashboard?</h3>
+        <p class="mt-4">Not necessarily. The answer depends on your vehicle.</p>
+        <p class="mt-4">
+          Dashboard rewrapping is a highly labour-intensive process involving dismantling, surface
+          preparation, template making, upholstery fabrication, stitching, wrapping and
+          reinstallation. For some vehicles, especially where replacement dashboards are readily
+          available, replacement may cost a similar amount or even less.
+        </p>
+        <p class="mt-4">
+          However, for many premium, older or discontinued models where replacement dashboards are
+          expensive or difficult to source, rewrapping can be the more practical and cost-effective
+          option. During our assessment, we'll be happy to advise which solution makes the most
+          sense for your vehicle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2ssg!4v1766728446154!5m2!1sen!2ssg"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</BaseLayout>
+
+<style>
+  h2 {
+    font-family: 'RacingSansOne', var(--font-sans);
+  }
+</style>
