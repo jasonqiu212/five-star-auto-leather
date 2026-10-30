@@ -12,7 +12,7 @@ A modern website for [Five Star Auto Leather](https://www.fivestarautoleather.co
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (v20.19.5 as specified in `.nvmrc`)
+- **Node.js** (v22.23.3 as specified in `.nvmrc`)
 - **pnpm** (package manager)
 
 ### Using nvm (recommended)
@@ -23,7 +23,7 @@ If you use [nvm](https://github.com/nvm-sh/nvm), the correct Node.js version wil
 nvm use
 ```
 
-This will use the version specified in the `.nvmrc` file (v20.19.2).
+This will use the version specified in the `.nvmrc` file.
 
 ### Installing pnpm
 
@@ -38,7 +38,7 @@ npm install -g pnpm
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/jasonqiu212/five-star-auto-leather-v1.git
+git clone https://github.com/jasonqiu212/five-star-auto-leather.git
 cd five-star-auto-leather
 ```
 

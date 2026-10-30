@@ -1,0 +1,387 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HeroTitle from '@/components/HeroTitle.astro';
+import { Image, getImage } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+import carSeat from '@/assets/car-seat-featured.webp';
+import seatProcess from '@/assets/car-seat-rewrap-process.webp';
+import veganLeather from '@/assets/premium-vegan-leather.webp';
+import whyChoose from '@/assets/why-choose-car-seats.webp';
+import beforeAfter1 from '@/assets/before-after-car-seat-1.webp';
+import beforeAfter2 from '@/assets/before-after-car-seat-2.webp';
+import beforeAfter3 from '@/assets/before-after-car-seat-3.webp';
+---
+
+<BaseLayout>
+<Fragment slot="head">
+    <title>Car Leather Seat Interior Repair & Rewrap Singapore | Five Star Auto Leather</title>
+    <meta
+      name="description"
+      content="Trusted car interior leather seat repair and rewrap in Singapore with vegan-only man-made materials, in-house custom production, and 20 years of workmanship."
+    />
+  </Fragment>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2">
+    <div class="order-2 sm:order-1">
+      <Image
+        src={carSeat}
+        alt='Mercedes CLA180 seats rewrap in Moonlight White leather showcasing refreshed auto interior repair finish'
+        loading='eager'
+        fetchpriority='high'
+        widths={[800]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="h-full w-full bg-black object-cover custom-featured"
+      />
+    </div>
+
+    <div class="order-1 flex items-center justify-center bg-black px-4 py-8 sm:order-2 sm:px-16">
+      <div
+        class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
+      >
+        <h1 class="text-white text-4xl font-bold">
+          Car Interior Leather Seat Repair and Rewrap Services in Singapore
+        </h1>
+        <p class="mt-8 text-white">
+       Are your car seats cracked, peeling or worn? Five Star specialises in car seat rewrap and repair backed by more than 20 years of hands-on work in Singapore. Our in-house services restore comfort and help protect resale value.
+        </p>
+        <div class="flex mt-8 w-full justify-start items-center">
+        <p class="text-white">
+        Call us: <a class="text-white" href="tel:+6591729570">9172 9570</a> / <a class="text-white" href="tel:+6587909677">8790 9677</a>
+        </p>
+        <a
+          href="https://www.google.com/maps?cid=13495479379412370960"
+          class="inline-block w-50 ml-6 rounded bg-red-700 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-red-600"
+        >
+         Visit our workshop
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
+    <div class="flex w-full flex-col items-center justify-center gap-6">
+      <h2 class="text-2xl mb-0 font-bold">Deciding on a Type of Car Seat Repair or Upholstery Service</h2>
+      <p>With so many car seat upholstery options available, it can be difficult to know which car interior repair service is right for your vehicle. The best choice depends on your car's current interior condition, your budget, and your future intentions for your car, from choosing a targeted repair, doing a partial rewrap, or creating a fully customised interior.</p>
+      <p>Use the guide below to identify the option that best suits your needs, then visit our workshop for a personalised recommendation.</p>
+<table class="w-full border-collapse border border-gray-300"> <thead> <tr class="bg-gray-100"> <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Your Car's Condition</th> <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Type of Upholstery Service</th> </tr> </thead> <tbody> <tr> <td class="border border-gray-300 px-4 py-3">Single tear, crack, or worn patch confined to one area of the seat</td> <td class="border border-gray-300 px-4 py-3"><strong>Targeted leather repair</strong></td> </tr> <tr> <td class="border border-gray-300 px-4 py-3">Seat leather is still presentable, but foam has sunken in or lacks comfort on long drives</td> <td class="border border-gray-300 px-4 py-3"><strong>Targeted foam repair</strong></td> </tr> <tr> <td class="border border-gray-300 px-4 py-3">One or two seats (e.g. driver's seat) are worn, cracked, peeling or faded, while the rest of the cabin remains in good condition</td> <td class="border border-gray-300 px-4 py-3"><strong>Partial seat rewrap</strong></td> </tr> <tr> <td class="border border-gray-300 px-4 py-3">Most seats are worn, cracked, peeling or faded throughout the cabin</td> <td class="border border-gray-300 px-4 py-3"><strong>Full seats rewrap</strong></td> </tr> <tr> <td class="border border-gray-300 px-4 py-3">You want a fresh new look, a colour change, premium materials or a unique interior</td> <td class="border border-gray-300 px-4 py-3"><strong>Fully customised seats rewrap</strong></td> </tr> </tbody> </table>
+<p class="mt-2">If you are unsure which car seat repair service you require, contact Five Star Auto Leather for a professional assessment. Our team will inspect the condition of your seats in person and recommend the most suitable and cost-effective solution.</p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 sm:grid-cols-12">
+    <div class="order-2 sm:order-1 sm:col-span-6">
+      <Image
+        src={seatProcess}
+        alt="Close up stitching trim with sewing machine during car seat repair upholstery process"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <div class="order-1 flex items-center px-4 py-14 sm:order-2 sm:col-span-6 sm:px-6 md:px-20">
+      <div class="flex h-full flex-col justify-center">
+        <h2 class="mb-2 text-2xl font-bold text-left">Our Auto Interior Repair and Rewrap Process</h2>
+        <p class="mb-6">Our car seat leather repair process is handled entirely in-house, from removal and preparation to the final quality check. Watch how a full rewrap is done at Five Star Auto Leather.</p>
+       <h3 class="mb-2 font-bold">Step 1: On-Car Assessment</h3>
+       <p class="mb-4">Bring your car in for a hands-on inspection. We assess the seats in person to identify what needs repairing and what needs a full rewrap.</p>
+       <h3 class="mb-2 font-bold">Step 2: Transparent Quotation</h3>
+       <p class="mb-4">A clear quotation with no misleading "from" prices or hidden charges. Just fair pricing tailored to your car.</p>
+       <h3 class="mb-2 font-bold">Step 3: Design Consultation</h3>
+       <p class="mb-4">Choose your leather colour, grain, stitch style, and finish. Selections are confirmed against your actual car under natural light. Too busy to visit? Consultations can also be finalised over WhatsApp or call.</p>
+       <h3 class="mb-2 font-bold">Step 4: In-House Craftsmanship</h3>
+       <p class="mb-4">Every panel is cut, stitched, and finished inside our workshop by our own team, never outsourced.</p>
+       <h3 class="mb-2 font-bold">Step 5: Final Quality Inspection</h3>
+       <p class="mb-6">Every seat panel is inspected and test-fitted before final installation, with adjustments made on the spot.</p>
+       <p>Watch the <a href="https://www.facebook.com/reel/2612823182449712?rdid=KF9iCmvi6fpp6pW9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1D8hfZkpBH%2F#">full car seat rewrap process in action</a> or read our <a href="https://www.fivestarautoleather.com/blog/seat-rewrap-process">step-by-step car seat rewrap process guide</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto w-full px-4 py-20 sm:px-6">
+    <div class="container flex mx-auto max-w-5xl flex-col items-start justify-center gap-4">
+      <h2 class="text-2xl mb-0 font-bold text-center mx-auto">How We Do Targeted Car Leather Repair</h2>
+      <p class="text-center">Got a perfectly good car seat with just a bit of leather damage, like a hole on the driver's bolster or a small tear along the seam? There's no need to replace the whole seat. At Five Star, we repair just the damaged spot, so you save on cost and keep the rest of the seat intact.</p>
+
+      <h3 class="text-left font-bold text-xl mt-8">Step 1: Cut Out the Damaged Piece</h3>
+      <p>We mark out the affected area and carefully cut away the damaged patch, keeping the surrounding leather untouched.</p>
+
+      <h3 class="text-left font-bold text-xl mt-8">Step 2: Stitch in New Leather</h3>
+      <p>Our in-house craftsman cuts a matching piece of premium vegan leather and stitches it in, blending with the existing seat design and stitch pattern.</p>
+
+      <h3 class="text-left font-bold text-xl mt-8">Step 3: Refit and Inspect</h3>
+      <p>The repaired panel is refitted onto the seat frame, test-fitted, and inspected before your car leaves the workshop.</p>
+      <p>Watch our <a href="https://www.facebook.com/share/r/1D8hfZkpBH/">step-by-step targeted car leather rewrap</a> for a closer look at how the patch work is done in our workshop.</p>
+
+      <h3 class="text-left font-bold text-xl mt-8">A Few Repair Tips Worth Knowing</h3>
+      <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Black seats are the easiest to match. Beiges and browns are the hardest, as shade differences show up more under natural light.</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Repair is worth it only for small damage. If wear is spread across the seat, a partial or full rewrap gives a cleaner result.</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Spray painting works for surface fading, but it may not last on high-touch areas like the driver's bolster.</span>
+              </li>
+        </ul>
+        <p>Not sure if your car qualifies? Send us a picture of the damaged area for a quick preliminary assessment, or drop by our Ang Mo Kio workshop.</p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 sm:grid-cols-12">
+    <div class="order-2 sm:order-2 sm:col-span-6">
+      <Image
+        src={veganLeather}
+        alt="Honda Odyssey pilot seats rewrap in Winter Snow leather showcasing premium car leather repair and rewrap finish"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full object-cover custom-featured-2"
+      />
+    </div>
+
+    <div class="order-1 flex items-center px-4 py-14 sm:order-1 sm:col-span-6 sm:px-6 md:px-20">
+      <div
+        class="title-slide-up flex h-full flex-col items-center justify-center text-center sm:items-start sm:text-left"
+      >
+        <h2 class="text-2xl font-bold mb-2">
+          Premium Vegan Leather Built for Singapore's Climate
+        </h2>
+        <p class="mb-6">Every car leather repair and rewrap at our workshop is finished with premium vegan man-made leather. Same premium look and feel as cowhide, but built to handle Singapore's heat, humidity, and UV exposure far better than natural hide.</p>
+
+        <h3 class="mb-2 font-bold text-xl">Why It Works Well for Singapore Cabins</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Soft and luxurious to the touch, on par with high-end car interiors</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>UV resistant, holds its finish under long hours in the sun</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Colour stable, keeps the cabin looking newer for longer</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Scratch resistant and wipes down cleanly, no conditioners required</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-red-600"
+                />
+                <span>Easy to maintain year-round in Singapore's humid climate</span>
+              </li>
+        </ul>
+
+        <h3 class="mb-2 font-bold text-xl mt-6">Engineered for Automotive Use</h3>
+        <p class="mb-6">Automotive-grade microfiber leather sits in a category of its own. Unlike the synthetic materials you might find in furniture or fashion accessories, this leather is engineered specifically for the automotive industry to withstand years of daily use. Soft, luxurious, and built to hold up to real driving conditions.</p>
+
+        <h3 class="mb-2 font-bold text-xl">Our Exclusive Vegan Leather Commitment</h3>
+        <p class="mb-2">After more than 20 years in the industry, taking over the family business came with one clear decision. Go exclusively vegan. Not because it costs less. Not because it's trendy. We believe automotive-grade microfiber leather is the right material for modern car interiors, and it's what we'd choose for our own cars.</p>
+        <p>Watch our founders share the story behind the switch in <a href="https://www.facebook.com/share/r/1DS7ForvzK/">our vegan leather journey</a>, or find out <a href="https://www.fivestarautoleather.com/blog/why-choose-vegan-leather">why we choose vegan leather</a>.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 sm:grid-cols-12">
+    <div class="order-2 sm:order-1 sm:col-span-6">
+      <Image
+        src={whyChoose}
+        alt="Honda Nvan seats rewrap in Burgundy Rose leather showcasing bold car interior repair and rewrap transformation"
+        loading="lazy"
+        widths={[640, 1280]}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        class="h-full w-full object-cover custom-featured"
+      />
+    </div>
+
+    <div class="order-1 flex items-center px-4 py-14 sm:order-2 sm:col-span-6 sm:px-6 md:px-20">
+      <div class="flex h-full flex-col justify-center">
+        <h2 class="mb-6 text-2xl font-bold text-left">Why Choose Five Star Auto Leather</h2>
+       <h3 class="mb-2 font-bold">Transparent Pricing</h3>
+       <p class="mb-4">Every car seat repair and rewrap is individually quoted based on your vehicle, seat condition, and chosen material. No misleading "from" prices, no hidden charges.</p>
+       <h3 class="mb-2 font-bold">Minimal Downtime, Maximum Convenience</h3>
+       <p class="mb-4">Your car is part of your daily routine. Every part of our car interior repair workflow is designed to be smooth, practical, and hassle-free without compromising on quality. Where possible, we complete multiple components together to keep your car off the road for as little time as possible.</p>
+       <h3 class="mb-2 font-bold">Built for Singapore's Climate</h3>
+       <p class="mb-4">Premium vegan microfiber leather paired with high-performance, heat-resistant adhesives, chosen specifically for Singapore's heat and humidity.</p>
+       <h3 class="mb-2 font-bold">100% In-House Craftsmanship</h3>
+       <p class="mb-4">Every auto interior repair and car leather repair job is carried out by our own team at our Singapore workshop, never outsourced. Full quality control from start to finish, backed by our workmanship warranty.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto max-w-6xl px-4 py-20 sm:px-6">
+    <div class="flex w-full flex-col items-center justify-center gap-6">
+      <h2 class="text-2xl mb-0 font-bold">Before & After</h2>
+      <p class="mb-6 text-center">See what a proper car seat leather repair and auto interior rewrap looks like on real customer vehicles, from worn and peeling grips to a clean, tight finish, all done in our Singapore workshop.</p>
+      <div class="grid w-full grid-cols-3 gap-4">
+        <div class="order-1"><Image
+        src={beforeAfter1}
+        alt='Before and after Lexus RX300 seats rewrap in Burgundy Rose showcasing full car seat repair result'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="mx-auto object-cover h-full max-h-[450px]"
+      /></div>
+      <div class="order-2">
+      <Image
+        src={beforeAfter2}
+        alt='Before and after Mazda MX5 seats rewrap in Coffee Cream highlighting auto interior repair finish'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="mx-auto object-cover h-full max-h-[450px]"
+      />
+      </div>
+      <div class="order-3">
+      <Image
+        src={beforeAfter3}
+        alt='Before and after targeted car leather repair on driver seat bolster restoring worn patch to clean finish'
+        loading='eager'
+        fetchpriority='high'
+        widths={[640, 1280]}
+        sizes='(max-width: 640px) 100vw, 50vw'
+        class="mx-auto object-cover h-full max-h-[450px]"
+      />
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black w-full px-4 py-14 sm:px-6">
+    <div class="container mx-auto flex max-w-5xl flex-col justify-center gap-6">
+      <h2 class="text-2xl mb-6 font-bold text-white text-center">Frequently Asked Questions</h2>
+
+      <h3 class="text-white font-bold text-xl">Can you rewrap any car seats and all interior parts?</h3>
+      <p class="text-white mb-8">Absolutely, we can rewrap any car seat. As for other interior parts, it depends. Some components, like plastic handles or casings, aren't meant to be wrapped and we don't believe in forcing what doesn't fit. Our rule of thumb? If it came wrapped in leather or PVC, we can rewrap it and make it look factory-fitted or better.</p>
+      
+      <h3 class="text-white font-bold text-xl">What are the downtimes for the different upholstery services?</h3>
+      <table class="w-full border-collapse border border-white text-white"> <thead> <tr> <th class="border border-white px-4 py-3 text-left font-semibold">Service Type</th> <th class="border border-white px-4 py-3 text-left font-semibold">Production Lead Time</th> <th class="border border-white px-4 py-3 text-left font-semibold">Installation Downtime</th> </tr> </thead> <tbody> <tr> <td class="border border-white px-4 py-3">Targeted leather repair</td> <td class="border border-white px-4 py-3">Not required</td> <td class="border border-white px-4 py-3">2 to 3 hours per seat</td> </tr> <tr> <td class="border border-white px-4 py-3">Targeted foam repair</td> <td class="border border-white px-4 py-3">Not applicable</td> <td class="border border-white px-4 py-3">2 to 3 hours per seat</td> </tr> <tr> <td class="border border-white px-4 py-3">Partial seats rewrap</td> <td class="border border-white px-4 py-3">3 to 4 working days for ordered covers to arrive</td> <td class="border border-white px-4 py-3">2 to 3 hours per seat</td> </tr> <tr> <td class="border border-white px-4 py-3">Full seats rewrap</td> <td class="border border-white px-4 py-3">3 to 4 working days for ordered covers to arrive</td> <td class="border border-white px-4 py-3">Within 1 day</td> </tr> </tbody> </table>
+      <p class="text-white mb-8 text-sm"><em><strong>Note:</strong> Applicable to cars with existing templates. For less common car models, we open templates by removing your existing seat covers and sending them to our production facility in Batam. This takes around 1 to 1.5 weeks. To minimise your downtime, we can fix back the "naked" car seats so your car remains fully drivable while you wait.</em></p>
+      
+      <h3 class="text-white font-bold text-xl">What material options do you offer?</h3>
+      <p class="text-white">We specialise exclusively in automotive-grade vegan microfiber leather, a next-generation material that delivers the same premium look and feel as cowhide, minus the cruelty, maintenance hassles, and environmental footprint.</p>
+      <p class="text-white">Crafted from ultra-fine fibres that replicate the structure of natural leather, it feels soft and supple to the touch. Engineered for modern car interiors, our microfiber leather is UV-resistant, scratch-resistant, and easy to clean. Our collection comes in two finishes:</p>
+      <ul class="space-y-2 text-white">
+          <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span><strong>Standard Full Grain</strong> for a more textured, natural feel</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span><strong>Premium Smooth Grain</strong> for a sleek, soft, and luxe finish</span>
+             </li>
+        </ul>
+        <p class="text-white">To complement your interior, we also carry other premium vegan materials such as Alcantara for seats and velvet fabric for roof linings. For commercial or rental vehicles, we offer a durable and cost-effective PVC option that's thicker than standard market versions, measuring 1.1mm for enhanced strength.</p>
+        <p class="text-white mb-8">Want to dive deeper? Check out our blog post "<a href="https://www.fivestarautoleather.com/blog/types-of-car-leather">3 Types of Car Leather and How to Identify Them</a>" for a more in-depth read.</p>
+    
+       <h3 class="text-white font-bold text-xl">What design elements can I customise for my car?</h3>
+      <p class="text-white">You can personalise your interior with:</p> 
+      <ul class="space-y-2 text-white">
+          <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Material type (such as textured vs smooth grain, fabric alternatives like Alcantara)</span>
+              </li>
+                        <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Colour combinations</span>
+             </li>
+             <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Leather trim details such as piping</span>
+             </li>
+             <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Stitching colour and pattern</span>
+             </li>
+             <li class="flex items-center gap-2">
+                <Icon
+                  name="mdi:checkbox-marked-circle-outline"
+                  class="h-4 w-4 shrink-0 text-white-600"
+                />
+                <span>Embroidered logo or branding</span>
+             </li>
+        </ul>
+      <p class="text-white mb-8">Google is your best friend for design inspiration, but do remember to keep your seat's original contours in mind as they can't be changed. The smartest designs work with your car's curves, not against them.</p> 
+
+      <h3 class="text-white font-bold text-xl">How durable is your leather? Is it scratch resistant and pet friendly?</h3>
+      <p class="text-white">Our leathers are automotive-grade, UV-resistant, and wear-tested for long-lasting performance even under Singapore's climate. It is scratch resistant and pet friendly, especially when it comes to wet messes. We do, however, recommend using a pet mat on top of the seats for even easier upkeep and to extend your leather's lifespan.</p> 
+      <p class="text-white mb-8">See how tough our leather really is in our <a href="https://www.facebook.com/reel/1269788776699954">Stress Test Reel</a>.</p> 
+
+      <h3 class="text-white font-bold text-xl">Does your leather get hot?</h3>
+      <p class="text-white">Our microfiber leather is UV-resistant and heat-treated to reduce heat absorption. It retains less heat than PVC, and a perforated option is also available for better breathability.</p> 
+      <p class="text-white mb-8">That said, any leather material will still feel warm under direct sunlight. We're in the midst of developing a new fabric material with our suppliers that is stain-resistant, easy to clean, and built to combat our tropical climate. Stay tuned!</p>  
+
+      <h3 class="text-white font-bold text-xl">How do I care for and maintain my new leather seats?</h3>
+      <p class="text-white">Avoid harsh chemicals when cleaning your leather seats. Our leather is 100% man-made and vegan so there's no need for any conditioners or oils.</p> 
+      <p class="text-white">For regular maintenance, simply wipe down with clear water using a soft, non-abrasive cloth. For tougher stains, use a mild detergent like hand soap or dishwashing liquid diluted with water. After cleaning, leave your car ventilated so the seats don't stay damp.</p>  
+      <p class="text-white mb-8"><strong>Important!</strong> Always remember to test any solution on a hidden or less obvious area first.</p>   
+    </div>
+  </section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6660102489027!2d103.8690919!3d1.3770706000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1658b06d3b7d%3A0xbb4992fe537bc610!2sFive%20Star%20Auto%20Leather!5e0!3m2!1sen!2sph!4v1782371450352!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</BaseLayout>
+
+<style>
+  h2 {
+    font-family: 'RacingSansOne', var(--font-sans);
+  }
+  .custom-featured{
+        max-height: 800px;
+    object-position: center;
+  }
+  .custom-featured-2{
+    max-height: 900px;
+  }
+</style>
