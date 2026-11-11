@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/car-leather-seat-interior-repair", "destination": "/services/car-leather-seat-interior-rewrap", "statusCode": 301 },
+    { "source": "/services/car-leather-seat-interior-repair", "destination": "/services/car-leather-seat-interior-rewrap", "statusCode": 301 },
+    { "source": "/car-steering-wheel-wrap", "destination": "/services/car-steering-wheel-wrap", "statusCode": 301 },
+    { "source": "/car-roof-lining", "destination": "/services/car-roof-lining", "statusCode": 301 },
+    { "source": "/car-dashboard-leather-repair", "destination": "/services/car-dashboard-leather-repair", "statusCode": 301 }
+  ]
+}
