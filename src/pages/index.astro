@@ -75,6 +75,7 @@ const whatWeDoItems = [
       'Transform your car upholstery with a full leather rewrap, or fix tears and worn areas with targeted repairs.',
     imageUrl: upholsteryImage,
     imageAlt: 'Black leather car seat with diamond stitching and orange trim',
+    link: '/services/car-leather-seat-interior-rewrap',
   },
   {
     title: 'Steering Wheel Rewrap',
@@ -82,12 +83,14 @@ const whatWeDoItems = [
       'Restore grip, comfort and driving feel with a premium leather steering wheel wrap.',
     imageUrl: steeringImage,
     imageAlt: 'Craftsperson hand-stitching a black leather steering wheel wrap',
+    link: '/services/car-steering-wheel-wrap',
   },
   {
     title: 'Car Roof Lining Repair',
     description: 'Restore sagging headliners with a clean, durable roof lining rewrap.',
     imageUrl: roofLiningImage,
     imageAlt: 'Craftsperson trimming grey fabric for a car roof lining',
+    link: '/services/car-roof-lining',
   },
   {
     title: 'Dashboard & Door Panel Repair',
@@ -95,6 +98,7 @@ const whatWeDoItems = [
       'Repair cracked, peeling, faded or sun-damaged dashboards and door panels for a clean, restored finish.',
     imageUrl: dashboardImage,
     imageAlt: 'Car dashboard wrapped in grey suede-like fabric with red stitching',
+    link: '/services/car-dashboard-leather-repair',
   },
 ];
 
@@ -177,18 +181,20 @@ const whyReasons = [
     <div class="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {
         whatWeDoItems.map((item) => (
-          <div class="flex flex-col items-center">
-            <Image
-              src={item.imageUrl}
-              alt={item.imageAlt}
-              loading="lazy"
-              widths={[350, 700]}
-              sizes="350px"
-              class="h-auto w-full max-w-[350px] rounded-lg object-cover"
-            />
-            <h3 class="mt-4 text-center text-xl font-bold">{item.title}</h3>
+          <a href={item.link} class="group flex flex-col items-center">
+            <div class="w-full max-w-[350px] overflow-hidden rounded-lg">
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt}
+                loading="lazy"
+                widths={[350, 700]}
+                sizes="350px"
+                class="h-auto w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-103"
+              />
+            </div>
+            <h3 class="mt-4 text-center text-xl font-bold group-hover:underline">{item.title}</h3>
             <p class="mt-2 text-center">{item.description}</p>
-          </div>
+          </a>
         ))
       }
     </div>
