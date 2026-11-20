@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import carSeatImage from '@/assets/car-leather-seat/car-seat.png';
+import processAirbagPlugImage from '@/assets/car-leather-seat/process-airbag-plug.jpg';
 import rewrapImage from '@/assets/car-leather-seat/rewrap.jpg';
 import stitchingImage from '@/assets/car-leather-seat/stitching.jpg';
 import HondaOdysseyImage from '@/assets/car-leather-seat/honda-odyssey-seats.jpg';
@@ -122,7 +123,15 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
   </section>
 
   <section class="grid grid-cols-1 lg:grid-cols-12">
-    <div class="order-1 lg:order-2 lg:col-span-6">
+    <div class="order-1 grid grid-cols-1 lg:order-2 lg:col-span-6 lg:grid-rows-2">
+      <Image
+        src={processAirbagPlugImage}
+        alt="Connecting airbag plug to car seat during car leather repair installation"
+        loading="lazy"
+        widths={[640, 800]}
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        class="h-full w-full object-cover"
+      />
       <Image
         src={rewrapImage}
         alt="Close up of car seat rewrap process"
@@ -399,7 +408,14 @@ import beforeAfterRepair2Image from '@/assets/car-leather-seat/before-after-repa
   </section>
 
   <section class="mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-4 py-8 sm:px-6">
-    <h2 class="text-2xl">Before & After</h2>
+    <div class="text-center">
+      <h2 class="text-2xl">Before & After</h2>
+      <p class="mt-2">
+        See what a proper car seat leather repair and auto interior rewrap looks like on real
+        customer vehicles, from worn and peeling grips to a clean, tight finish, all done in our
+        Singapore workshop.
+      </p>
+    </div>
 
     <div class="flex flex-col items-center gap-3">
       <div class="grid w-full gap-3 sm:grid-cols-3">
